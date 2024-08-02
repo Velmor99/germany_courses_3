@@ -1,0 +1,76 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.banner-content {
+  @media (min-width: $unfolded-tablet-width) {
+    padding-top: 136px;
+    width: 380px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 563px;
+    padding-top: 166px;
+  }
+  &__title {
+    color: $text-black;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+    @media (min-width: $wide-phone-width) {
+      font-size: 30px;
+      font-size: 45px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      text-align: left;
+    }
+    @media (min-width: $desktop-width) {
+      width: 380px;
+    }
+  }
+
+  &__text {
+    color: $text-black;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &__button {
+    width: 200px;
+    height: 63px;
+    border-radius: 10px 10px 0px 10px;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    color: $white;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media (min-width: $wide-phone-width) {
+      width: 380px;
+      height: 100px;
+      font-size: 45px;
+    }
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
+}

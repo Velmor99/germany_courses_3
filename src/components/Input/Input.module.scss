@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+
+.input {
+  // position: relative;
+  &__text, &__tel {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px 5px 0px 5px;
+    background-color: $white;
+    outline: none;
+    border: none;
+    box-shadow: $input-shadow;
+    padding-left: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: $text-black;
+    &::placeholder {
+      color: #C7D1CC;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    @media (min-width: $tablet-width) {
+      height: 78px;
+      border-radius: 15px 15px 0px 15px;
+      padding-left: 20px;
+      font-size: 21px;
+      &::placeholder {
+        color: #C7D1CC;
+        font-size: 21px;
+      }
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      padding-left: 40px;
+    }
+  }
+
+  &__tel {
+    padding-left: 68px;
+    font-size: 15px;
+    @media (min-width: $desktop-width) {
+      padding-left: 100px;
+    }
+  }
+
+  &__checkbox {
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    @media (min-width: $tablet-width) {
+      width: 21px;
+      height: 21px;
+    }
+  }
+}
+
+.error-message {
+  color: $error-input;
+  display: block;
+  position: absolute;
+  z-index: 2;
+}

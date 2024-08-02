@@ -1,0 +1,62 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.notification {
+  box-shadow: 0px 0px 28px 0px rgba(14, 62, 39, 0.15) inset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background-color: $white;
+  border-radius: 20px;
+  display: grid;
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    border-radius: 50px;
+  }
+
+  &__title {
+    color: $main-green;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+    @media (min-width: $wide-phone-width) {
+      font-size: 30px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 60px;
+      font-size: 60px;
+    }
+  }
+
+  &__text {
+    color: $text-black;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 230px;
+    margin: 0 auto;
+    @media (min-width: $wide-phone-width) {
+      width: 300px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 500px;
+      font-size: 30px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      font-size: 45px;
+      width: 753px;
+    }
+  }
+}

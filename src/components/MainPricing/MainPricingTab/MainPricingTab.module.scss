@@ -1,0 +1,198 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.tab {
+  position: relative;
+  margin-bottom: 63px;
+  @media (min-width: $wide-phone-width) {
+    margin-bottom: 73px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+  &__title {
+    color: $white;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 194px;
+    height: 43px;
+    background-color: $main-green;
+    border-radius: 5px 5px 0px 5px;
+    padding-top: 12px;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: -10%;
+    @media (min-width: $tablet-width) {
+      position: static;
+      transform: translate(0%);
+      font-size: 24px;
+      padding-top: 4px;
+      width: 100%;
+      width: 496px;
+      margin: 0 auto;
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+
+  &__content {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: $header-shadow;
+    border-radius: 10px;
+    @media (min-width: $tablet-width) {
+      width: 496px;
+      border-radius: 0px 0px 10px 10px;
+    }
+  }
+
+  &__button-list {
+    width: 50%;
+    background-color: $yellow-payment;
+    border-radius: 10px 0px 0px 10px;
+    // box-shadow: $header-shadow;
+    padding: 59px 25px 68px;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px 0;
+    @media (min-width: $tablet-width) {
+      width: 207px;
+      border-radius: 0px 0px 0px 10px;
+    }
+  }
+
+  &__button {
+    outline: none;
+    border: none;
+    width: 110px;
+    height: 43px;
+    border-radius: 5px 5px 0px 5px;
+    box-shadow: $header-shadow;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__information {
+    &-block {
+      width: 50%;
+      padding: 26px 0 37px;
+      @media (min-width: $tablet-width) {
+      }
+    }
+    &-title {
+      color: $text-black;
+      text-align: center;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &-value {
+      color: $main-green;
+      text-align: center;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 91.7%; /* 16.506px */
+      @media (min-width: $tablet-width) {
+        font-size: 45px;
+      }
+    }
+
+    &-discount {
+      display: block;
+      background-color: $discount-red;
+      color: $white;
+      text-align: center;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 91.7%; /* 15.589px */
+      width: 53px;
+      height: 26px;
+      padding-top: 6px;
+      border-radius: 5px 5px 0px 5px;
+      position: relative;
+      margin: 0 auto;
+      &::before {
+        content: "";
+        display: block;
+        width: 110%;
+        height: 2px;
+        background-color: $white;
+        transform: translate(-50%);
+        position: absolute;
+        top: 24%;
+        left: 50%;
+        rotate: -15deg;
+      }
+    }
+  }
+
+  &__duration {
+    &-block {
+      position: relative;
+      padding-bottom: 19px;
+      margin-bottom: 12px;
+      &::after {
+        content: "";
+        display: block;
+        width: 110px;
+        height: 1px;
+        background-color: $main-green;
+        transform: translate(-50%);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+      }
+    }
+    &-title {
+      margin-bottom: 18px;
+    }
+    &-hours {
+      color: $main-green;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 91.7%; /* 16.506px */
+    }
+  }
+
+  &__per-hour {
+    &-block {
+      padding-bottom: 18px;
+      margin-bottom: 12px;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 110px;
+        height: 1px;
+        background-color: $main-green;
+        transform: translate(-50%);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+      }
+    }
+  }
+
+  &__per-course {
+    &-title {
+      margin-bottom: 5px;
+    }
+    &-discount {
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../styles/variables";
+
+.button {
+  cursor: pointer;
+  transition: background-color linear .25s;
+  // &:active {
+  //   box-shadow: 0px 0px 9px 0px rgba(14, 62, 39, 0.15) inset,
+  //   0px 0px 16px 0px rgba(14, 62, 39, 0.1) inset;
+  //   background: #fff;
+  //   color: $main-green;
+  //   transition: background-color linear .25s;
+  // }
+  // &:disabled {
+  //   cursor: auto;
+  //   background-color: gray;
+  //   transition: background-color linear .25s;
+  //   color: $text-black;
+  // }
+}
+
+.green {
+  background-color: $main-green;
+  color: $white;
+  &:disabled {
+    cursor: auto;
+    background-color: $green-line;
+    transition: background-color linear .25s;
+  }
+  &:hover {
+    box-shadow: 10px 0px 12px 0px rgba(14, 62, 39, 0.10), 0px 10px 9px 0px rgba(14, 62, 39, 0.10);
+    transition: box-shadow linear .25s;
+  }
+  &:active {
+    box-shadow: 0px 0px 9px 0px rgba(14, 62, 39, 0.15) inset, 0px 0px 16px 0px rgba(14, 62, 39, 0.10) inset;
+    transition: background-color linear .25s;
+  }
+}
+
+.white {
+  background-color: $white;
+  color: $main-green;
+  &:disabled {
+    cursor: auto;
+    background-color: $white;
+    box-shadow: 0px 0px 2px 0px rgba(14, 62, 39, 0.25) inset, 0px 4px 60px 0px rgba(0, 0, 0, 0.10);
+    transition: background-color linear .25s;
+    color: $green-line;
+  }
+  &:hover {
+    box-shadow: 10px 0px 12px 0px rgba(14, 62, 39, 0.10), 0px 10px 9px 0px rgba(14, 62, 39, 0.10);
+    transition: box-shadow linear .25s;
+  }
+  &:active {
+    box-shadow: 0px 0px 9px 0px rgba(14, 62, 39, 0.15) inset, 0px 0px 16px 0px rgba(14, 62, 39, 0.10) inset;
+    transition: background-color linear .25s;
+  }
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  @media (min-width: $wide-phone-width) {
+    width: 55px;
+    height: 55px;
+  }
+}

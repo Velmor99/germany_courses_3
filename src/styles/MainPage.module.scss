@@ -1,0 +1,153 @@
+@import "./variables";
+@import "./mixins";
+
+.container {
+  @include container;
+}
+
+.main-page {
+  &__banner-section {
+    margin-bottom: 66px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__advantages-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 113px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 70px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 88px;
+    }
+  }
+  &__additional-services-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 136px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__green-content-block {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 45px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 40px;
+    }
+    @media (min-width: $desktop-width) {
+      padding-bottom: 60px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__green-content-section {
+    background-image: url("../../public/backgrounds/green-text/main/mobile.png");
+    background-position: bottom 470px center;
+    background-repeat: no-repeat;
+    background-size: 100% 454px;
+    margin-bottom: 62px;
+    @media (min-width: $wide-phone-width) {
+      background-image: url("../../public/backgrounds/green-text/main/wide-phone.png");
+      background-position: bottom 650px center;
+      margin-bottom: 80px;
+    }
+    @media (min-width: $tablet-width) {
+      background-image: url("../../public/backgrounds/green-text/main/tablet.png");
+      background-position: bottom 700px center;
+      background-size: 100% 679px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      background-image: url("../../public/backgrounds/green-text/main/unfolded-tablet.png");
+      background-position: bottom 760px center;
+      background-size: 100% 693px;
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../../public/backgrounds/green-text/main/desktop.png");
+      background-position: bottom 620px center;
+      background-size: 100%;
+      margin-bottom: 148px;
+    }
+  }
+
+  &__pricing-section {
+    margin-bottom: 103px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 123px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 137px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 176px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 102px;
+    }
+  }
+
+  &__form-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 141px;
+      background-image: url("../../public/backgrounds/form/main-form-background.png");
+      background-position: bottom 220px center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__additional-section {
+    padding-bottom: 30px;
+    @media (min-width: $wide-phone-width) {
+      padding-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      padding-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      padding-bottom: 112px;
+      position: relative;
+      background-image: url("../../public/backgrounds/other/main-additional-services-background.png");
+      background-repeat: no-repeat;
+      background-position: top 220px center;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        top: 44%;
+        background: $mint-gradient;
+        z-index: -1;
+      }
+    }
+  }
+}

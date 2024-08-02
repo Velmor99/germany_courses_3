@@ -1,0 +1,196 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+  @include container;
+}
+
+.form {
+  width: 100%;
+  border-radius: 20px;
+  padding: 66px 20px 38px;
+  position: relative;
+  max-width: 1097px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    padding: 85px 40px;
+    border-radius: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 85px 109px;
+  }
+
+  &__green {
+    background: $main-green;
+  }
+
+  &__white {
+    background-color: $white;
+    box-shadow: $white-form-shadow;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+    @media (min-width: $wide-phone-width) {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      font-size: 60px;
+      margin-bottom: 34px;
+    }
+    &-white {
+      color: $white;
+    }
+    &-green {
+      color: $main-green;
+    }
+  }
+
+  &__input {
+    margin-bottom: 21px;
+    border-radius: 5px 5px 0px 5px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+    &-phone {
+      margin-bottom: 17px;
+      @media (min-width: $wide-phone-width) {
+        margin-bottom: 50px;
+      }
+      @media (min-width: $tablet-width) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__checkbox-label {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    @media (min-width: $tablet-width) {
+      width: 566px;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: 4%;
+    @media (min-width: $wide-phone-width) {
+      left: 18%;
+    }
+    @media (min-width: $tablet-width) {
+      top: 2px;
+      left: 13%;
+    }
+  }
+
+  &__checkbox-text {
+    text-align: center;
+    margin-bottom: 45px;
+    margin: 0 auto 45px auto;
+  }
+
+  &__link {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+    }
+    &-green {
+      color: $main-green;
+    }
+    &-white {
+      color: $white;
+    }
+  }
+
+  &__text {
+    color: $text-black;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+    }
+  }
+
+  &__submit-button {
+    width: 200px;
+    height: 63px;
+    border-radius: 10px 10px 0px 10px;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    text-transform: capitalize;
+    @media (min-width: $wide-phone-width) {
+      width: 380px;
+      height: 100px;
+      border-radius: 20px 20px 0px 20px;
+      font-size: 45px;
+    }
+  }
+
+  &__we-icon {
+    position: absolute;
+    top: -38px;
+    transform: translate(-50%);
+    left: 50%;
+    z-index: 9999;
+    @media (min-width: $tablet-width) {
+      top: -64px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      top: -80px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 90%;
+      left: 999px;
+      rotate: 15deg;
+    }
+    // &-green {
+    //   @media (min-width: $desktop-width) {
+    //     top: 850px;
+    //   }
+    // }
+  }
+
+  &__phone-input {
+    position: relative;
+  }
+
+  &__select {
+    position: absolute;
+    z-index: 4;
+    top: 17px;
+    left: 10px;
+    @media (min-width: $wide-phone-width) {
+      left: 20px;
+    }
+    @media (min-width: $tablet-width) {
+      top: 25px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      left: 40px;
+    }
+  }
+}

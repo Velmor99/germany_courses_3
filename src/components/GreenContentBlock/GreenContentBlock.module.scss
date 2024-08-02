@@ -1,0 +1,171 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.container {
+  @include container;
+}
+
+.green-content {
+  &__text-with-photo-block {
+    margin-bottom: 30px;
+    position: relative;
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 40px;
+    }
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 0 30px;
+      align-items: center;
+    }
+  }
+
+  &__icon-block {
+    position: absolute;
+    transform: translate(-50%);
+    bottom: -7%;
+    left: 57%;
+    transform: rotate(15deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 110px;
+    height: 69px;
+    background-image: url("../../../public/common/green_content_icons/white_small_we.svg");
+    @media (min-width: $wide-phone-width) {
+      left: 78%;
+    }
+    @media (min-width: $tablet-width) {
+      background-image: url("../../../public/common/green_content_icons/white_large_we.svg");
+      width: 147px;
+      height: 92px;
+      left: 80%;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+    }
+    @media (min-width: $desktop-width) {
+    }
+  }
+
+  &__text-with-photo {
+    color: $text-black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+    @media (min-width: $wide-phone-width) {
+      font-size: 18px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      width: 544px;
+      margin: 0 auto 20px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      font-size: 30px;
+      margin-bottom: 40px;
+      width: 636px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      width: auto;
+    }
+  }
+
+  &__text-below-photo {
+    color: $text-black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: pre-line;
+    @media (min-width: $wide-phone-width) {
+      font-size: 18px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      width: 568px;
+      margin: 0 auto;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      font-size: 30px;
+      width: 715px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 1010px;
+    }
+  }
+
+  &__image-block {
+    width: 320px;
+    height: 300px;
+    // background-color: $yellow-payment;
+    border-radius: 20px;
+    box-shadow: $header-shadow;
+    margin: 0 auto;
+    position: relative;
+    @media (min-width: $wide-phone-width) {
+      width: 440px;
+      height: 280px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 588px;
+      height: 374px;
+    }
+  }
+
+  // &__main-background {
+  //   background-image: url("../../../public/backgrounds/green-text/main/mobile.png");
+  //   background-position: center bottom;
+  //   background-repeat: no-repeat;
+  // }
+}
+
+.main-image {
+  background-image: url("../../../public/images/main/1_iStock-1288103838.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+
+.consultation-image {
+  background-image: url("../../../public/images/students/10_iStock-1126400335.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.documents-image {
+  background-image: url("../../../public/images/documents/2_iStock-827804170.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.prepare-to-test-image {
+  background-image: url("../../../public/images/prepare-to-test/2_iStock-1288092444_Red.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.resume-image {
+  background-image: url("../../../public/images/resume/2_iStock-587892248.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.resume-image-desktop {
+  background-image: url("../../../public/images/resume/2_iStock-587892248.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.speaking-club-image {
+  background-image: url("../../../public/images/speaking-club/2_iStock-1264709816.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.students-image {
+  background-image: url("../../../public/images/students/2_iStock-1308970663.jpg");
+  background-size: cover;
+  background-position: center;
+}

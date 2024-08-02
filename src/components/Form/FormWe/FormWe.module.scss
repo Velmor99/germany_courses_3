@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+.mobile {
+  display: block;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tablet {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+  @media (min-width: $unfolded-tablet-width) {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @media (min-width: $unfolded-tablet-width) {
+    display: block;
+  }
+}

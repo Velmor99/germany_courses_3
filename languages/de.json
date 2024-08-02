@@ -1,3 +1,414 @@
 {
-        "title": "guten tag"
+  "payment_button": "zahlen",
+  "service": "Leistungen",
+  "footer_links": {
+    "cv_writing": "Lebenslauf schreiben",
+    "admission_to_universities": "Dienstleistungen für Hochschulzulassungen",
+    "prepare_to_technical_language_test": "Vorbereitung auf die Fachsprachprüfung",
+    "conversational_club": "Разговорный клуб медицинская лексика",
+    "preparing_documents": "Vorbereitung der Dokumente für die Migration",
+    "language_school": "Internationale Sprachschule",
+    "public_offer": "Публичная оферта",
+    "privacy_policy": "Политика конфиденциальности",
+    "free_information_course": "Бесплатный информационный курс",
+    "personal_consultation": "Beratung im Bereich der Arbeitsmigration",
+    "personal_consultation_long": "Persönliche Beratung im Bereich der Arbeitsmigration"
+  },
+  "main_additional_links": {
+    "cv_writing": "Die Erstellung\n eines Lebenslaufs",
+    "free_information_course": "Informationskurs zur\n Arbeitsmigration nach Deutschland",
+    "conversational_club": "Разговорный клуб\n медицинская лексика",
+    "preparing_documents": "Подготовка пакета\n документов для миграции",
+    "personal_consultation": "Persönliche Beratung\n im Bereich der Arbeitsmigration",
+    "admission_to_universities": "Организация\n поступления в ВУЗы",
+    "prepare_to_technical_language_test": "Vorbereitung\n auf die Fachsprachprüfung"
+  },
+  "form": {
+    "title_for_main": "Melden Sie sich bei unserer Sprachschule an",
+    "title_for_consultation": "Beratung buchen",
+    "title_for_prepare_to_test": "Dem Kurs beitreten",
+    "title_for_students": "Записаться на консультацию",
+    "title_for_documents": "Vorbereitung der Dokumente bestellen",
+    "title_for_speaking_club": "Mitglied in unserem Sprachclub werden",
+    "title_for_resume": "Lebenslauf bestellen",
+    "main_submit_button": "Bestellen",
+    "name_placeholder": "Geben Sie Ihren Namen ein",
+    "email_placeholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "link_of_public_offer": "den Datenschutzbestimmungen einverstanden",
+    "link_of_privacy_policy": "mit dem öffentlichen Angebot",
+    "press_on_button": "Mit einem Klick auf die Schaltfläche erkläre ich mich",
+    "and": "und",
+    "empty_name_error": "Заполните имя",
+    "empty_email_error": "Заполните email",
+    "empty_phone_error": "Заполните номер телефона",
+    "success_notification_title": "Спасибо за Вашу заявку!",
+    "success_notification_text": "Менеджер свяжется с Вами в течение двух рабочих дней в порядке очереди"
+  },
+  "FAQ_title": "Häufig gestellte Fragen",
+  "FAQ_resume": {
+    "0": {
+      "title": "Welchen Vorteil hat es, einen Lebenslauf über Ihr Unternehmen zu bestellen?",
+      "content": "Unser Unternehmen ist auf die Erstellung von Lebensläufen spezialisiert, die den deutschen Anforderungen entsprechen. Wir haben jahrelange Erfahrung und kennen die lokalen Standards, so dass wir Lebensläufe erstellen können, die sich von denen anderer Bewerber abheben."
+    },
+    "1": {
+      "title": "Welche Sprachen unterstützen Sie bei der Erstellung der Lebensläufe?",
+      "content": "Wir erstellen Lebensläufe in mehreren Sprachen, darunter Englisch, Deutsch und Russisch. Wir stellen sicher, dass Ihr Lebenslauf ein hohes Sprachkenntnisniveau aufweist."
+    },
+    "2": {
+      "title": "Wie lange dauert es, einen Lebenslauf zu erstellen?",
+      "content": "Durchschnittlich sieben Arbeitstage. Die Zeit für die Erstellung eines Lebenslaufs hängt von der Komplexität des Auftrags und unserer aktuellen Arbeitsbelastung ab. Wir bemühen uns um hohe Qualität und gehen auf jedes Profil ein."
+    },
+    "3": {
+      "title": "Welche Garantien gibt es, dass mein Lebenslauf erfolgreich sein wird?",
+      "content": "Wir können keine konkrete Anstellung garantieren, aber wir garantieren, dass Ihr Lebenslauf für potenzielle Arbeitgeber so attraktiv wie möglich sein wird. Unsere Erfahrung und unser Fachwissen werden Ihnen helfen, sich von Ihren Mitbewerbern abzuheben."
+    }
+  },
+  "FAQ_speaking_club": {
+    "0": {
+      "title": "Welches Sprachniveau brauche ich, um am Sprachclub teilzunehmen?",
+      "content": "Sie können an unserem Sprachclub ab dem Niveau A2 teilnehmen. Die Gruppen sind in die Niveaus A2–B1 und B1–B2 unterteilt."
+    },
+    "1": {
+      "title": "Welche Themen werden im Sprachclub besprochen?",
+      "content": "Die Themen, die im Sprachclub besprochen werden, sind vielfältig. Wir diskutieren über alles, was die Teilnehmer interessiert, von aktuellen Ereignissen bis hin zu Geschichte und Kultur. Wir haben auch einen Sprachclub für medizinisches Vokabular, der sowohl für Ärzte als auch für Krankenschwestern geeignet ist."
+    },
+    "2": {
+      "title": "Wie lauten die Verhaltensregeln im Sprachclub?",
+      "content": "Im Sprachclub gilt die Regel des Respekts gegenüber anderen Teilnehmern. Wir dulden keine Beleidigungen, Diskriminierungen oder andere Formen von Respektlosigkeit."
+    },
+    "3": {
+      "title": "Welche Vorteile hat die Mitgliedschaft in einem Sprachclub?",
+      "content": "Die Teilnahme an einem Sprachclub hat viele Vorteile. Sie können Ihre Sprachkenntnisse verbessern, Ihren Wortschatz erweitern, mit Muttersprachlern kommunizieren und neue Kenntnisse in verschiedenen Bereichen erwerben."
+    }
+  },
+  "FAQ_documents": {
+    "0": {
+      "title": "Wie lange dauert es, meine Bewerbungsmappe vorzubereiten?",
+      "content": "Der Zeitaufwand für die Erstellung Ihrer Bewerbung ist abhängig von Ihrer individuellen Situation, einschließlich des Ziellandes, der Art des Visums und Ihren persönlichen Umständen. Wir versuchen, den Prozess so weit wie möglich zu optimieren und den Zeitaufwand so gering wie möglich zu halten."
+    },
+    "1": {
+      "title": "Wie ist der Ablauf der Zusammenarbeit mit Ihrem Unternehmen?",
+      "content": "Unser Kooperationsprozess beginnt damit, dass Sie ein Kontaktformular ausfüllen oder uns anrufen. Unser Manager wird sich dann mit Ihnen in Verbindung setzen, um Ihren Fall zu besprechen und Ihr Ziel zu definieren. Wir bieten Ihnen dann eine ausführliche Beratung an und erstellen einen differenzierten Aktionsplan."
+    },
+    "2": {
+      "title": "Welche Dokumente benötige ich für die Arbeitsmigration?",
+      "content": "Die erforderlichen Unterlagen hängen vom Zielland und von der Art des Visums ab. Unsere Manager stellen Ihnen eine genaue Liste der benötigten Dokumente zur Verfügung und beraten Sie, wo und wie Sie diese beschaffen können."
+    },
+    "3": {
+      "title": "Bieten Sie Erfolgsgarantien für die Arbeitsmigration?",
+      "content": "Wir können keine 100%ige Erfolgsgarantie geben, da die endgültige Entscheidung von der zuständigen Behörde getroffen wird. Unsere erfahrenen Spezialisten werden jedoch alles tun, um die Wahrscheinlichkeit eines erfolgreichen Abschlusses zu erhöhen und Fehler zu vermeiden."
+    },
+    "4": {
+      "title": "Welche Erfahrung haben Ihre Manager auf dem Gebiet der Arbeitsmigration?",
+      "content": "Unsere Manager verfügen über umfangreiche Erfahrungen im Bereich der Arbeitsmigration und kennen alle Nuancen sowie Anforderungen der verschiedenen Länder. Wir aktualisieren unser Wissen ständig und halten uns über Gesetzesänderungen auf dem Laufenden, um immer einen Schritt voraus zu sein."
+    }
+  },
+  "FAQ_students": {
+    "0": {
+      "title": "Welche Unterlagen benötige ich für die Bewerbung an einer deutschen Hochschule?",
+      "content": "Für die Aufnahme an deutschen Hochschulen benötigen Sie die folgenden Dokumente:\n— Reisepass\n— Zeugnis der Sekundarschule\n— Prüfungsergebnisse in Deutsch und Mathe\n— Motivationsschreiben\n— Empfehlungsbriefe."
+    },
+    "1": {
+      "title": "Wie bereite ich mich auf die Aufnahme an deutschen Hochschulen vor?",
+      "content": "Um sich auf die Aufnahme an einer deutschen Hochschule vorzubereiten, müssen Sie:\n— so früh wie möglich mit dem Deutschlernen beginnen.\n— Suchen Sie sich einen Tutor oder eine Sprachschule, der/die Ihnen bei der Vorbereitung auf die Deutsch- und Matheprüfungen hilft.\n— Schreiben Sie ein Motivationsschreiben, in dem Sie Ihre Ziele und Beweggründe für die Bewerbung an einer deutschen Hochschule beschreiben.\n— Besorgen Sie sich Referenzen von Lehrern oder anderen Personen, die Ihre Leistungen bestätigen können."
+    },
+    "2": {
+      "title": "Was sind die Vorteile eines Studiums an einer deutschen Hochschule?",
+      "content": "Ein Studium an einer deutschen Hochschule bietet Ihnen die folgenden Vorteile:\n— Hochwertige Ausbildung\n— Internationales Umfeld\n— Möglichkeit, einen Arbeitsplatz in Deutschland oder einem anderen Land der Europäischen Union zu bekommen\n— Möglichkeit, einen Master- oder Doktortitel zu erwerben."
+    },
+    "3": {
+      "title": "Wann kann ich Sie kontaktieren, um Hilfe bei meiner Bewerbung an einer deutschen Hochschule zu erhalten?",
+      "content": "Sie können uns in jeder Phase des Bewerbungsverfahrens an einer deutschen Hochschule kontaktieren. Wir helfen Ihnen bei Ihrer Zulassungsstrategie, bei der Erstellung Ihrer Bewerbungsunterlagen, bei der Übersetzung Ihrer Dokumente, bei der Beglaubigung Ihrer Dokumente, bei der Einreichung Ihres Lebenslaufs an der Universität und bei der Vorbereitung auf Ihr Vorstellungsgespräch.\nWir hoffen, dass unsere Unterstützung Ihnen dabei hilft, an einer deutschen Universität aufgenommen zu werden und die Ausbildung zu bekommen, die Sie sich wünschen!"
+    },
+    "4": {
+      "title": "Welche Vorteile bietet Ihnen die Zusammenarbeit mit uns?",
+      "content": "Die Zusammenarbeit mit uns bietet Ihnen die folgenden Vorteile:\n— Erfahrenes Team von Spezialisten\n— Individueller Zugang zu jedem Kunden\n— Qualitätsgarantie der Dienstleistungen\n— Angemessene Preise.\nWir hoffen, dass unsere Zusammenarbeit für Sie von Vorteil sein wird!"
+    }
+  },
+  "FAQ_prepare_to_test": {
+    "0": {
+      "title": "Wer kann den Kurs besuchen?",
+      "content": "Der Kurs ist für alle Ärzte geeignet, die in Deutschland arbeiten wollen und ihre Deutschkenntnisse auf dem Niveau C1 nachweisen müssen, um die Fachsprachprüfung zu bestehen."
+    },
+    "1": {
+      "title": "Wie lange dauert es, sich auf die Prüfung vorzubereiten?",
+      "content": "An unserer Schule bieten wir zwei Formen der Vorbereitung auf die FSP-Prüfung an: Einzelunterricht (drei Monate) und Gruppenunterricht (vier Monate)."
+    },
+    "2": {
+      "title": "Gibt es eine Garantie, dass ich die Prüfung bestehe?",
+      "content": "Wir können keine absolute Garantie für das Bestehen der Prüfung geben, aber wir garantieren Ihnen einen qualitativ hochwertigen Unterricht, erfahrene Lehrkräfte und einen individuellen Ansatz, der Ihnen hilft, Ihre Vorbereitung auf die Prüfung zu optimieren."
+    },
+    "3": {
+      "title": "Kann ich zusätzlich Einzelstunden buchen?",
+      "content": "Ja, natürlich. Wir bieten Ihnen die Möglichkeit, auf Wunsch zusätzliche Einzelstunden zu buchen."
+    }
+  },
+  "pricing_title": "Kosten der Dienstleistung",
+  "main_pricing": {
+    "title": "Kursdauer und Preise\n je nach Niveau",
+    "duration": "Kursdauer",
+    "per_hour": "Preis pro Stunde",
+    "per_course": "Preis für den gesamten Kurs",
+    "hours": "часов"
+  },
+  "pricing_title_course": "Kosten für den Kurs",
+  "some_parts_of_payment": "Ratenzahlung ist möglich.",
+  "groups_pricing": "Gruppenunterricht",
+  "individual_pricing": "Einzelunterricht",
+  "per_lesson": "pro Unterrichtsstunde",
+  "how_it_works": "Wie es funktioniert",
+  "resume_how_it_works": {
+    "1": "Füllen Sie das Kontaktformular aus.",
+    "2": "Der Manager schickt Ihnen einen Fragebogen und gute Fotobeispiele für Ihren Lebenslauf.",
+    "3": "Sie senden den ausgefüllten Fragebogen und qualitativ hochwertige Fotos an den Manager.",
+    "4": "Sie bezahlen die Dienstleistung über die zentrale Schaltfläche ‚Bezahlen‘ oben auf der Website.",
+    "5": "Wir schreiben Ihren Lebenslauf kompetent in der entsprechenden Fremdsprache.",
+    "6": "Wir schicken Ihnen den fertigen Lebenslauf per E-Mail oder auf einem anderen von Ihnen bevorzugten Weg."
+  },
+  "speaking_club_how_it_works": {
+    "1": "Die Anmeldung erfolgt einmal pro Monat für einen Monat im Voraus, je nach Teilnehmerzahl können die Gruppen auch häufiger stattfinden.",
+    "2": "Die Clubtreffen finden einmal wöchentlich für 1,5 Stunden in Minigruppen von 4–6 Personen statt.",
+    "3": "Die Teilnehmer erhalten Vokabellisten, Lehrbuchempfehlungen und eine Menge positiver Erfahrungen durch soziale Kontakte."
+  },
+  "documents_how_it_works": {
+    "1": {
+      "strong": "Füllen Sie das Kontaktformular aus.",
+      "text": "Wir werden Sie kontaktieren, um Ihren Fall zu besprechen und Ihr Ziel zu definieren."
+    },
+    "2": {
+      "strong": "Konsultation mit einem Manager:",
+      "text": "Unser Spezialist führt ein ausführliches Gespräch mit Ihnen, um die erforderlichen Unterlagen zu ermitteln und Ihre Situation zu verstehen."
+    },
+    "3": {
+      "strong": "Aktionsplan:",
+      "text": "Wir entwickeln einen detaillierten Aktionsplan und beraten Sie, welche Unterlagen Sie benötigen und wie Sie diese beschaffen können."
+    },
+    "4": {
+      "strong": "Unterstützung in jeder Phase:",
+      "text": "Unsere Manager begleiten Sie durch den gesamten Prozess, beantworten alle Ihre Fragen und helfen Ihnen bei der Lösung etwaiger Schwierigkeiten."
+    },
+    "5": {
+      "strong": "Erfolgreiche Migration:",
+      "text": "Ihre Dokumente sind in Ordnung – Sie können sich auf den Weg machen, um neue Chancen zu nutzen und Ihre Ziele zu erreichen."
+    }
+  },
+  "students_how_it_works": {
+    "1": {
+      "strong": "Füllen Sie das Kontaktformular aus.",
+      "text": "Wir werden uns mit Ihnen in Verbindung setzen, um einen Termin für eine kostenpflichtige Erstberatung zu vereinbaren."
+    },
+    "2": {
+      "strong": "Konsultation mit einem Manager:",
+      "text": "Unser Spezialist führt ein ausführliches Gespräch, in dem Sie umfassende Informationen über alle Phasen der Aufnahme an deutschen Hochschulen und die Bedingungen für den Abschluss eines Vertrags über einen umfassenden Service erhalten."
+    },
+    "3": {
+      "strong": "Unterstützung in jeder Phase:",
+      "text": "Unsere Manager begleiten Sie durch den gesamten Prozess, beantworten alle Ihre Fragen und helfen Ihnen bei der Lösung aller auftretenden Schwierigkeiten."
+    },
+    "4": {
+      "strong": "Erfolgreiche Immatrikulation:",
+      "text": "Ihre Unterlagen sind in Ordnung – Sie können sich auf den Weg zu neuen Möglichkeiten machen und Ihre Ziele erreichen."
+    }
+  },
+  "prepare_to_test_how_it_works": {
+    "1": {
+      "strong": "Füllen Sie das Kontaktformular aus.",
+      "text": "Wir werden uns mit Ihnen in Verbindung setzen, um einen passenden Termin für Ihr Beratungsgespräch zu vereinbaren."
+    },
+    "2": {
+      "strong": "Konsultation mit einem Manager:",
+      "text": "Unser Spezialist wird ein ausführliches Beratungsgespräch führen, um alle Ihre zusätzlichen Fragen zu unserem Kurs zu beantworten."
+    },
+    "3": {
+      "strong": "Bezahlung des Kurses:",
+      "text": "Die Zahlung kann in mehrere Raten aufgeteilt werden (dies wird individuell mit dem Manager besprochen). Nach der ersten Zahlung beginnen Sie den Kurs."
+    },
+    "4": {
+      "strong": "Erhalt eines Zertifikats:",
+      "text": "Sie erhalten ein Zertifikat über die Teilnahme an unserem Kurs und sind bereit, die Prüfung bei der Ärztekammer abzulegen."
+    }
+  },
+  "consultation_how_it_works": {
+    "1": {
+      "strong": "Füllen Sie das Kontaktformular aus.",
+      "text": "Wir werden uns mit Ihnen in Verbindung setzen, um einen passenden Termin für Ihr Beratungsgespräch zu vereinbaren."
+    },
+    "2": {
+      "strong": "Список вопросов.",
+      "text": "Вы предоставляете нам список приблизительных вопросов, которые хотите обсудить"
+    },
+    "3": {
+      "strong": "Консультация.",
+      "text": " В рамках консультации, которая длится 45 минут, Ольга Богомазова детально рассмотрит каждый ваш вопрос и предоставит вам исчерпывающие ответы и рекомендации"
+    },
+    "4": {
+      "strong": "Дополнительные материалы.",
+      "text": " Мы ценим вашу заинтересованность в получении максимальной информации. Поэтому, после консультации, вам будут высланы дополнительные материалы по вашей теме, если это необходимо."
+    }
+  },
+  "main_banner": {
+    "strong": "Internationale Sprachschule",
+    "text": "mit Videokursen und Sprachclubs",
+    "button": "Beitreten"
+  },
+  "resume_banner": {
+    "strong": "Lebenslauf schreiben \n",
+    "text": "ist Ihr erster Schritt für eine erfolgreiche Karriere im Ausland!",
+    "green_text": "Wir helfen Ihnen, diesen Schritt selbstbewusst zu gehen!",
+    "button": "Beitreten"
+  },
+  "speaking_club_banner": {
+    "strong": "Sprachclub\n",
+    "text": "Verbessern Sie Ihre Sprachkenntnisse für eine erfolgreiche Integration",
+    "button": "Beitreten"
+  },
+  "documents_banner": {
+    "strong": "Vorbereitung der Dokumente\n für die Arbeitsmigration\n",
+    "text": "Ihr sorgloser Weg zum Erfolg mit unseren Managern!",
+    "button": "Anmelden"
+  },
+  "students_banner": {
+    "strong": "Aufnahme eines Studiums an einer deutschen Hochschule\n",
+    "text": "Ihr Weg zu einer erfolgreichen Karriere!",
+    "button": "Beitreten"
+  },
+  "prepare_to_test_banner": {
+    "strong": "Vorbereitung auf die Fachsprachprüfung\n",
+    "text": "Wir können Ärzten helfen, ein C1-Niveau in Deutsch zu erreichen, um die Fachsprachprüfung in Deutschland erfolgreich abzulegen.",
+    "button": "Beitreten"
+  },
+  "consultation_banner": {
+    "strong": "Индивидуальная консультация",
+    "text": "Ответы на интересующие вопросы при переезде в другую страну",
+    "button": "Beitreten"
+  },
+  "speaking_club_adventages_title": "Vorteile des Sprachclubs",
+  "speaking_club_advantages_items": {
+    "vebinars": "Webinare und Training\n mit Muttersprachlern",
+    "dictionary": "Überwindung\n der Sprachbarrieren",
+    "pronunciation": "Verbesserung\n der Aussprache",
+    "language_environment": "Eintauchen\n in die sprachliche Umgebung"
+  },
+  "main_advantages_title": "Unsere Vorteile",
+  "main_advantages_items": {
+    "video": "Videokurse\n und Beratungen",
+    "speaking": "Sprachclubs",
+    "vebinars": "Webinare und Training\n mit Muttersprachlern",
+    "prepare": "Prüfungsvorbereitung"
+  },
+  "deutch_education_title": "Deutsch lernen",
+  "deutch_education_from": "Von",
+  "deutch_education_to": "bis",
+  "deutch_education_part_one": "Welingua bietet Vorbereitungskurse für internationale B1- und B2-Prüfungen an. Diese Sprachkurse dienen der Vorbereitung auf die Arbeitsmigration sowie der allgemeinen Sprachschulung.",
+  "deutch_education_part_two": "Der Unterricht wird anhand eines speziellen Programms im Online-Format mit ausgebildeten Lehrern durchgeführt. Der Unterricht kann in Gruppen, einzeln und in Minigruppen 1+1 (zwei Personen) stattfinden. Die Stundenpläne für den Einzel- und Minigruppenunterricht werden nach Wunsch der Schüler erstellt.",
+  "main_banner_title": "Международная языковая школа",
+  "main_banner_text": "С видео-курсами и разговорными клубами",
+  "consultation_banner_title": "Индивидуальная консультация",
+  "consultation_banner_text": "Ответы на интересующие вопросы при переезде в другую страну",
+  "main_banner_button": "Beitreten",
+  "consultation_banner_button": "Beitreten",
+  "additional_services_white_title": "Außerdem",
+  "additional_services_black_title": "Zusätzliche Dienstleistungen",
+  "additional_services_items": {
+    "resume": "Die Erstellung\n eines Lebenslaufs",
+    "translations": "Vorbereitung und Übersetzung von\n Dokumenten",
+    "consultations": "Beratungen im\n Bereich Arbeitsmigration"
+  },
+  "main_green_content": {
+    "with_photo": "Bei Welingua bieten wir einen umfassenden Lernansatz, der moderne Techniken mit einem kommunikativen Ansatz kombiniert. Unser Unterricht wird online durchgeführt, damit Sie lernen können, wann und wo Sie wollen.",
+    "below_photo": "Unsere Lehrer bieten mehr als Lehrbücher und Auswendiglernen. Sie helfen Ihnen, praktische Sprachkenntnisse in realen Lebenssituationen zu entwickeln. Sie nehmen aktiv an Gesprächen, Spielen und Übungen teil, die Sie in die Lage versetzen, die Fremdsprache mühelos im Alltag und Berufsleben anzuwenden."
+  },
+  "resume_green_content": {
+    "with_photo": "Der Lebenslauf ist die Visitenkarte des Arbeitssuchenden. Von der Qualität Ihres Lebenslaufs hängt es ab, ob Sie die Aufmerksamkeit des Arbeitgebers auf sich lenken und zum Vorstellungsgespräch eingeladen werden.",
+    "below_photo": "Es ist wichtig zu wissen, dass ein Lebenslauf für eine Stelle im Ausland auf die Anforderungen eines bestimmten Landes zugeschnitten sein sollte, wobei die kulturellen Besonderheiten und Erwartungen der Arbeitgeber zu berücksichtigen sind.\n\n Es reicht nicht aus, eine Fremdsprache fließend zu sprechen; Sie müssen in der Lage sein, Ihre Qualitäten und Leistungen in einer Weise hervorzuheben, die Aufmerksamkeit und Interesse eines potenziellen Arbeitgebers weckt."
+  },
+  "resume_green_content_desktop": {
+    "with_photo": "Der Lebenslauf ist die Visitenkarte des Arbeitssuchenden. Von der Qualität Ihres Lebenslaufs hängt es ab, ob Sie die Aufmerksamkeit des Arbeitgebers auf sich lenken und zum Vorstellungsgespräch eingeladen werden.",
+    "below_photo": "Es ist wichtig zu wissen, dass ein Lebenslauf für eine Stelle im Ausland auf die Anforderungen eines bestimmten Landes zugeschnitten sein sollte, wobei die kulturellen Besonderheiten und Erwartungen der Arbeitgeber zu berücksichtigen sind. Es reicht nicht aus, eine Fremdsprache fließend zu sprechen; Sie müssen in der Lage sein, Ihre Qualitäten und Leistungen in einer Weise hervorzuheben, die Aufmerksamkeit und Interesse eines potenziellen Arbeitgebers weckt."
+  },
+  "speaking_club_green_content": {
+    "with_photo": "Sich sicher auf Englisch oder Deutsch verständigen zu können, ist eine wichtige Fähigkeit in der heutigen Welt, insbesondere bei der Arbeitsmigration.",
+    "below_photo": "Bei Welingua können Sie an Sprachclubs zu verschiedenen Themen teilnehmen. So können Sie Ihre Sprachkenntnisse verbessern, Ihr Wissen in einem speziellen Bereich erweitern und mit interessanten Menschen kommunizieren."
+  },
+  "documents_green_content": {
+    "with_photo": "Träumen Sie davon, im Ausland zu arbeiten, haben aber Angst vor den Schwierigkeiten mit dem Papierkram? Keine Sorge, Sie müssen es nicht allein schaffen!",
+    "below_photo": "Wir wissen, dass der Prozess der Arbeitsmigration kompliziert und verwirrend sein kann. Wir bieten Ihnen umfassende Unterstützung und Hilfe durch unsere erfahrenen Manager bei der Vorbereitung Ihrer Unterlagen. Dank uns wird Ihre Zukunft im Ausland zur Realität, ohne dass Sie sich darum kümmern müssen!"
+  },
+  "students_green_content": {
+    "with_photo": "Wir arbeiten seit mehr als sechs Jahren an Arbeitsmigrationsprogrammen und der Organisation von Schulungen in Deutschland.",
+    "below_photo": "Olga Bogomazova, die Leiterin der Sprachschule, hat selbst ihr Studium in Deutschland absolviert und sich dabei auf Wirtschaftswissenschaften ‚Medizinmanagement‘ spezialisiert. Da sie diesen Weg selbst gegangen ist und dann die Möglichkeit hatte, Menschen aus verschiedenen Ländern bei der Aufnahme einer Hochschulausbildung und einer weiterführenden Berufsausbildung zu helfen, organisieren wir jedes Jahr für Dutzende von Studenten eine Ausbildung in Deutschland."
+  },
+  "prepare_to_test_green_content": {
+    "with_photo": "Wir bei Welingua sind stolz darauf, erfahrene Lehrkräfte zu beschäftigen, die über umfangreiche Erfahrungen bei der Vorbereitung der Ärzte auf die Fachsprachprüfung verfügen.",
+    "below_photo": "Unsere einzigartige Lehrmethodik, die speziell für Mediziner entwickelt wurde, hilft Ihnen, medizinisches Vokabular effektiv zu erlernen und es in beruflichen Situationen sicher anzuwenden."
+  },
+  "consultation_green_content": {
+    "with_photo": "Переезд в другую страну — это ответственное решение, которое влияет на многие аспекты вашей жизни.",
+    "below_photo": "Обращение к опытному специалисту, такому как Ольга Богомазова, позволит вам избежать ошибок, сэкономить время и деньги, а также обеспечить гладкое и успешное осуществление вашего проекта по переезду."
+  },
+  "resume_content_with_photo_part_one": "Unser Unternehmen verfügt über langjährige Erfahrung bei der Erstellung von Bewerbungen für Stellen im Ausland.",
+  "resume_content_with_photo_part_two": "Wir kennen die Anforderungen der Arbeitgeber in den verschiedenen Ländern und wissen, wie Sie Ihr Profil effektiv präsentieren können, um sich von anderen Bewerbern abzuheben.",
+  "detailed": "Подробнее",
+  "free": "Бесплатно",
+  "our_advantages_title": "Vorteile unserer Dienstleistung",
+  "our_advantages_prepare_to_test": {
+    "1": {
+      "strong": "Vorbereitungskurs Fachsprachprüfung",
+      "text": "20 Module mit symptombasierten Krankheiten, medizinischem Vokabular und Prüfungssimulationen",
+      "image_title_top": "20",
+      "image_title_bottom": "Module"
+    },
+    "2": {
+      "strong": "Einzel- oder Gruppenunterricht",
+      "text": "Wählen Sie das Format, das am besten zu Ihnen passt: Minigruppen oder Einzelunterricht.",
+      "image_title_top": "Bequemes",
+      "image_title_bottom": "Format"
+    },
+    "3": {
+      "strong": "Prüfungsvorbereitung in allen Bundesländern",
+      "text": "Wir recherchieren Anforderungen und Besonderheiten der Prüfung in den verschiedenen Regionen Deutschlands gründlich, um sicherzustellen, dass Sie sicher und gut auf die Prüfung vorbereitet sind, egal wo sie stattfindet.",
+      "image_title_top": "Jedes",
+      "image_title_bottom": "Bundesland"
+    },
+    "4": {
+      "strong": "Zusätzliche Unterstützung",
+      "text": "Auf Wunsch bieten wir zusätzlichen Einzelunterricht an, um schwierige Themen zu vertiefen und Ihren Prüfungserfolg sicherzustellen.",
+      "image_title_top": "Mehr",
+      "image_title_bottom": "Unterrichtsstunden"
+    }
+  },
+  "our_advantages_documents": {
+    "1": {
+      "text": "Unsere Manager kennen jedes Detail des Arbeitsmigrationsprozesses und sind bereit, Sie problemlos durch den Prozess zu führen."
+    },
+    "2": {
+      "text": "Sie brauchen sich nicht mehr von den Anforderungen und Bedingungen verwirren zu lassen – wir stellen Ihnen eine genaue Liste der Dokumente zur Verfügung und sagen Ihnen, wo Sie sie bekommen und was Sie damit tun müssen."
+    },
+    "3": {
+      "text": "Wir wissen, dass jeder Fall einzigartig ist, und wir entwickeln für jeden Kunden eine individuelle Lösung, die Ihre Besonderheiten und Bedürfnisse berücksichtigt."
+    },
+    "4": {
+      "text": "Wir erstellen für Sie einen individuellen Aktionsplan, um die Wahrscheinlichkeit einer erfolgreichen Arbeitsmigration zu erhöhen."
+    }
+  },
+  "what_can_we_help_title": "Wie wir Ihnen helfen können",
+  "what_can_we_help_items": {
+    "1": "Strategie für die Aufnahme\n eines Studiums aufbauen",
+    "2": "Vorbereitung\n auf das Vorstellungsgespräch",
+    "3": "Vorbereitung Ihrer\n Bewerbungsunterlagen",
+    "4": "Qualifizierte Übersetzung\n der Dokumente",
+    "5": "Vorbereitungen\n für die Aufnahme",
+    "6": "Einreichung des Lebenslaufs bei der Universität zur\n Annahme",
+    "7": "Beglaubigung\n der Dokumente",
+    "8": "Umfassende\n Beratungsgespräche"
+  },
+  "sort_of_consultation_text": "Индивидуальная консультация проводится лично Ольгой Богомазовой, экспертом с многолетним опытом в сфере международной миграции и переезда.",
+  "sort_of_consultation_title": "Виды консультации",
+  "sort_of_consultation_items": {
+    "1": "Поступление в ВУЗ за границей",
+    "2": "Трудовая миграция и работа за рубежом",
+    "3": "Интеграция в новой стране",
+    "4": "Переезд семьи в Германию и оформление документов"
+  },
+  "consultation_title": "Зачем стоит обратиться к профессионалу?"
 }

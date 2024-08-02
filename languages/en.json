@@ -1,3 +1,414 @@
 {
-        "title": "hello"
+  "payment_button": "pay",
+  "service": "services",
+  "footer_links": {
+    "cv_writing": "Writing CV",
+    "admission_to_universities": "University Admissions services",
+    "prepare_to_technical_language_test": "Preparation for Fachsprachprüfung",
+    "conversational_club": "Разговорный клуб медицинская лексика",
+    "preparing_documents": "Preparation of documents for migration",
+    "language_school": "Language School",
+    "public_offer": "Public offer",
+    "privacy_policy": "Privacy Policy",
+    "free_information_course": "Бесплатный информационный курс",
+    "personal_consultation": "Consultation in the field of labor migration",
+    "personal_consultation_long": "Персональная консультация по трудовой миграции"
+  },
+  "main_additional_links": {
+    "cv_writing": "Writing\n CV",
+    "free_information_course": "Information course\n on labor migration to Germany",
+    "conversational_club": "Разговорный клуб\n медицинская лексика",
+    "preparing_documents": "Preparation of\n documents for migration",
+    "personal_consultation": "Personal consultation\n in the field of labor migration",
+    "admission_to_universities": "University\n Admissions services",
+    "prepare_to_technical_language_test": "Preparation\n for Fachsprachprüfung"
+  },
+  "form": {
+    "title_for_main": "Join our language school",
+    "title_for_consultation": "Book a consultation",
+    "title_for_prepare_to_test": "Join a course",
+    "title_for_students": "Записаться на консультацию",
+    "title_for_documents": "Order preparation of documents",
+    "title_for_speaking_club": "Join a speaking club",
+    "title_for_resume": "Order CV writing",
+    "main_submit_button": "Order",
+    "name_placeholder": "Enter your name",
+    "email_placeholder": "Enter your e-mail address",
+    "link_of_public_offer": "Public offer",
+    "link_of_privacy_policy": "Privacy Policy",
+    "press_on_button": "By clicking on the button, I agree to the",
+    "and": "and",
+    "empty_name_error": "Заполните имя",
+    "empty_email_error": "Заполните email",
+    "empty_phone_error": "Заполните номер телефона",
+    "success_notification_title": "Спасибо за Вашу заявку!",
+    "success_notification_text": "Менеджер свяжется с Вами в течение двух рабочих дней в порядке очереди"
+  },
+  "FAQ_title": "Frequently asked questions",
+  "FAQ_resume": {
+    "0": {
+      "title": "What is the advantage of ordering a resume through your company?",
+      "content": "Our company specializes in creating resumes that meet German requirements. We have years of experience and knowledge of local standards, which allows us to create resumes that stand out among other candidates."
+    },
+    "1": {
+      "title": "What languages do you support for resume writing?",
+      "content": "We support multiple languages including English, German and Russian. We ensure a high level of language literacy in your resume."
+    },
+    "2": {
+      "title": "How long does it take to create a resume?",
+      "content": "On average within seven working days. The time it takes to create a resume depends on the complexity of the order and our current workload. We strive for high quality and are attentive to each profile."
+    },
+    "3": {
+      "title": "What are the guarantees that my resume will be successful?",
+      "content": "We cannot guarantee specific employment, but we do guarantee that your resume will be as attractive as possible to potential employers. Our experience and expertise will help you stand out from the competition."
+    }
+  },
+  "FAQ_speaking_club": {
+    "0": {
+      "title": "What language level do I need to participate in the Speaking Club?",
+      "content": "You can participate in our language club from level A2. The groups are divided into A2–B1 and B1–B2 levels."
+    },
+    "1": {
+      "title": "What topics are discussed in the Speaking Club?",
+      "content": "The topics to be discussed in the Speaking Club are varied. We discuss whatever is of interest to the participants, from current events to history and culture. We also have a medical vocabulary Speaking Club that is suitable for both doctors and nurses."
+    },
+    "2": {
+      "title": "What are the rules of behavior in the Speaking Club?",
+      "content": "The Speaking Club has a rule of respect for other participants. We do not tolerate insults, discrimination, or other forms of disrespect."
+    },
+    "3": {
+      "title": "What are the benefits of joining a Speaking Club?",
+      "content": "There are many benefits to joining a Speaking Club. You can improve your language skills, expand your vocabulary, learn to communicate with native speakers, and gain new knowledge in different areas."
+    }
+  },
+  "FAQ_documents": {
+    "0": {
+      "title": "How long does it take to prepare my application package?",
+      "content": "The time taken to prepare your application package depends on your specific situation, including the country of destination, the type of visa and your individual circumstances. We try to optimize the process as much as possible and reduce the time to a minimum."
+    },
+    "1": {
+      "title": "What does the process of cooperation with your company look like?",
+      "content": "Our cooperation process starts by filling out a feedback form or calling us. Our manager will then contact you to discuss your case and define your goal. We will then provide you with a detailed consultation and develop a clear plan of action."
+    },
+    "2": {
+      "title": "What documents will I need for labor migration?",
+      "content": "The required documents depend on the country of destination and the type of visa. Our managers will provide you with an accurate list of the documents you will need and advise you where to get them and how to collect them."
+    },
+    "3": {
+      "title": "Do you provide guarantees of success in labor migration?",
+      "content": "We cannot guarantee 100 % success as the final decision is made by the relevant agency. However, our experienced specialists will do everything possible to increase the probability of a successful outcome and to avoid mistakes."
+    },
+    "4": {
+      "title": "What experience do your managers have in the field of labor migration?",
+      "content": "Our managers have extensive experience in the field of labor migration and know all the nuances as well as the requirements of different countries. We constantly update our knowledge and keep abreast of changes in legislation to stay one step ahead."
+    }
+  },
+  "FAQ_students": {
+    "0": {
+      "title": "What documents do I need to apply to a German university?",
+      "content": "You will need the following documents for admission to a German university:\n— Passport\n— Secondary school certificate\n— German language and math exam results\n— Letter of motivation\n— Letters of recommendation."
+    },
+    "1": {
+      "title": "How do I prepare for admission to a German university?",
+      "content": "To prepare for admission to a German university, you need to:\n— Start learning German as early as possible\n— Find a tutor or language school to help you prepare for your German language and math exams.\n— Write a motivation letter that describes your goals and motivations for applying to a German university.\n— Get references from teachers or other people who can attest to your achievements."
+    },
+    "2": {
+      "title": "What are the advantages of studying at a German university?",
+      "content": "Studying at a German university offers you the following advantages:\n— Quality education\n— International environment\n— Opportunity to get a job in Germany or another European Union country\n— Possibility to obtain a master's or doctoral degree"
+    },
+    "3": {
+      "title": "When can I contact you for help with my German university application?",
+      "content": "You can contact us at any stage of the German university application process. We can help you with your admission strategy, preparing your application documents, translating your documents, certifying your documents, submitting your CV to the university for admission, and preparing for your interview.\nWe hope that our assistance will help you get into a German university and get the education you want!"
+    },
+    "4": {
+      "title": "What advantages do you get from cooperation with us?",
+      "content": "Cooperation with us gives you the following advantages:\n— Experienced team of specialists\n— Individual approach to each client\n— Guarantee of quality of services\n— Reasonable prices\nWe hope that our cooperation will be mutually beneficial for you!"
+    }
+  },
+  "FAQ_prepare_to_test": {
+    "0": {
+      "title": "Who can take the training course?",
+      "content": "The training course is suitable for all doctors who want to work in Germany and need to prove their German language skills at the C1 level in order to pass the Fachsprachprüfung."
+    },
+    "1": {
+      "title": "How long does it take to prepare for the exam?",
+      "content": "At our school we offer two forms of preparation for the FSP exam: individual (three months) and group (four months)."
+    },
+    "2": {
+      "title": "Do you have a guarantee that I will pass the exam?",
+      "content": "We cannot give an absolute guarantee of success in the exam, but we do guarantee quality instruction, experienced teachers, and a personalized approach to help you maximize your preparation for the exam."
+    },
+    "3": {
+      "title": "Can I book individual lessons in addition?",
+      "content": "Yes, of course. We provide the opportunity to book additional individual lessons at your request."
+    }
+  },
+  "pricing_title": "Cost of service",
+  "main_pricing": {
+    "title": "Course duration\n and fees by level",
+    "duration": "The course lasts",
+    "per_hour": "Fee per hour",
+    "per_course": "Fee for the whole course",
+    "hours": "часов"
+  },
+  "pricing_title_course": "Course fee",
+  "some_parts_of_payment": "Split payment is possible.",
+  "groups_pricing": "Group classes",
+  "individual_pricing": "Individual lessons",
+  "per_lesson": "per lesson",
+  "how_it_works": "How it works",
+  "resume_how_it_works": {
+    "1": "Fill in the contact form",
+    "2": "The manager sends you a questionnaire and examples of good photos for your CV",
+    "3": "You send the completed questionnaire and high-quality photos to the manager",
+    "4": "You pay for the service using the central ‘Pay’ button at the top of the site",
+    "5": "We write your CV in a competent foreign language",
+    "6": "We send the finished CV to your mail or any other convenient way for you"
+  },
+  "speaking_club_how_it_works": {
+    "1": "Signing up for classes is once a month for a month in advance, depending on the number of people interested, groups can be held more often.",
+    "2": "Club sessions are held once a week for 1.5 hours in mini groups of 4–6 people.",
+    "3": "Participants receive vocabulary lists, textbook recommendations and a lot of positive emotions from communication."
+  },
+  "documents_how_it_works": {
+    "1": {
+      "strong": "Fill out the contact form.",
+      "text": "We will contact you to discuss your case and define your goal."
+    },
+    "2": {
+      "strong": "Consultation with a manager:",
+      "text": "Our specialist will conduct a detailed interview to determine the necessary documents and understand your situation."
+    },
+    "3": {
+      "strong": "Action Plan:",
+      "text": "We will develop a clear plan of action and advise you on what documents you will need and how to collect them."
+    },
+    "4": {
+      "strong": "Support at every stage:",
+      "text": "Our managers will guide you through the entire process, ready to answer all your questions and help you solve any difficulties that may arise."
+    },
+    "5": {
+      "strong": "Successful migration:",
+      "text": "Your documents are in order – you can set off to new opportunities and achieve your goals."
+    }
+  },
+  "students_how_it_works": {
+    "1": {
+      "strong": "Fill out the feedback form.",
+      "text": "We will contact you to discuss a time convenient for you for an initial consultation for a fee."
+    },
+    "2": {
+      "strong": "Consultation with a manager:",
+      "text": "Our specialist will conduct a detailed interview, during which you will receive comprehensive information on all stages of admission to a German university and the conditions for signing a contract for a comprehensive service."
+    },
+    "3": {
+      "strong": "Support at every stage:",
+      "text": "Our managers will guide you through the entire process, ready to answer all your questions and help you to solve any difficulties that may arise."
+    },
+    "4": {
+      "strong": "Successful enrolment:",
+      "text": "Your documents are in order – you can set off to new opportunities and achieve your goals."
+    }
+  },
+  "prepare_to_test_how_it_works": {
+    "1": {
+      "strong": "Fill out the contact form.",
+      "text": "We will contact you to discuss a convenient time for your consultation."
+    },
+    "2": {
+      "strong": "Consultation with a manager:",
+      "text": "Our specialist will conduct a detailed consultation to answer any additional questions you may have about our course."
+    },
+    "3": {
+      "strong": "Course payment:",
+      "text": "The payment can be divided into several payments (this is individually discussed with the manager). After the first payment you start the course."
+    },
+    "4": {
+      "strong": "Receiving a certificate:",
+      "text": "You receive a certificate of participation in our course and are ready to take the exam at the Medical Chamber of Physicians"
+    }
+  },
+  "consultation_how_it_works": {
+    "1": {
+      "strong": "Fill out the contact form.",
+      "text": "We will contact you to discuss a convenient time for your consultation."
+    },
+    "2": {
+      "strong": "Список вопросов.",
+      "text": "Вы предоставляете нам список приблизительных вопросов, которые хотите обсудить"
+    },
+    "3": {
+      "strong": "Консультация.",
+      "text": " В рамках консультации, которая длится 45 минут, Ольга Богомазова детально рассмотрит каждый ваш вопрос и предоставит вам исчерпывающие ответы и рекомендации"
+    },
+    "4": {
+      "strong": "Дополнительные материалы.",
+      "text": " Мы ценим вашу заинтересованность в получении максимальной информации. Поэтому, после консультации, вам будут высланы дополнительные материалы по вашей теме, если это необходимо."
+    }
+  },
+  "main_banner": {
+    "strong": "International Language School",
+    "text": "with video courses and speaking clubs",
+    "button": "Join"
+  },
+  "resume_banner": {
+    "strong": "Writing CV \n",
+    "text": "is your first step to a successful career abroad!",
+    "green_text": "We'll help you step with confidence!",
+    "button": "Join"
+  },
+  "speaking_club_banner": {
+    "strong": "Speaking Club\n",
+    "text": "Improve language skills for successful integration",
+    "button": "Join"
+  },
+  "documents_banner": {
+    "strong": "Preparation of documents\n for labor migration\n",
+    "text": "Carefree path to success with our managers!",
+    "button": "Sign up"
+  },
+  "students_banner": {
+    "strong": "Admission to German universities\n",
+    "text": "Your path to a successful career!",
+    "button": "Join"
+  },
+  "prepare_to_test_banner": {
+    "strong": "Preparation for the Fachsprachprüfung\n",
+    "text": "We can help doctors achieve a C1 level of German to successfully complete Fachsprachprüfung in Germany.",
+    "button": "Join"
+  },
+  "consultation_banner": {
+    "strong": "Индивидуальная консультация",
+    "text": "Ответы на интересующие вопросы при переезде в другую страну",
+    "button": "Join"
+  },
+  "speaking_club_adventages_title": "Advantages of the Speaking Club",
+  "speaking_club_advantages_items": {
+    "vebinars": "Webinars and trainings\n with native speakers",
+    "dictionary": "Overcoming\n language barriers",
+    "pronunciation": "Pronunciation\n improvement",
+    "language_environment": "Immersion\n in the language environment"
+  },
+  "main_advantages_title": "Our advantages",
+  "main_advantages_items": {
+    "video": "Video courses\n and consultations",
+    "speaking": "Speaking\n Clubs",
+    "vebinars": "Webinars and trainings\n with native speakers",
+    "prepare": "Exam\n preparation"
+  },
+  "deutch_education_title": "German language teaching",
+  "deutch_education_from": "From",
+  "deutch_education_to": "to",
+  "deutch_education_part_one": "Welingua offers preparation courses for B1 and B2 international exams. These language courses are aimed at preparing candidates for labor migration as well as general language training.",
+  "deutch_education_part_two": "Classes are conducted according to a special program in an online format with trained teachers. It is possible to study in groups, individually, and in mini-groups 1+1 (two people). Schedules of individual and mini-group lessons are made at the request of students.",
+  "main_banner_title": "Международная языковая школа",
+  "main_banner_text": "С видео-курсами и разговорными клубами",
+  "consultation_banner_title": "Индивидуальная консультация",
+  "consultation_banner_text": "Ответы на интересующие вопросы при переезде в другую страну",
+  "main_banner_button": "Join",
+  "consultation_banner_button": "Join",
+  "additional_services_white_title": "Besides",
+  "additional_services_black_title": "Additional services",
+  "additional_services_items": {
+    "resume": "Writing\n a CV",
+    "translations": "Preparation and translation of\n documents",
+    "consultations": "Consultations in\n the field of labor migration"
+  },
+  "main_green_content": {
+    "with_photo": "At Welingua we offer a comprehensive approach to learning that combines modern techniques with a communicative approach. Our lessons are provided online so that you can study when and where you want.",
+    "below_photo": "Our teachers go beyond textbooks and rote learning. They will help you develop practical language skills through real-life situations. You will actively participate in conversations, games, and exercises that will enable you to use the foreign language with ease in both everyday life and work."
+  },
+  "resume_green_content": {
+    "with_photo": "A CV is the face of the jobseeker, the employer's first introduction to you. The quality of your CV determines whether you will attract the employer's attention and get an invitation for an interview.",
+    "below_photo": "It is important to realise that a CV for a job abroad should be tailored to the requirements of a particular country, considering the cultural specificities and expectations of employers.\n\n It is not enough to speak a foreign language fluently; you must be able to emphasise your qualities and achievements in a way that will attract the attention and interest of a potential employer."
+  },
+  "resume_green_content_desktop": {
+    "with_photo": "A CV is the face of the jobseeker, the employer's first introduction to you. The quality of your CV determines whether you will attract the employer's attention and get an invitation for an interview.",
+    "below_photo": "It is important to realise that a CV for a job abroad should be tailored to the requirements of a particular country, considering the cultural specificities and expectations of employers. It is not enough to speak a foreign language fluently; you must be able to emphasise your qualities and achievements in a way that will attract the attention and interest of a potential employer."
+  },
+  "speaking_club_green_content": {
+    "with_photo": "Being able to communicate confidently in English or German is an important skill in today's world, especially in labor migration.",
+    "below_photo": "At Welingua you can take part in Speaking Clubs on various topics. This will help you to improve your language skills, expand your knowledge in a specialised field and communicate with interesting people."
+  },
+  "documents_green_content": {
+    "with_photo": "Do you dream of working abroad, but are afraid of the difficulties with paperwork? Don't worry, you don't have to do it alone!",
+    "below_photo": "We understand that the process of labor migration can be complicated and confusing. We offer you full support and assistance from our experienced managers in preparing your document set. Thanks to us, your future abroad will become a reality without any hassle!"
+  },
+  "students_green_content": {
+    "with_photo": "We have been working for more than 6 years on labor migration programmes and organising training in Germany.",
+    "below_photo": "The head of the language school Olga Bogomazova herself received a higher education in Germany, specialising in Economics ‘Medical Management’. Having gone through this path independently, and then having the opportunity to help people from different countries to enter universities and to receive secondary specialised education, we organise training in Germany for dozens of students every year."
+  },
+  "prepare_to_test_green_content": {
+    "with_photo": "At Welingua, we are proud to provide experienced teachers with extensive experience in preparing doctors for the Fachsprachprüfung.",
+    "below_photo": "Our unique teaching methodology, specifically designed for medical professionals, will help you learn medical vocabulary effectively and use it confidently in professional situations."
+  },
+  "consultation_green_content": {
+    "with_photo": "Переезд в другую страну — это ответственное решение, которое влияет на многие аспекты вашей жизни.",
+    "below_photo": "Обращение к опытному специалисту, такому как Ольга Богомазова, позволит вам избежать ошибок, сэкономить время и деньги, а также обеспечить гладкое и успешное осуществление вашего проекта по переезду."
+  },
+  "resume_content_with_photo_part_one": "Our company has many years of experience in writing CVs for jobs abroad.",
+  "resume_content_with_photo_part_two": "We know the requirements of employers in different countries and how to effectively present your profile to stand out from other applicants.",
+  "detailed": "Подробнее",
+  "free": "Бесплатно",
+  "our_advantages_title": "Advantages of our service",
+  "our_advantages_prepare_to_test": {
+    "1": {
+      "strong": "Fachsprachprüfung preparation course",
+      "text": "20 modules with symptom-based illnesses, medical vocabulary and exam simulations",
+      "image_title_top": "20",
+      "image_title_bottom": "modules"
+    },
+    "2": {
+      "strong": "Individual or group format",
+      "text": "Choose the format that suits you best: mini-groups or individual lessons.",
+      "image_title_top": "Convenient",
+      "image_title_bottom": "format"
+    },
+    "3": {
+      "strong": "Exam preparation in all federal states",
+      "text": "We thoroughly research the requirements and specifics of the exam in the different regions of Germany to ensure that you are confident and prepared for the exam wherever it takes place.",
+      "image_title_top": "Any German",
+      "image_title_bottom": "state"
+    },
+    "4": {
+      "strong": "Additional support",
+      "text": "At your request, we provide additional one-to-one tuition to focus on difficult topics and ensure your success in the exam.",
+      "image_title_top": "More",
+      "image_title_bottom": "classes"
+    }
+  },
+  "our_advantages_documents": {
+    "1": {
+      "text": "Our managers know every detail of the labor migration process and are ready to guide you through it without a hitch"
+    },
+    "2": {
+      "text": "You no longer need to get lost in the requirements and conditions – we will provide you with a precise list of documents and tell you where to get them and what to do with them"
+    },
+    "3": {
+      "text": "We understand that every case is unique and we develop a unique solution for each client, considering your specifics and needs"
+    },
+    "4": {
+      "text": "We will provide you with an individual action plan to increase the likelihood of successful labor migration"
+    }
+  },
+  "what_can_we_help_title": "How we can help you",
+  "what_can_we_help_items": {
+    "1": "Making a strategy\n for getting into university",
+    "2": "Preparing\n for the interview",
+    "3": "Preparing\n your application pack",
+    "4": "Qualified translation\n of documents",
+    "5": "Preparing\n for admission",
+    "6": "Submission of CV to the university for\n admission",
+    "7": "Certification\n of documents",
+    "8": "Comprehensive\n consultations"
+  },
+  "sort_of_consultation_text": "Индивидуальная консультация проводится лично Ольгой Богомазовой, экспертом с многолетним опытом в сфере международной миграции и переезда.",
+  "sort_of_consultation_title": "Виды консультации",
+  "sort_of_consultation_items": {
+    "1": "Поступление в ВУЗ за границей",
+    "2": "Трудовая миграция и работа за рубежом",
+    "3": "Интеграция в новой стране",
+    "4": "Переезд семьи в Германию и оформление документов"
+  },
+  "consultation_title": "Зачем стоит обратиться к профессионалу?"
 }

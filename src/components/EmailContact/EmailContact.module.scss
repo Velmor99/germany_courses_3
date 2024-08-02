@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.email {
+  &__link {
+    display: grid;
+    grid-template-columns: minmax(30px, 40px) auto;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 0 6px;
+    &-white {
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+      @media (min-width: $unfolded-tablet-width) {
+        display: grid;
+      }
+    }
+  }
+
+  &__text {
+    &-black {
+      color: $text-black;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    &-white {
+      color: $white;
+      text-shadow: $footer-links-shadow;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  &__icon {
+    &-white {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+      @media (min-width: $unfolded-tablet-width) {
+        display: block;
+      }
+    }
+  }
+}

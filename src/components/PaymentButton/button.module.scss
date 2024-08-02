@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.payment {
+  background-color: $yellow-payment;
+  color: $text-black;
+}
+
+.payment-active {
+  box-shadow: $payment-button-shadow;
+  background-color: $white;
+  color: $main-green;
+}

@@ -1,0 +1,123 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins";
+
+.container {
+  @include container;
+}
+
+.header {
+  box-shadow: $header-shadow;
+  height: 80px;
+  position: relative;
+  z-index: 5;
+  @media (min-width: $tablet-width) {
+    height: 100px;
+  }
+
+  &__content {
+    display: grid;
+    position: relative;
+    z-index: 5;
+    align-items: center;
+    height: 100%;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 1fr auto;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 33.333% 33.333% 1fr auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 25% 16.66% 16.68% 24% 17.66%;
+    }    
+  }
+
+  &__logo-container {
+    align-self: center;
+  }
+
+  &__socials {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-self: center;
+      grid-column: 4 / 5;
+    }
+  }
+
+  &__payment-button {
+    width: 102px;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 5px;
+    @media (min-width: $wide-phone-width) {
+      width: 136px;
+      font-size: 24px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 156px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      width: 136px;
+      height: 42px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 206px;
+      height: 58px;
+      font-size: 30px;
+      border-radius: 10px;
+    }
+  }
+
+  &__burger {
+    grid-column: 4 / 5;
+    align-self: center;
+    @media (min-width: $desktop-width) {
+      grid-column: 2 / 3;
+    }
+  }
+
+  &__localization-block {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      grid-column: 3 / 4;
+      justify-self: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 5;
+    }
+  }
+
+  &__burger-menu {
+    min-height: calc(100vh - 80px);
+    background-color: $white;
+    position: fixed;
+    width: 360px;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    // transform: translateX(300%);
+    z-index: 3;
+    overflow-x: scroll;
+
+    @media (min-width: $tablet-width) {
+      min-height: calc(100vh - 100px);
+      top: 100px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}

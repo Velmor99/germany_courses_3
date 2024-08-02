@@ -1,0 +1,95 @@
+@import "../../styles/variables";
+
+.localization {
+  position: relative;
+
+  &__current,
+  &__link {
+    color: $text-black;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    opacity: 0;
+    @media (min-width: $desktop-width) {
+      font-size: 30px;
+    }
+    &-open {
+      opacity: 1;
+      color: $text-black;
+      transition: opacity linear .25s;
+      &-active {
+        color: $main-green;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__current {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 108px;
+    opacity: 1;
+    @media (min-width: $desktop-width) {
+      margin-right: 8px;
+    }
+    &-language-icon {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      @media (min-width: $desktop-width) {
+        margin-right: 17px;
+      }
+    }
+    &-arrow-icon {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+
+  &__current-block {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__list {
+    position: absolute;
+    width: 186px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px 27px 0px 20px;
+    box-shadow: 0px 4px 50px 0px rgba(14, 62, 39, 0.1),
+      0px 0px 15px 0px rgba(14, 62, 39, 0.05);
+    z-index: 0;
+    top: 67px;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 100%,
+      rgba(255, 255, 255, 0.7) 70%,
+      rgba(0, 0, 0, 0) 0%
+    );
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px 0;
+    height: 0;
+    // transition: height linear .25s;
+    @media (min-width: $desktop-width) {
+      top: 71px;
+    }
+    &-burger {
+      top: 46px;
+    }
+    &-open {
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0;
+      //TODO flexible from links
+      height: auto;
+      // transition: height linear .25s;
+      padding: 0px 27px 0px 20px;
+    }
+  }
+}

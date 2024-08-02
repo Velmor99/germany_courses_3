@@ -1,0 +1,50 @@
+@import "../../../../styles/variables";
+
+.menu-button {
+  &__desktop {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+      display: block;
+      position: relative;
+    }
+    &-button {
+      outline: none;
+      border: none;
+      background-color: $white;
+      display: flex;
+      cursor: pointer;
+      &-text {
+        color: $text-black;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-right: 8px;
+      }
+      &-icon {
+        padding-top: 12px;
+      }
+    }
+  }
+
+  &__mobile {
+    display: block;
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+    
+    //unfolded-tablet-width + 1px
+
+    &-button {
+      outline: none;
+      border: none;
+      background-color: $white;
+      display: block;
+      padding: 0;
+      margin: 0;
+      padding-top: 4px;
+      width: 32px;
+    }
+  }
+}

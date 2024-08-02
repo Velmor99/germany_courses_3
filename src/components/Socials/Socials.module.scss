@@ -1,0 +1,16 @@
+.socials {
+  &__list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0 20px;
+
+    &-item {
+      padding-top: 6px;
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+  }
+}

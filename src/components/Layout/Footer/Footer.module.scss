@@ -1,0 +1,363 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.container {
+  @include container;
+  //Special for footer
+  padding: 0 0 0 20px;
+  @media (min-width: $wide-phone-width) {
+    padding: 0 20px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.footer {
+  background-color: $text-black;
+  padding: 40px 0 135px;
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 60px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 41px;
+    margin-bottom: 40px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 0 20px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    // grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+    margin-bottom: 40px;
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 1fr 1fr;
+      justify-items: stretch;
+      grid-column: 1 / 3;
+      grid-row: 1;
+      margin-bottom: 71px;
+    }
+    // links on page change its places on defferent screen width
+    &-item {
+      &-first {
+        @media (min-width: $tablet-width) {
+          order: -9;
+          padding-left: 66px;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          order: -9;
+          padding-left: 0px;
+        }
+      }
+      &-second {
+        @media (min-width: $tablet-width) {
+          order: -7;
+          padding-left: 66px;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          order: -10;
+          padding-left: 0px;
+        }
+      }
+      &-third {
+        @media (min-width: $tablet-width) {
+          order: -5;
+          padding-left: 66px;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          order: -6;
+          padding-left: 0px;
+        }
+      }
+      &-fourth {
+        @media (min-width: $tablet-width) {
+          order: -3;
+          padding-left: 66px;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          order: -8;
+          padding-left: 0px;
+        }
+      }
+      &-fifth {
+        @media (min-width: $tablet-width) {
+          order: -1;
+          padding-left: 66px;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          order: -3;
+          padding-left: 0px;
+        }
+      }
+      &-sixth {
+        &-long {
+          display: none;
+          @media (min-width: $unfolded-tablet-width) {
+            order: -1;
+            display: block;
+          }
+        }
+        @media (min-width: $tablet-width) {
+          order: -8;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          order: 1;
+          display: none;
+        }
+      }
+      &-seventh {
+        @media (min-width: $tablet-width) {
+          order: -6;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          order: -4;
+        }
+      }
+      &-eighth {
+        @media (min-width: $tablet-width) {
+          order: -2;
+          margin-bottom: 0px;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          order: -2;
+        }
+      }
+      &-nineth {
+        @media (min-width: $tablet-width) {
+          order: -10;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          order: -7;
+        }
+      }
+      &-tenth {
+        @media (min-width: $tablet-width) {
+          order: -4;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          order: -5;
+        }
+      }
+    }
+  }
+
+  &__list-of-documents {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__link-text {
+    text-shadow: $footer-links-shadow;
+    color: $white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &:hover {
+      color: $main-green;
+      text-shadow: $footer-links-shadow;
+      transition: linear 250ms color;
+    }
+  }
+
+  &__contacts-link {
+    display: flex;
+  }
+
+  &__bottom-link {
+    color: $white;
+    text-shadow: $footer-links-shadow;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 8px;
+  }
+
+  &__email {
+    grid-row: 2 / 3;
+    margin-bottom: 20px;
+    @media (min-width: $tablet-width) {
+      grid-row: 3;
+      grid-column: 2;
+      margin-bottom: 0;
+      justify-self: end;
+      align-self: flex-end;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      grid-row: 2;
+      grid-column: 2 / 3;
+      align-self: baseline;
+      justify-self: start;
+      padding-top: 12px;
+    }
+  }
+
+  &__phone {
+    grid-row: 3 / 4;
+    padding-bottom: 87px;
+    @media (min-width: $tablet-width) {
+      grid-row: 3;
+      grid-column: 2;
+      padding-bottom: 0;
+      justify-self: end;
+      padding-top: 20px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      grid-row: 2;
+      grid-column: 3 / 4;
+      padding-top: 4px;
+      justify-self: center;
+      padding-top: 16px;
+    }
+    @media (min-width: $desktop-width) {
+      justify-self: end;
+    }
+  }
+
+  &__socials {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__socials-block {
+    width: 228px;
+    justify-self: center;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column-reverse;
+    //Design is awfull
+    margin-right: 20px;
+    @media (min-width: $wide-phone-width) {
+      margin-right: 0;
+    }
+    //Design is awfull (end)
+    @media (min-width: $tablet-width) {
+      grid-row: 2;
+      grid-column: 1 / 3;
+      flex-direction: column;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      grid-row: 1;
+      grid-column: 3 / 4;
+      flex-direction: column-reverse;
+      margin-bottom: 0px;
+      align-self: baseline;
+    }
+    @media (min-width: $desktop-width) {
+      justify-self: end;
+    }
+  }
+
+  &__payment-footer {
+    width: 228px;
+    height: 60px;
+    border-radius: 10px;
+    color: $text-black;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 37px;
+    }
+  }
+
+  &__copyright {
+    color: $white;
+    text-shadow: $footer-links-shadow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    @media (min-width: $tablet-width) {
+      text-align: start;
+    }
+  }
+
+  &__logo {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px 0;
+    justify-self: center;
+    //Design is awfull
+    margin-right: 20px;
+    @media (min-width: $wide-phone-width) {
+      margin-right: 0;
+    }
+    //Design is awfull (end)
+    @media (min-width: $tablet-width) {
+      grid-row: 3;
+      grid-column: 1;
+      justify-self: start;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      grid-row: 2;
+      grid-column: 1 / 2;
+    }
+  }
+
+  &__green-line {
+    position: absolute;
+    width: calc(100% - 20px);
+    height: 1px;
+    background-color: $main-green;
+    bottom: 408px;
+    @media (min-width: $wide-phone-width) {
+      width: 100%;
+      height: 1px;
+      bottom: 408px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 1px;
+      height: 200px;
+      transform: translateY(50%);
+      right: 50%;
+      top: -17.4%;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      width: 100%;
+      height: 1px;
+      top: 248px;
+      right: 0;
+    }
+    @media (min-width: $desktop-width) {
+      top: 226px;
+    }
+  }
+}

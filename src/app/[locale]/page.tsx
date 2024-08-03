@@ -1,5 +1,4 @@
 import IndividualBanner from "@/components/IndividualBanner/IndividualBanner";
-import { useTranslations } from "next-intl";
 import styles from "../../styles/MainPage.module.scss";
 import AdvantagesSpeakingClub from "@/components/AdvantagesSpeakingClub/AdvantagesSpeakingClub";
 import AdditionalServices from "@/components/AdditionalServices/AdditionalServices";
@@ -10,7 +9,6 @@ import MainAdditionalServices from "@/components/MainAdditionalServices/MainAddi
 import { FormComponent } from "@/components/Form/Form";
 
 export default function HomePage() {
-  const t = useTranslations();
   return (
     <>
       <section className={styles["main-page__banner-section"]}>

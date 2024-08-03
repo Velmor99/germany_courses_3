@@ -57,7 +57,7 @@ export const FormComponent = ({
 
   useEffect(() => {
     setCheckbox(false);
-    console.log("mount", checkbox);
+    // console.log("mount", checkbox);
   }, []);
 
   const onSubmit: SubmitHandler<IForm> = async (formData: IForm) => {

@@ -1,0 +1,144 @@
+@import "./mixins";
+@import "./variables";
+
+.consultation {
+  &__banner-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+  &__sort-of-section {
+    padding-bottom: 45px;
+    margin-bottom: 41px;
+    background-image: url("../../public/backgrounds/green-text/consultation/sort-of/mobile.png");
+    background-repeat: no-repeat;
+    background-position: top 160px center;
+    @media (min-width: $wide-phone-width) {
+      background-image: url("../../public/backgrounds/green-text/consultation/sort-of/wide-phone.png");
+      background-repeat: no-repeat;
+      background-position: top 160px center;
+      padding-bottom: 55px;
+      margin-bottom: 64px;
+    }
+    @media (min-width: $tablet-width) {
+      background-image: url("../../public/backgrounds/green-text/consultation/sort-of/tablet.png");
+      background-repeat: no-repeat;
+      background-position: top 300px center;
+      padding-bottom: 60px;
+      margin-bottom: 100px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      background-image: url("../../public/backgrounds/green-text/consultation/sort-of/unfolded-tablet.png");
+      background-repeat: no-repeat;
+      background-position: top 290px center;
+      padding-bottom: 118px;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../../public/backgrounds/green-text/consultation/sort-of/desktop.png");
+      background-repeat: no-repeat;
+      background-position: top 380px center;
+      margin-bottom: 0;
+      padding-bottom: 107px;
+    }
+  }
+
+  &__title-section {
+    margin-bottom: 30px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 50px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 45px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 60px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &__green-content-section {
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+    background-image: url("../../public/backgrounds/green-text/consultation/mobile.png");
+    background-repeat: no-repeat;
+    background-position: top 90px center;
+    @media (min-width: $wide-phone-width) {
+      padding-bottom: 53px;
+      margin-bottom: 80px;
+      background-image: url("../../public/backgrounds/green-text/consultation/wide-phone.png");
+      background-repeat: no-repeat;
+      background-position: top 70px center;
+    }
+    @media (min-width: $tablet-width) {
+      padding-bottom: 80px;
+      background-image: url("../../public/backgrounds/green-text/consultation/tablet.png");
+      background-repeat: no-repeat;
+      background-position: top 200px center;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+      background-image: url("../../public/backgrounds/green-text/consultation/unfolded-tablet.png");
+      background-repeat: no-repeat;
+      background-position: top 280px center;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 56px;
+      background-image: url("../../public/backgrounds/green-text/consultation/desktop.png");
+      background-repeat: no-repeat;
+      background-position: top -140px center;
+    }
+  }
+
+  &__how-it-works-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 86px;
+    }
+  }
+
+  &__pricing-section {
+    margin-bottom: 103px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 123px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 137px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 176px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 166px;
+    }
+  }
+
+  &__form-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../../public/backgrounds/form/consultation-form-background.png");
+      background-repeat: no-repeat;
+      background-position: top 240px center;
+    }
+  }
+}

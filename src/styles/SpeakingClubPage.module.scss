@@ -1,0 +1,115 @@
+@import "./mixins";
+@import "./variables";
+
+.speaking-club {
+  &__banner-section {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    @media (min-width: $wide-phone-width) {
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-top: 14px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-top: 0;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__green-content-section {
+    margin-bottom: 60px;
+    background-image: url("../../public/backgrounds/green-text/speaking-club/mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom -160px center;
+    padding-bottom: 30px;
+    @media (min-width: $wide-phone-width) {
+      background-image: url("../../public/backgrounds/green-text/speaking-club/wide-phone.png");
+      background-position: bottom -280px center;
+      padding-bottom: 45px;
+    }
+    @media (min-width: $tablet-width) {
+      background-image: url("../../public/backgrounds/green-text/speaking-club/tablet.png");
+      background-position: bottom -160px center;
+      padding-bottom: 50px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      background-image: url("../../public/backgrounds/green-text/speaking-club/unfolded-tablet.png");
+      background-position: bottom -40px center;
+      padding-bottom: 74px;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../../public/backgrounds/green-text/speaking-club/desktop.png");
+      background-position: bottom -70px center;
+      padding-bottom: 80px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__advantages-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__how-it-works-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 68px;
+    }
+  }
+
+  &__price-section {
+    margin-bottom: 145px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 165px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 200px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 238px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 148px;
+    }
+  }
+
+  &__form-section {
+    margin-bottom: 68px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../../public/backgrounds/form/speaking-club-form-background.png");
+      background-position: top 300px center;
+      background-repeat: no-repeat;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__faq-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+  }
+}

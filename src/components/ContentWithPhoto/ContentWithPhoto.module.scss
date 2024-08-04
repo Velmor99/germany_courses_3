@@ -1,0 +1,95 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.container {
+  @include container;
+}
+
+.content-with-photo {
+  &__content {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      gap: 0 50px;
+    }
+  }
+
+  &__image-block {
+    width: 320px;
+    height: 300px;
+    background-image: url("../../../public/images/resume/3_iStock-587813534.jpg");
+    background-size: cover;
+    background-position: center right -30px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    @media (min-width: $wide-phone-width) {
+      width: 440px;
+      height: 374px;
+      margin-bottom: 30px;
+      background-position: center right -20px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 588px;
+      height: 374px;
+      margin-bottom: 47px;
+      background-position: top right 10px;
+      background-size: 120%;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon-block {
+    display: none;
+    @media (min-width: $wide-phone-width) {
+      display: block;
+      position: absolute;
+      transform: rotate(15deg);
+      bottom: -30px;
+      right: -7px;
+    }
+  }
+
+  &__text-part-one {
+    color: $text-black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+    @media (min-width: $wide-phone-width) {
+      width: 97%;
+      margin: 0 auto 40px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      width: 673px;
+    }
+    @media (min-width: $desktop-width) {
+      width: auto;
+    }
+  }
+
+  &__text-part-two {
+    color: $text-black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media (min-width: $wide-phone-width) {
+      width: 97%;
+      margin: 0 auto;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      width: 673px;
+    }
+    @media (min-width: $desktop-width) {
+      width: auto;
+    }
+  }
+}

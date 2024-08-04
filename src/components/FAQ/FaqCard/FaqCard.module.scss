@@ -1,0 +1,91 @@
+@import "../../../styles/variables";
+
+.card {
+  position: relative;
+  &__title-block {
+    background-color: $main-green;
+    box-shadow: $header-shadow;
+    border-radius: 15px 15px 0px 15px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 0 10px 0 14px;
+    justify-content: space-between;
+    min-height: 78px;
+    z-index: 2;
+    position: relative;
+    @media (min-width: $wide-phone-width) {
+      padding: 0px 40px 0 20px;
+    }
+    @media (min-width: $tablet-width) {
+      padding: 0px 26px 0 22px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      padding: 0 24px 0 30px;
+    }
+    @media (min-width: $desktop-width) {
+      padding: 0 20px 0 30px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media (min-width: $wide-phone-width) {
+      font-size: 16px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      font-size: 24px;
+    }
+  }
+
+  &__button {
+    display: block;
+    padding: 6px 0 0;
+    background-color: $main-green;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__content-block {
+    position: relative;
+    top: -18px;
+    z-index: 1;
+    border-radius: 15px 15px 0 15px;
+    background: $white;
+    box-shadow: $header-shadow;
+    // padding: 36px 0px 18px 19px;
+    min-height: 0;
+    height: 0;
+    &-active {
+      min-height: 100px;
+      height: auto;
+      transition: height .25s;
+    }
+  }
+
+  &__content {
+    color: $text-black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: pre-line;
+    @media (min-width: $wide-phone-width) {
+      font-size: 16px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      font-size: 24px;
+    }
+  }
+}

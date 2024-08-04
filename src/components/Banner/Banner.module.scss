@@ -1,0 +1,225 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+  @include container;
+}
+
+.banner {
+  // height: 700px;
+
+  &__content {
+    position: relative;
+  }
+
+  &__background {
+    width: 320px;
+    height: 300px;
+    border-radius: 20px;
+    @media (min-width: $wide-phone-width) {
+      width: 440px;
+      height: 450px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 728px;
+      height: 450px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      display: none;
+    }
+  }
+
+  &__background-desktop {
+    @media (min-width: $unfolded-tablet-width) {
+      height: 700px;
+      position: relative;
+      // padding-top: 126px;
+    }
+  }
+
+  &__gradient {
+    @media (min-width: $unfolded-tablet-width) {
+      background: linear-gradient(
+        90deg,
+        #fff 39.58%,
+        rgba(255, 255, 255, 0) 70.31%
+      );
+      height: 100%;
+      padding-top: 126px;
+    }
+    @media (min-width: $desktop-width) {
+      padding-top: 166px;
+    }
+  }
+
+  &__mobile-green-block {
+    width: 100%;
+    background-color: $main-green;
+    padding: 21px 0;
+    @media (min-width: $unfolded-tablet-width) {
+      padding: 0 0 0 20px;
+      background-color: $white;
+      text-align: left;
+      color: $main-green;
+      width: $tablet-width;
+      margin: 0 auto;
+      position: relative;
+      top: -44px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      display: none;
+    }
+  }
+
+  &__inner-content {
+    position: relative;
+    top: -30px;
+    @media (min-width: $wide-phone-width) {
+      top: -50px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      position: static;
+    }
+  }
+
+  &__mobile-green-text {
+    color: $white;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 360px;
+    margin: 0 auto;
+    @media (min-width: $tablet-width) {
+      width: auto;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      width: auto;
+      text-align: left;
+      color: $main-green;
+      
+    }
+  }
+}
+
+.resume-background {
+  background-image: url("../../../public/images/resume/1_iStock-587892784.jpg");
+  background-size: cover;
+  background-position: center;
+  @media (min-width: $unfolded-tablet-width) {
+    display: none;
+  }
+}
+
+.documents-background {
+  background-image: url("../../../public/images/documents/1_iStock-901092330.jpg");
+  background-size: cover;
+  background-position: center left;
+  transform: rotateY(180deg);
+  @media (min-width: $tablet-width) {
+    background-size: 150%;
+  }
+  @media (min-width: $unfolded-tablet-width) {
+    display: none;
+  }
+}
+
+.prepare-to-test-background {
+  background-image: url("../../../public/images/prepare-to-test/1_iStock-1126400335.jpg");
+  background-size: cover;
+  background-position: center;
+  @media (min-width: $unfolded-tablet-width) {
+    display: none;
+  }
+}
+
+.speaking-club-background {
+  background-image: url("../../../public/images/speaking-club/1_iStock-1282039994.jpg");
+  background-size: cover;
+  background-position: center;
+  @media (min-width: $unfolded-tablet-width) {
+    display: none;
+  }
+}
+
+.students-background {
+  background-image: url("../../../public/images/students/1_iStock-928319458.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center right;
+  @media (min-width: $unfolded-tablet-width) {
+    display: none;
+  }
+}
+
+.resume-background-desktop {
+  @media (min-width: $unfolded-tablet-width) {
+    background-image: url("../../../public/images/resume/1_iStock-587892784.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center left 140px;
+  }
+  @media (min-width: $desktop-width) {
+    background-position: top left 140px;
+  }
+}
+
+.documents-background-desktop {
+  @media (min-width: $unfolded-tablet-width) {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      z-index: -1;
+      position: absolute;
+      // transform: translate(-50%);
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../public/images/documents/1_iStock-901092330.jpg");
+      transform: rotateY(180deg);
+      background-size: cover;
+      background-repeat: repeat;
+      background-position: center left;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-size: 110%;
+    }
+  }
+}
+
+.prepare-to-test-background-desktop {
+  @media (min-width: $unfolded-tablet-width) {
+    background-image: url("../../../public/images/prepare-to-test/1_iStock-1126400335.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center left 140px;
+  }
+  @media (min-width: $desktop-width) {
+    background-position: top left 140px;
+  }
+}
+
+.speaking-club-background-desktop {
+  @media (min-width: $unfolded-tablet-width) {
+    background-image: url("../../../public/images/speaking-club/1_iStock-1282039994.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center left 140px;
+  }
+  @media (min-width: $desktop-width) {
+    background-position: top left 140px;
+  }
+}
+
+.students-background-desktop {
+  @media (min-width: $unfolded-tablet-width) {
+    background-image: url("../../../public/images/students/1_iStock-928319458.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+  }
+}

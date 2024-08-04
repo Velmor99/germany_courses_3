@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+  @include container;
+}
+
+.faq {
+  &__content {
+    width: 100%;
+    margin: 0 auto;
+    @media (min-width: $desktop-width) {
+      width: 83.34%;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: $main-green;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+    @media (min-width: $wide-phone-width) {
+      font-size: 30px;
+      margin-bottom: 24px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      font-size: 60px;
+      margin-bottom: 34px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px 0;
+  }
+}

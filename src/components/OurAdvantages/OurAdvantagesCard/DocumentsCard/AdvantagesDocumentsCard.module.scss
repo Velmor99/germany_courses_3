@@ -1,0 +1,62 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.card {
+  @media (min-width: $wide-phone-width) {
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: $header-shadow;
+  }
+  @media (min-width: $unfolded-tablet-width) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 364px auto;
+    gap: 0 60px;
+    position: relative;
+    min-height: 228px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 22px 50px 0px 0;
+    height: 228px;
+  }
+
+  &__text {
+    color: $text-black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 10px;
+    @media (min-width: $wide-phone-width) {
+      padding: 0 0 33px 26px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      padding: 0 0 42px 43px;
+      grid-column: 2 / 3;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      padding: 0;
+      align-self: center;
+    }
+    @media (min-width: $desktop-width) {
+      align-self: flex-start;
+    }
+  }
+
+  &__image-block {
+    @media (min-width: $unfolded-tablet-width) {
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 162px;
+        transform: translateY(-50%);
+        background-color: $main-green;
+        right: -20px;
+        top: 42%;
+        position: absolute;
+      }
+    }
+  }
+}

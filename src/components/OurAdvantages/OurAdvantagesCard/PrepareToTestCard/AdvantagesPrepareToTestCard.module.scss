@@ -1,0 +1,125 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.card {
+  @media (min-width: $unfolded-tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 40px;
+  }
+  @media (min-width: $desktop-width) {
+    border-radius: 20px;
+    background: $white;
+    box-shadow: $header-shadow;
+    position: relative;
+    padding: 32px 50px 12px 0;
+    min-height: 228px;
+    grid-template-columns: 365px auto;
+    gap: 0 60px;
+  }
+  &__background-block {
+    width: 320px;
+    height: 228px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: $yellow-payment;
+    box-shadow: $advantages-image-shadow;
+    margin-bottom: 20px;
+    @media (min-width: $wide-phone-width) {
+      width: 440px;
+      height: 228px;
+      margin-bottom: 40px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 728px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      width: 365px;
+      align-self: center;
+      margin-bottom: 0;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 162px;
+        transform: translateY(-50%);
+        background-color: $main-green;
+        right: -20px;
+        top: 42%;
+        position: absolute;
+      }
+    }
+  }
+
+  &__title {
+    display: grid;
+    grid-auto-flow: row;
+    height: 100%;
+
+    &-top {
+      color: $text-black;
+      text-align: center;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%; /* 44px */
+      display: block;
+      text-align: center;
+      align-self: flex-end;
+      @media (min-width: $wide-phone-width) {
+        font-size: 50px;
+      }
+    }
+
+    &-bottom {
+      color: $text-black;
+      text-align: center;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%; /* 44px */
+      display: block;
+      text-align: center;
+      @media (min-width: $wide-phone-width) {
+        font-size: 50px;
+      }
+    }
+  }
+
+  &__text-content {
+    @media (min-width: $desktop-width) {
+      grid-column: 2 / 3;
+      max-height: 184px;
+    }
+  }
+
+  &__strong-text {
+    color: $text-black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    color: $text-black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
+    @media (min-width: $desktop-width) {
+      line-height: 120%;
+    }
+  }
+}

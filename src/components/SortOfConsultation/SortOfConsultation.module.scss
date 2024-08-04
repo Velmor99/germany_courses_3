@@ -1,0 +1,178 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.container {
+  @include container;
+}
+
+.sort-of {
+  &__text {
+    color: $text-black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 24px;
+    @media (min-width: $wide-phone-width) {
+      width: 344px;
+      margin: 0 auto 24px auto;
+    }
+    @media (min-width: $tablet-width) {
+      width: 580px;
+      font-size: 30px;
+      margin: 0 auto 38px auto;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin: 0 auto 50px auto;
+    }
+    @media (min-width: $desktop-width) {
+      grid-column: 2 / 3;
+      align-self: center;
+      justify-self: start;
+      width: 580px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    background-image: url("../../../public/images/documents/5_iStock-1129638600.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 320px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    @media (min-width: $wide-phone-width) {
+      width: 440px;
+      height: 374px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 598px;
+      height: 374px;
+    }
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 2;
+      grid-row: 1;
+      width: 588px;
+    }
+  }
+
+  &__we-icon {
+    background-image: url("../../../public/common/green_content_icons/green_small_we.svg");
+    width: 110px;
+    height: 69px;
+    transform: rotate(15deg);
+    position: absolute;
+    // bottom: -2px;
+    right: 8px;
+    display: none;
+    @media (min-width: $wide-phone-width) {
+      display: block;
+      bottom: -4%;
+      left: 78%;
+    }
+    @media (min-width: $tablet-width) {
+      background-image: url("../../../public/common/green_content_icons/green_large_we.svg");
+      width: 148px;
+      height: 94px;
+      left: 80%;
+      bottom: -7%;
+    }
+  }
+
+  &__content-block {
+    margin-bottom: 40px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 56px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 52px;
+    }
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: auto 50%;
+      gap: 0 20px;
+      margin-bottom: 57px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+    @media (min-width: $wide-phone-width) {
+      font-size: 45px;
+      margin-bottom: 22px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+    @media (min-width: $desktop-width) {
+      color: $text-black;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px 0;
+  }
+
+  &__card {
+    background-color: $white;
+    border-radius: 20px;
+    padding: 0 20px;
+    height: 115px;
+    display: grid;
+    align-items: center;
+    position: relative;
+    box-shadow: $header-shadow;
+    @media (min-width: $wide-phone-width) {
+      padding: 0 70px 0 50px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 540px;
+      margin: 0 auto;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      width: auto;
+      padding: 0 0 0 155px;
+    }
+    &-text {
+      color: $text-black;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      @media (min-width: $tablet-width) {
+        font-size: 24px;
+        width: 324px;
+      }
+      @media (min-width: $unfolded-tablet-width) {
+        width: auto;
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__yellow-circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $yellow-payment;
+    box-shadow: $header-shadow;
+    border-radius: 50%;
+    right: 26px;
+    transform: translateY(-50%);
+    bottom: -50%;
+    @media (min-width: $unfolded-tablet-width) {
+      left: 40px;
+    }
+  }
+}

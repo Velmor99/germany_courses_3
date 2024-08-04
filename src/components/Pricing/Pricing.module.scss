@@ -1,0 +1,170 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+  @include container;
+}
+
+.pricing {
+  &__yellow-background {
+    background-image: url("../../../public/backgrounds/payment/payment-background-mobile.png");
+    background-repeat: no-repeat;
+    @media (min-width: $wide-phone-width) {
+      background-image: url("../../../public/backgrounds/payment/payment-background-wide-mobile.png");
+      background-position: top;
+    }
+    @media (min-width: $tablet-width) {
+      background-image: url("../../../public/backgrounds/payment/payment-background-tablet.png");
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      background-image: url("../../../public/backgrounds/payment/payment-background-unfolded-tablet.png");
+    }
+    @media (min-width: $desktop-width) {
+      background-image: none;
+    }
+  }
+  &__block {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: row;
+    position: relative;
+    grid-row: 2 / 3;
+    @media (min-width: $desktop-width) {
+      grid-auto-flow: column;
+      grid-template-columns: 2% 1fr 21%;
+    }
+  }
+
+  &__title {
+    color: $text-black;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px; /* 277.778% */
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 40px;
+    @media (min-width: $wide-phone-width) {
+      font-size: 45px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      margin-bottom: 60px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 80px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    &-block {
+      width: 100%;
+      @media (min-width: $desktop-width) {
+        background-color: $yellow-payment;
+        height: 142px;
+        display: grid;
+        align-items: center;
+        border-radius: 25px 25px 0px 25px;
+        // margin-left: 60px;
+        grid-column: 2 / 3;
+        grid-row: 1;
+        align-self: center;
+        padding-left: 54px;
+      }
+    }
+  }
+
+  &__price {
+    color: $text-black;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    line-height: 70%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto 15px auto;
+    position: relative;
+    @media (min-width: $wide-phone-width) {
+      font-size: 250px;
+      text-align: left;
+    }
+
+    &-block {
+      display: grid;
+      justify-items: center;
+      top: -140px;
+      right: 80px;
+      z-index: 9;
+      grid-row: 1;
+      @media (min-width: $desktop-width) {
+        grid-column: 1 / 4;
+        // justify-self: end;
+        justify-self: right;
+        padding-right: 56px;
+        min-width: 390px;
+        justify-items: left;
+        // order: 1;
+      }
+    }
+  }
+
+  &__thing {
+    position: absolute;
+    top: 4px;
+    right: -6.5%;
+    @media (min-width: $wide-phone-width) {
+      right: -10%;
+    }
+  }
+
+  &__per-lesson {
+    &-block {
+      position: absolute;
+      border-radius: 10px 10px 0px 10px;
+      background: $white;
+      box-shadow: $header-shadow;
+      padding: 15px 30px;
+      transform: translate(-50%, -50%);
+      bottom: -30%;
+      left: 50%;
+      z-index: 8;
+      width: 285px;
+      @media (min-width: $tablet-width) {
+        width: 548px;
+        bottom: -28%;
+      }
+      @media (min-width: $desktop-width) {
+        bottom: -50%;
+        left: 36%;
+        border-radius: 15px 15px 0px 15px;
+      }
+    }
+    &-text {
+      color: $main-green;
+      text-align: center;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      display: block;
+      @media (min-width: $tablet-width) {
+        font-size: 45px;
+      }
+    }
+  }
+}
+
+.euro-icon {
+  display: none;
+  @media (min-width: $wide-phone-width) {
+    display: block;
+  }
+}
+
+.euro-mobile-icon {
+  @media (min-width: $wide-phone-width) {
+    display: none;
+  }
+}

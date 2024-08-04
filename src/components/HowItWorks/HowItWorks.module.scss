@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+  @include container;
+}
+
+.how-it-works {
+  &__title-block {
+    width: 100%;
+    background-color: $main-green;
+    border-radius: 10px 10px 0px 10px;
+    padding: 20px 0;
+    margin-bottom: 37px;
+    @media (min-width: $wide-phone-width) {
+      padding: 38px 0;
+    }
+    @media (min-width: $tablet-width) {
+      border-radius: 20px 20px 0px 20px;
+    }
+    @media (min-width: $desktop-width) {
+      border-radius: 25px 25px 0px 25px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: $white;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media (min-width: $tablet-width) {
+      font-size: 45px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 40px 0;
+    @media (min-width: $desktop-width) {
+      width: 68%;
+    }
+  }
+}

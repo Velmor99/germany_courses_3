@@ -1,7 +1,4 @@
-import Component from "@/components/component/Component";
 import { LayoutCmp } from "@/components/Layout/Layout";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
 
 export default async function LocaleLayout({
   children,

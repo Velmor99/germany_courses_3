@@ -1,0 +1,137 @@
+@import "./mixins";
+@import "./variables";
+
+.students {
+  &__banner-section {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+      margin-top: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-top: 0;
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 50px;
+    }
+  }
+  &__green-content-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 80px;
+      background-image: url("../../public/backgrounds/green-text/students/desktop.png");
+      background-repeat: no-repeat;
+      background-position: top 50px center;
+    }
+  }
+  &__green-content-block {
+    padding-bottom: 26px;
+    margin-bottom: 34px;
+    background-image: url("../../public/backgrounds/green-text/students/mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom -320px center;
+    @media (min-width: $wide-phone-width) {
+      padding-bottom: 25px;
+      margin-bottom: 54px;
+      background-image: url("../../public/backgrounds/green-text/students/wide-phone.png");
+      background-repeat: no-repeat;
+      background-position: bottom -410px center;
+    }
+    @media (min-width: $tablet-width) {
+      padding-bottom: 43px;
+      margin-bottom: 80px;
+      background-image: url("../../public/backgrounds/green-text/students/tablet.png");
+      background-repeat: no-repeat;
+      background-position: bottom -370px center;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      padding-bottom: 43px;
+      margin-bottom: 100px;
+      background-image: url("../../public/backgrounds/green-text/students/unfolded-tablet.png");
+      background-repeat: no-repeat;
+      background-position: bottom -190px center;
+    }
+    @media (min-width: $desktop-width) {
+      padding-bottom: 56px;
+      margin-bottom: 33px;
+      background-image: none;
+    }
+  }
+  // &__what-can-we-help-section {
+  //   @media (min-width: $wide-phone-width) {
+  //   }
+  //   @media (min-width: $unfolded-tablet-width) {
+  //   }
+  //   @media (min-width: $desktop-width) {
+  //   }
+  // }
+  &__how-it-works-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 82px;
+    }
+  }
+
+  &__pricing-section {
+    margin-bottom: 103px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 123px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 137px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 176px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 135px;
+    }
+  }
+
+  &__form-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../../public/backgrounds/form/students-form-background.png");
+      background-repeat: no-repeat;
+      background-position: top 220px center;
+      margin-bottom: 82px;
+    }
+  }
+
+  &__faq-section {
+    margin-bottom: 60px;
+    @media (min-width: $wide-phone-width) {
+      margin-bottom: 80px;
+    }
+    @media (min-width: $unfolded-tablet-width) {
+      margin-bottom: 100px;
+    }
+  }
+}

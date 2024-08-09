@@ -5,19 +5,19 @@
     "cv_writing": "Writing CV",
     "admission_to_universities": "University Admissions services",
     "prepare_to_technical_language_test": "Preparation for Fachsprachprüfung",
-    "conversational_club": "Разговорный клуб медицинская лексика",
+    "conversational_club": "Conversational Club for Medicals",
     "preparing_documents": "Preparation of documents for migration",
     "language_school": "Language School",
     "public_offer": "Public offer",
     "privacy_policy": "Privacy Policy",
-    "free_information_course": "Бесплатный информационный курс",
+    "free_information_course": "Video-Course as a Gift",
     "personal_consultation": "Consultation in the field of labor migration",
-    "personal_consultation_long": "Персональная консультация по трудовой миграции"
+    "personal_consultation_long": "Personal consultation on relocation"
   },
   "main_additional_links": {
     "cv_writing": "Writing\n CV",
     "free_information_course": "Information course\n on labor migration to Germany",
-    "conversational_club": "Разговорный клуб\n медицинская лексика",
+    "conversational_club": "Conversational Club\n for Medicals",
     "preparing_documents": "Preparation of\n documents for migration",
     "personal_consultation": "Personal consultation\n in the field of labor migration",
     "admission_to_universities": "University\n Admissions services",
@@ -27,7 +27,7 @@
     "title_for_main": "Join our language school",
     "title_for_consultation": "Book a consultation",
     "title_for_prepare_to_test": "Join a course",
-    "title_for_students": "Записаться на консультацию",
+    "title_for_students": "Sign up for consultation",
     "title_for_documents": "Order preparation of documents",
     "title_for_speaking_club": "Join a speaking club",
     "title_for_resume": "Order CV writing",
@@ -38,11 +38,11 @@
     "link_of_privacy_policy": "Privacy Policy",
     "press_on_button": "By clicking on the button, I agree to the",
     "and": "and",
-    "empty_name_error": "Заполните имя",
-    "empty_email_error": "Заполните email",
-    "empty_phone_error": "Заполните номер телефона",
-    "success_notification_title": "Спасибо за Вашу заявку!",
-    "success_notification_text": "Менеджер свяжется с Вами в течение двух рабочих дней в порядке очереди"
+    "empty_name_error": "Name, Surname",
+    "empty_email_error": "e-mail",
+    "empty_phone_error": "Phone number",
+    "success_notification_title": "Thank you for your application!",
+    "success_notification_text": "We will contact you shortly."
   },
   "FAQ_title": "Frequently asked questions",
   "FAQ_resume": {
@@ -234,16 +234,16 @@
       "text": "We will contact you to discuss a convenient time for your consultation."
     },
     "2": {
-      "strong": "Список вопросов.",
-      "text": "Вы предоставляете нам список приблизительных вопросов, которые хотите обсудить"
+      "strong": "List of questions.",
+      "text": "You provide us with a list of issues you want to discuss."
     },
     "3": {
-      "strong": "Консультация.",
-      "text": " В рамках консультации, которая длится 45 минут, Ольга Богомазова детально рассмотрит каждый ваш вопрос и предоставит вам исчерпывающие ответы и рекомендации"
+      "strong": "Consultation.",
+      "text": " During the consultation, which lasts 60 minutes, Olga Bogomazova will discuss each question in detail and provide you with answers and personal recommendations."
     },
     "4": {
-      "strong": "Дополнительные материалы.",
-      "text": " Мы ценим вашу заинтересованность в получении максимальной информации. Поэтому, после консультации, вам будут высланы дополнительные материалы по вашей теме, если это необходимо."
+      "strong": "Additional materials.",
+      "text": " After the consultation, you will have the opportunity to ask for additional help. Moreover, the consultation includes sending further important materials: examples of CVs, reference letters and other necessary documents."
     }
   },
   "main_banner": {
@@ -278,8 +278,8 @@
     "button": "Join"
   },
   "consultation_banner": {
-    "strong": "Индивидуальная консультация",
-    "text": "Ответы на интересующие вопросы при переезде в другую страну",
+    "strong": "Personal consultation",
+    "text": "Answers to all your questions about relocating to another country",
     "button": "Join"
   },
   "speaking_club_adventages_title": "Advantages of the Speaking Club",
@@ -301,10 +301,10 @@
   "deutch_education_to": "to",
   "deutch_education_part_one": "Welingua offers preparation courses for B1 and B2 international exams. These language courses are aimed at preparing candidates for labor migration as well as general language training.",
   "deutch_education_part_two": "Classes are conducted according to a special program in an online format with trained teachers. It is possible to study in groups, individually, and in mini-groups 1+1 (two people). Schedules of individual and mini-group lessons are made at the request of students.",
-  "main_banner_title": "Международная языковая школа",
-  "main_banner_text": "С видео-курсами и разговорными клубами",
-  "consultation_banner_title": "Индивидуальная консультация",
-  "consultation_banner_text": "Ответы на интересующие вопросы при переезде в другую страну",
+  "main_banner_title": "International language school.",
+  "main_banner_text": "with video courses and speaking clubs.",
+  "consultation_banner_title": "Personal consultation",
+  "consultation_banner_text": "Answers to all your questions about relocating to another country",
   "main_banner_button": "Join",
   "consultation_banner_button": "Join",
   "additional_services_white_title": "Besides",
@@ -343,13 +343,13 @@
     "below_photo": "Our unique teaching methodology, specifically designed for medical professionals, will help you learn medical vocabulary effectively and use it confidently in professional situations."
   },
   "consultation_green_content": {
-    "with_photo": "Переезд в другую страну — это ответственное решение, которое влияет на многие аспекты вашей жизни.",
-    "below_photo": "Обращение к опытному специалисту, такому как Ольга Богомазова, позволит вам избежать ошибок, сэкономить время и деньги, а также обеспечить гладкое и успешное осуществление вашего проекта по переезду."
+    "with_photo": "Moving to another country is a big decision that affects many aspects of your life.",
+    "below_photo": "He who is informed is prepared! Seeking advice from an experienced professional at all stages of relocation allows you to avoid mistakes and save time and money."
   },
   "resume_content_with_photo_part_one": "Our company has many years of experience in writing CVs for jobs abroad.",
   "resume_content_with_photo_part_two": "We know the requirements of employers in different countries and how to effectively present your profile to stand out from other applicants.",
-  "detailed": "Подробнее",
-  "free": "Бесплатно",
+  "detailed": "read more",
+  "free": "Gift for you",
   "our_advantages_title": "Advantages of our service",
   "our_advantages_prepare_to_test": {
     "1": {
@@ -402,13 +402,13 @@
     "7": "Certification\n of documents",
     "8": "Comprehensive\n consultations"
   },
-  "sort_of_consultation_text": "Индивидуальная консультация проводится лично Ольгой Богомазовой, экспертом с многолетним опытом в сфере международной миграции и переезда.",
-  "sort_of_consultation_title": "Виды консультации",
+  "sort_of_consultation_text": "Individual consultation is conducted personally by Olga Bogomazova, a specialist with many years of experience in the field of international migration and relocation.",
+  "sort_of_consultation_title": "Types of consultation",
   "sort_of_consultation_items": {
     "1": "Поступление в ВУЗ за границей",
-    "2": "Трудовая миграция и работа за рубежом",
-    "3": "Интеграция в новой стране",
-    "4": "Переезд семьи в Германию и оформление документов"
+    "2": "Relocation and work abroad",
+    "3": "Integration in a new country",
+    "4": "Family relocation to Germany and bureaucracy"
   },
-  "consultation_title": "Зачем стоит обратиться к профессионалу?"
+  "consultation_title": "Why get help from a professional?"
 }

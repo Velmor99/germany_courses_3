@@ -5,20 +5,20 @@
     "cv_writing": "Lebenslauf schreiben",
     "admission_to_universities": "Dienstleistungen für Hochschulzulassungen",
     "prepare_to_technical_language_test": "Vorbereitung auf die Fachsprachprüfung",
-    "conversational_club": "Разговорный клуб медицинская лексика",
+    "conversational_club": "Speaking-Club für Mediziner",
     "preparing_documents": "Vorbereitung der Dokumente für die Migration",
     "language_school": "Internationale Sprachschule",
-    "public_offer": "Публичная оферта",
-    "privacy_policy": "Политика конфиденциальности",
-    "free_information_course": "Бесплатный информационный курс",
+    "public_offer": "AGB",
+    "privacy_policy": "Datenschutz",
+    "free_information_course": "Video-Kurs als Geschenk",
     "personal_consultation": "Beratung im Bereich der Arbeitsmigration",
     "personal_consultation_long": "Persönliche Beratung im Bereich der Arbeitsmigration"
   },
   "main_additional_links": {
     "cv_writing": "Die Erstellung\n eines Lebenslaufs",
     "free_information_course": "Informationskurs zur\n Arbeitsmigration nach Deutschland",
-    "conversational_club": "Разговорный клуб\n медицинская лексика",
-    "preparing_documents": "Подготовка пакета\n документов для миграции",
+    "conversational_club": "Speaking-Club\n für Mediziner",
+    "preparing_documents": "Vorbereitung zur\n Anerkennung als Mediziner",
     "personal_consultation": "Persönliche Beratung\n im Bereich der Arbeitsmigration",
     "admission_to_universities": "Организация\n поступления в ВУЗы",
     "prepare_to_technical_language_test": "Vorbereitung\n auf die Fachsprachprüfung"
@@ -27,7 +27,7 @@
     "title_for_main": "Melden Sie sich bei unserer Sprachschule an",
     "title_for_consultation": "Beratung buchen",
     "title_for_prepare_to_test": "Dem Kurs beitreten",
-    "title_for_students": "Записаться на консультацию",
+    "title_for_students": "Meine Beratung vereinbaren",
     "title_for_documents": "Vorbereitung der Dokumente bestellen",
     "title_for_speaking_club": "Mitglied in unserem Sprachclub werden",
     "title_for_resume": "Lebenslauf bestellen",
@@ -38,11 +38,11 @@
     "link_of_privacy_policy": "mit dem öffentlichen Angebot",
     "press_on_button": "Mit einem Klick auf die Schaltfläche erkläre ich mich",
     "and": "und",
-    "empty_name_error": "Заполните имя",
-    "empty_email_error": "Заполните email",
-    "empty_phone_error": "Заполните номер телефона",
-    "success_notification_title": "Спасибо за Вашу заявку!",
-    "success_notification_text": "Менеджер свяжется с Вами в течение двух рабочих дней в порядке очереди"
+    "empty_name_error": "Name, Vorname",
+    "empty_email_error": "E-Mail-Adresse",
+    "empty_phone_error": "Telefonnummer",
+    "success_notification_title": "Vielen Dank für Ihre Anfrage!",
+    "success_notification_text": "Wir setzen uns in Verbindung mit Ihnen so schnell wie möglich."
   },
   "FAQ_title": "Häufig gestellte Fragen",
   "FAQ_resume": {
@@ -149,7 +149,7 @@
     "duration": "Kursdauer",
     "per_hour": "Preis pro Stunde",
     "per_course": "Preis für den gesamten Kurs",
-    "hours": "часов"
+    "hours": "Stunden"
   },
   "pricing_title_course": "Kosten für den Kurs",
   "some_parts_of_payment": "Ratenzahlung ist möglich.",
@@ -234,16 +234,16 @@
       "text": "Wir werden uns mit Ihnen in Verbindung setzen, um einen passenden Termin für Ihr Beratungsgespräch zu vereinbaren."
     },
     "2": {
-      "strong": "Список вопросов.",
-      "text": "Вы предоставляете нам список приблизительных вопросов, которые хотите обсудить"
+      "strong": "Liste von Fragen.",
+      "text": "Sie übermitteln uns eine Liste von Fragen, die Sie besprechen möchten."
     },
     "3": {
-      "strong": "Консультация.",
-      "text": " В рамках консультации, которая длится 45 минут, Ольга Богомазова детально рассмотрит каждый ваш вопрос и предоставит вам исчерпывающие ответы и рекомендации"
+      "strong": "Konsultation",
+      "text": " Während des 60-minütigen Beratungsgesprächs wird Olga Bogomazova jede Ihrer Fragen im Detail besprechen und Ihnen umfassende Antworten und Empfehlungen geben."
     },
     "4": {
-      "strong": "Дополнительные материалы.",
-      "text": " Мы ценим вашу заинтересованность в получении максимальной информации. Поэтому, после консультации, вам будут высланы дополнительные материалы по вашей теме, если это необходимо."
+      "strong": "Zusätzliche Materialien.",
+      "text": " Nach der Beratung haben Sie die Möglichkeit, uns um zusätzliche Hilfe zu bitten. Darüber hinaus umfasst die Beratung die Zusendung weiterer wichtiger Unterlagen: Beispiele für Lebensläufe, Referenzschreiben und andere notwendige Dokumente."
     }
   },
   "main_banner": {
@@ -278,8 +278,8 @@
     "button": "Beitreten"
   },
   "consultation_banner": {
-    "strong": "Индивидуальная консультация",
-    "text": "Ответы на интересующие вопросы при переезде в другую страну",
+    "strong": "Persönliche Beratung",
+    "text": "Antworten auf alle Fragen über Relocation nach Deutschland",
     "button": "Beitreten"
   },
   "speaking_club_adventages_title": "Vorteile des Sprachclubs",
@@ -301,10 +301,10 @@
   "deutch_education_to": "bis",
   "deutch_education_part_one": "Welingua bietet Vorbereitungskurse für internationale B1- und B2-Prüfungen an. Diese Sprachkurse dienen der Vorbereitung auf die Arbeitsmigration sowie der allgemeinen Sprachschulung.",
   "deutch_education_part_two": "Der Unterricht wird anhand eines speziellen Programms im Online-Format mit ausgebildeten Lehrern durchgeführt. Der Unterricht kann in Gruppen, einzeln und in Minigruppen 1+1 (zwei Personen) stattfinden. Die Stundenpläne für den Einzel- und Minigruppenunterricht werden nach Wunsch der Schüler erstellt.",
-  "main_banner_title": "Международная языковая школа",
-  "main_banner_text": "С видео-курсами и разговорными клубами",
-  "consultation_banner_title": "Индивидуальная консультация",
-  "consultation_banner_text": "Ответы на интересующие вопросы при переезде в другую страну",
+  "main_banner_title": "Internationale Sprachschule",
+  "main_banner_text": "mit Video-Kursen und Konversationsklubs.",
+  "consultation_banner_title": "Persönliche Beratung",
+  "consultation_banner_text": "Antworten auf alle Fragen bei Relocation",
   "main_banner_button": "Beitreten",
   "consultation_banner_button": "Beitreten",
   "additional_services_white_title": "Außerdem",
@@ -343,13 +343,13 @@
     "below_photo": "Unsere einzigartige Lehrmethodik, die speziell für Mediziner entwickelt wurde, hilft Ihnen, medizinisches Vokabular effektiv zu erlernen und es in beruflichen Situationen sicher anzuwenden."
   },
   "consultation_green_content": {
-    "with_photo": "Переезд в другую страну — это ответственное решение, которое влияет на многие аспекты вашей жизни.",
-    "below_photo": "Обращение к опытному специалисту, такому как Ольга Богомазова, позволит вам избежать ошибок, сэкономить время и деньги, а также обеспечить гладкое и успешное осуществление вашего проекта по переезду."
+    "with_photo": "Ein Umzug in ein anderes Land ist eine wichtige Entscheidung, die viele Aspekte Ihres Lebens betrifft.",
+    "below_photo": "Wer informiert ist, ist abgesichert! Wenn Sie sich in allen Phasen des Umzugs von einem erfahrenen Fachmann beraten lassen, können Sie Fehler vermeiden und Zeit und Geld sparen."
   },
   "resume_content_with_photo_part_one": "Unser Unternehmen verfügt über langjährige Erfahrung bei der Erstellung von Bewerbungen für Stellen im Ausland.",
   "resume_content_with_photo_part_two": "Wir kennen die Anforderungen der Arbeitgeber in den verschiedenen Ländern und wissen, wie Sie Ihr Profil effektiv präsentieren können, um sich von anderen Bewerbern abzuheben.",
-  "detailed": "Подробнее",
-  "free": "Бесплатно",
+  "detailed": "Mehr",
+  "free": "Geschänk",
   "our_advantages_title": "Vorteile unserer Dienstleistung",
   "our_advantages_prepare_to_test": {
     "1": {
@@ -402,13 +402,13 @@
     "7": "Beglaubigung\n der Dokumente",
     "8": "Umfassende\n Beratungsgespräche"
   },
-  "sort_of_consultation_text": "Индивидуальная консультация проводится лично Ольгой Богомазовой, экспертом с многолетним опытом в сфере международной миграции и переезда.",
-  "sort_of_consultation_title": "Виды консультации",
+  "sort_of_consultation_text": "Die individuelle Beratung wird persönlich von Olga Bogomazova durchgeführt, einer Expertin mit langjähriger Erfahrung im Bereich der internationalen Migration und Relocation.",
+  "sort_of_consultation_title": "Arten der Beratung",
   "sort_of_consultation_items": {
     "1": "Поступление в ВУЗ за границей",
-    "2": "Трудовая миграция и работа за рубежом",
-    "3": "Интеграция в новой стране",
-    "4": "Переезд семьи в Германию и оформление документов"
+    "2": "Relocation und Anerkennung Ihres Studiums",
+    "3": "Integration in einem neuen Land",
+    "4": "Familiennachzug und Bürokratie"
   },
-  "consultation_title": "Зачем стоит обратиться к профессионалу?"
+  "consultation_title": "Warum lohnt es sich, professionelle Hilfe zu bekommen?"
 }

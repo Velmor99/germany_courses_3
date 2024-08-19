@@ -18,6 +18,7 @@ const LocalizationMenu = ({
   const [isOpenLocalizationMenu, openLocalizationMenu] = useState(false);
   const pathname = usePathname();
   const lang = pathname.split("/");
+  console.log(lang);
 
   const changeLocalizationMenu = (value: boolean) => {
     openLocalizationMenu(value);
@@ -101,8 +102,7 @@ const LocalizationMenu = ({
         >
           <Link
             replace={true}
-            href={pathname}
-            locale="en"
+            href={`/en`}
             className={cn(styles["localization__link"], {
               [styles["localization__link-active"]]:
                 lang.includes("en") && isOpenLocalizationMenu,
@@ -125,8 +125,7 @@ const LocalizationMenu = ({
               [styles["localization__link-open"]]: isOpenLocalizationMenu,
             })}
             replace={true}
-            href={pathname}
-            locale="de"
+            href={`/de`}
           >
             {routes.localization.de.title}
           </Link>
@@ -156,8 +155,7 @@ const LocalizationMenu = ({
               [styles["localization__link-open"]]: isOpenLocalizationMenu,
             })}
             replace={true}
-            href={pathname}
-            locale="ru"
+            href={`/ru`}
           >
             {routes.localization.ru.title}
           </Link>

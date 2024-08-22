@@ -16,9 +16,9 @@ const TextComponent = ({text, targets, textColor, fontWeight}: TextComponentProp
     
     return (
       <span>
-        {result.map(item => {
+        {result.map((item, idx) => {
           if(typeof item === "object") {
-            return <span className={cn(styles["text__"+textColor], styles["text__weight-"+fontWeight])}>{item.target + " "}</span>
+            return <span key={idx} className={cn(styles["text__"+textColor], styles["text__weight-"+fontWeight])}>{item.target + " "}</span>
           } else {
             return item + " "
           }

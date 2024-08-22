@@ -4,6 +4,7 @@ import cn from 'classnames';
 import { ForwardedRef, forwardRef } from 'react';
 
 export const InputComponent = forwardRef(({type, className, error, ...props }: InputProps, ref: ForwardedRef<HTMLInputElement>): JSX.Element => {
+	
 	return (
 		<div className={cn(className, styles["input-wrapper"])}>
 			<input type={type} className={cn(styles["input"], {
@@ -16,3 +17,5 @@ export const InputComponent = forwardRef(({type, className, error, ...props }: I
 		</div>
 	);
 });
+
+InputComponent.displayName = "InputComponent";

@@ -14,7 +14,7 @@ const navLinks = [
     link: routes.prepareToTest,
     name: "footer_links.prepare_to_technical_language_test",
   },
-  { link: routes.students, name: "footer_links.admission_to_universities" },
+  // { link: routes.students, name: "footer_links.admission_to_universities" },
   { link: routes.consultation, name: "footer_links.personal_consultation" },
   { link: routes.speakingClub, name: "footer_links.conversational_club" },
   { link: routes.freeCourse, name: "footer_links.free_information_course" },
@@ -61,7 +61,7 @@ const BurgerListDesktop = ({ isOpened }: BurgerMenuDesktopProps) => {
 
   return (
     <motion.ul
-      layout
+      // layout
       variants={variants}
       animate={isOpened ? "visible" : "hidden"}
       className={styles["nav__menu"]}

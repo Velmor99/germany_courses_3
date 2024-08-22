@@ -9,7 +9,7 @@
   box-shadow: $header-shadow;
   height: 80px;
   position: relative;
-  z-index: 5;
+  z-index: 10;
   @media (min-width: $tablet-width) {
     height: 100px;
   }

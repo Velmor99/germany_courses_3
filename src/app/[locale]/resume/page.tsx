@@ -23,7 +23,7 @@ export default function PrepareToTestPage({
 }: {
   params: { locale: string };
 }) {
-  unstable_setRequestLocale(locale);
+  unstable_setRequestLocale(locale ? locale : "en");
   // const t = await getTranslations({locale});
   const t = useTranslations();
   return (

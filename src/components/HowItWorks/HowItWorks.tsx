@@ -1,9 +1,9 @@
 import styles from "./HowItWorks.module.scss";
 import cn from "classnames";
-import { useTranslations } from "next-intl";
 import { HowItWorksProps } from "./HowItWorks.props";
 import HowItWorksCard from "./HowItWorksCard/HowItWorksCard";
 import data from "@/../languages/de.json";
+import { useTranslations } from "next-intl";
 
 const HowItWorks = ({ title, dataString, textOptions }: HowItWorksProps) => {
   const t = useTranslations();

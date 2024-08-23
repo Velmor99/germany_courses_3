@@ -1,9 +1,9 @@
 import cn from "classnames";
 import styles from "./ContentWithPhoto.module.scss";
-import { useTranslations } from "next-intl";
 import { ContentWithPhotoProps } from "./ContentWithPhoto.props";
 import MediumGreenWeIcon from "../../../public/common/medium_green_we.svg";
 import TextComponent from "../Text/Text";
+import { useTranslations } from "next-intl";
 
 const ContentWithPhoto = ({
   partOne,

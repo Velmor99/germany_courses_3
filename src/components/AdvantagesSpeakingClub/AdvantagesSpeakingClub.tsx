@@ -1,6 +1,5 @@
 import cn from "classnames";
 import styles from "./AdvantagesSpeakingClub.module.scss";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import VebinarImage from "../../../public/advantages_icons/vebinars.png";
 import DictionaryImage from "../../../public/advantages_icons/dictionary.png";
@@ -10,9 +9,10 @@ import VideoCoursesImage from "../../../public/advantages_icons/video-courses.pn
 import SpeakingClubImage from "../../../public/advantages_icons/speaking-club.png";
 import PrepareToExamImage from "../../../public/advantages_icons/prepare_to_exam.png";
 import { AdvantagesProps } from "./AdvantagesSpeakingClub.props";
+// import { useTranslations } from "next-intl";
 
-const AdvantagesSpeakingClub = ({ where }: AdvantagesProps) => {
-  const t = useTranslations();
+const AdvantagesSpeakingClub = ({ where, t }: AdvantagesProps) => {
+  // const t = useTranslations();
   return (
     <div className={cn(styles["advantages"])}>
       <div className={cn(styles["container"])}>

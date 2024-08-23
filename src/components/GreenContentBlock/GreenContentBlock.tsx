@@ -1,9 +1,9 @@
 import cn from "classnames";
 import styles from "./GreenContentBlock.module.scss";
 import { GreenContentProps } from "./GreenContentBlock.props";
-import { useTranslations } from "next-intl";
 // import MediumWhiteWeIcon from "../../../public/common/medium_white_we.svg";
 import TextComponent from "../Text/Text";
+import { useTranslations } from "next-intl";
 // import TextComponent from "../Text/Text";
 
 const GreenContentBlock = ({

@@ -20,4 +20,5 @@ export interface GreenContentProps
   revers: boolean;
   optionsForTextWithPhoto: optionsForText;
   optionsForTextBelowPhoto: optionsForText;
+  // t: (s: string) => string
 }

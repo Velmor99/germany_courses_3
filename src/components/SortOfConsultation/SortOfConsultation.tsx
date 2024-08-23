@@ -1,13 +1,12 @@
 import cn from "classnames";
 import styles from "./SortOfConsultation.module.scss";
-import { useTranslations } from "next-intl";
 import data from "../../../languages/de.json";
 import TextComponent from "../Text/Text";
 import { SortOfConsultationsProps } from "./SortOfConsultation.props";
+import { useTranslations } from "next-intl";
 
 const SortOfConsultation = ({ textOptions }: SortOfConsultationsProps) => {
   const t = useTranslations();
-
   const generateData = () => {
     const keys = Object.keys(data.sort_of_consultation_items);
     const genereted = keys.map((item) => `sort_of_consultation_items.${item}`);

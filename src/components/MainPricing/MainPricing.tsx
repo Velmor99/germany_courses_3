@@ -1,15 +1,14 @@
 import styles from "./MainPricing.module.scss";
 import cn from "classnames";
-import { useTranslations } from "next-intl";
 import MainPricingTab from "./MainPricingTab/MainPricingTab";
 import {
   createIndividualCoursesData,
   createGroupCoursesData,
 } from "@/utils/createPriceDataForMain";
+import { useTranslations } from "next-intl";
 
 const MainPricing = () => {
   const t = useTranslations();
-
   return (
     <div className={cn(styles["main-pricing"])}>
       <div className={cn(styles["container"])}>

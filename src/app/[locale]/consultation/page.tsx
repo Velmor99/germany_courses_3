@@ -6,9 +6,26 @@ import SortOfConsultation from "@/components/SortOfConsultation/SortOfConsultati
 import TitleComponent from "@/components/TitleComponent/TitleComponent";
 import styles from "@/styles/ConsultationPage.module.scss";
 import prices from "../../../../public/prices.json";
+import { unstable_setRequestLocale } from "next-intl/server";
+// import {getTranslations} from 'next-intl/server';
 import { FormComponent } from "@/components/Form/Form";
+import { useTranslations } from "next-intl";
+import { routes } from "../../../../routes";
 
-export default function ConsultationPage() {
+const locales = Object.keys(routes.localization);
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default function ConsultationPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
+  // const t = await getTranslations({locale});
+  const t = useTranslations();
   return (
     <>
       <section className={styles["consultation__banner-section"]}>

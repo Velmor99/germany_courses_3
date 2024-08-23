@@ -5,9 +5,26 @@ import GreenContentBlock from "@/components/GreenContentBlock/GreenContentBlock"
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import OurAdvantages from "@/components/OurAdvantages/OurAdvantages";
 import PrepareToTestPricing from "@/components/PrepareToTestPricing/PrepareToTestPricing";
+import { unstable_setRequestLocale } from "next-intl/server";
+// import {getTranslations} from 'next-intl/server';
+import { useTranslations } from "next-intl";
 import styles from "@/styles/PrepareToTestPage.module.scss";
+import { routes } from "../../../../routes";
 
-export default function PrepareToTestPage() {
+const locales = Object.keys(routes.localization);
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default function PrepareToTestPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
+  // const t = await getTranslations({locale});
+  const t = useTranslations();
   return (
     <>
       <section className={styles["prepare__banner-section"]}>

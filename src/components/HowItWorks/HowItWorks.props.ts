@@ -11,4 +11,5 @@ export interface HowItWorksProps extends DetailedHTMLProps<HTMLAttributes<HTMLDi
   className?: string;
   dataString: "resume_how_it_works" | "speaking_club_how_it_works" | "documents_how_it_works" | "students_how_it_works" | "prepare_to_test_how_it_works" | "consultation_how_it_works";
   textOptions: optionsForText;
+  // t: (s: string) => string;
 }

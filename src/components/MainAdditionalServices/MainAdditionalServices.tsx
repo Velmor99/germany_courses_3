@@ -1,9 +1,9 @@
 import styles from "./MainAdditionalServices.module.scss";
 import cn from "classnames";
-import { useTranslations } from "next-intl";
 import MainAdditionalServicesCard from "./MainAdditionalServicesCard/MainAdditionalServicesCard";
 import prices from "../../../public/prices.json";
 import { routes } from "../../../routes";
+import { useTranslations } from "next-intl";
 
 const MainAdditionalServices = () => {
   const t = useTranslations();

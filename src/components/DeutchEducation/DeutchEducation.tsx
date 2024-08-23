@@ -1,7 +1,7 @@
 import cn from "classnames";
 import styles from "./DeutchEducation.module.scss";
-import { useTranslations } from "next-intl";
 import TextComponent from "../Text/Text";
+import { useTranslations } from "next-intl";
 
 const DeutchEducation = () => {
   const t = useTranslations();

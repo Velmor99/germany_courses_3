@@ -1,11 +1,9 @@
 import cn from "classnames";
 import styles from "./WhatCanWeHelp.module.scss";
-import { useTranslations } from "next-intl";
 import data from "@/../languages/de.json";
 import WhatCanWeHelpCard from "./WhatCanWeHelpCard/WhatCanWeHelpCard";
 
-const WhatCanWeHelp = () => {
-  const t = useTranslations();
+const WhatCanWeHelp = ({t}: {t: (s: string) => string}) => {
   const generateData = () => {
     const keys = Object.keys(data.what_can_we_help_items);
     const generated = keys.map((item) => `what_can_we_help_items.${item}`);

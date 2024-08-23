@@ -4,4 +4,5 @@ export interface IndividualBannerTextContentProps extends DetailedHTMLProps<HTML
   title: "main_banner_title" | "consultation_banner_title";
   text: "consultation_banner_text" | "main_banner_text";
   buttonText: "main_banner_button" | "consultation_banner_button";
+  // t: (s: string) => string
 }

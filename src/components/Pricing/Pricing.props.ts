@@ -4,4 +4,5 @@ export interface PricingProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivEl
   price: string;
   className?: string;
   perLesson: boolean;
+  // t: (s: string) => string
 }

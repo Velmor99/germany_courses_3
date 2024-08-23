@@ -1,9 +1,9 @@
-import { useTranslations } from "next-intl";
 import styles from "./Pricing.module.scss";
 import cn from "classnames";
 import { PricingProps } from "./Pricing.props";
 import EuroIcon from "../../../public/common/euro.svg";
 import EuroMobileIcon from "../../../public/common/euro-mobile.svg";
+import { useTranslations } from "next-intl";
 
 const Pricing = ({
   price,
@@ -11,7 +11,6 @@ const Pricing = ({
   perLesson,
 }: PricingProps): JSX.Element => {
   const t = useTranslations();
-
   return (
     <div className={cn(styles["pricing"], className)}>
       <div className={cn(styles["pricing__yellow-background"])}>

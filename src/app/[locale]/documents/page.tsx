@@ -6,9 +6,26 @@ import Pricing from "@/components/Pricing/Pricing";
 import styles from "@/styles/DocumentsPage.module.scss";
 import prices from "@/../public/prices.json";
 import { FormComponent } from "@/components/Form/Form";
+import { unstable_setRequestLocale } from "next-intl/server";
+// import {getTranslations} from 'next-intl/server';
+import { useTranslations } from "next-intl";
 import FAQ from "@/components/FAQ/Faq";
+import { routes } from "../../../../routes";
 
-export default function DocumentsPage() {
+const locales = Object.keys(routes.localization);
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default function DocumentsPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
+  // const t = await getTranslations({locale});
+  const t = useTranslations();
   return (
     <>
       <section className={styles["documents__banner-section"]}>

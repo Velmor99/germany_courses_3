@@ -16,7 +16,7 @@
     "framer-motion": "^11.3.21",
     "libphonenumber-js": "^1.11.5",
     "mailgun.js": "^10.2.3",
-    "next": "14.2.5",
+    "next": "^14.2.5",
     "next-intl": "^3.17.2",
     "react": "^18",
     "react-dom": "^18",

@@ -3,8 +3,8 @@ import styles from "./AdditionalServices.module.scss";
 import ResumeImage from "../../../public/advantages_icons/resume.png";
 import TranslateImage from "../../../public/advantages_icons/translate_documents.png";
 import ConsultationImage from "../../../public/advantages_icons/consultations.png";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const AdditionalServices = () => {
   const t = useTranslations();

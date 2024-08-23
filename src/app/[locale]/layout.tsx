@@ -1,4 +1,11 @@
 import { LayoutCmp } from "@/components/Layout/Layout";
+import { routes } from "../../../routes";
+
+const locales = Object.keys(routes.localization);
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({
   children,

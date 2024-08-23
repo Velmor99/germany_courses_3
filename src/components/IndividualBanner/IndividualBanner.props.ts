@@ -5,4 +5,5 @@ export interface IndividualBannerProps extends DetailedHTMLProps<HTMLAttributes<
   text: "consultation_banner_text" | "main_banner_text";
   buttonText: "main_banner_button" | "consultation_banner_button";
   where: "main" | "consultation";
+  // t: (s: string) => string
 }

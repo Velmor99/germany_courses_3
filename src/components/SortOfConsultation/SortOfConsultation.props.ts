@@ -8,4 +8,5 @@ export type optionsForText = {
 
 export interface SortOfConsultationsProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   textOptions: optionsForText;
+  // t: (s: string) => string;
 }

@@ -18,7 +18,6 @@ const LocalizationMenu = ({
   const [isOpenLocalizationMenu, openLocalizationMenu] = useState(false);
   const pathname = usePathname();
   const lang = pathname.split("/");
-  console.log(lang);
 
   const changeLocalizationMenu = (value: boolean) => {
     openLocalizationMenu(value);

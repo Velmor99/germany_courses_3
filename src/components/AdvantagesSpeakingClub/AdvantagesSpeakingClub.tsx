@@ -9,10 +9,10 @@ import VideoCoursesImage from "../../../public/advantages_icons/video-courses.pn
 import SpeakingClubImage from "../../../public/advantages_icons/speaking-club.png";
 import PrepareToExamImage from "../../../public/advantages_icons/prepare_to_exam.png";
 import { AdvantagesProps } from "./AdvantagesSpeakingClub.props";
-// import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
-const AdvantagesSpeakingClub = ({ where, t }: AdvantagesProps) => {
-  // const t = useTranslations();
+const AdvantagesSpeakingClub = ({ where }: AdvantagesProps) => {
+  const t = useTranslations();
   return (
     <div className={cn(styles["advantages"])}>
       <div className={cn(styles["container"])}>

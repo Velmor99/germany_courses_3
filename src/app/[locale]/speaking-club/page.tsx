@@ -7,25 +7,22 @@ import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Pricing from "@/components/Pricing/Pricing";
 import styles from "@/styles/SpeakingClubPage.module.scss";
 import { unstable_setRequestLocale } from "next-intl/server";
-// import {getTranslations} from 'next-intl/server';
-import { useTranslations } from "next-intl";
 import prices from "@/../public/prices.json";
-import { routes } from "../../../../routes";
+// import { routes } from "../../../../routes";
 
-const locales = Object.keys(routes.localization);
+// const locales = Object.keys(routes.localization);
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
+// export function generateStaticParams() {
+//   return locales.map((locale) => ({ locale }));
+// }
 
 export default function SpeakingClubPage({
   params: { locale },
 }: {
   params: { locale: string };
 }) {
-  unstable_setRequestLocale(locale ? locale : "en");
-  // const t = await getTranslations({locale});
-  const t = useTranslations();
+  unstable_setRequestLocale(locale);
+
   return (
     <>
       <section className={styles["speaking-club__banner-section"]}>
@@ -48,7 +45,7 @@ export default function SpeakingClubPage({
         />
       </section>
       <section className={styles["speaking-club__advantages-section"]}>
-        <AdvantagesSpeakingClub t={t} where="speaking_club" />
+        <AdvantagesSpeakingClub where="speaking_club" />
       </section>
       <section className={styles["speaking-club__how-it-works-section"]}>
         <HowItWorks

@@ -7,25 +7,22 @@ import DeutchEducation from "@/components/DeutchEducation/DeutchEducation";
 import MainPricing from "@/components/MainPricing/MainPricing";
 import MainAdditionalServices from "@/components/MainAdditionalServices/MainAdditionalServices";
 import { unstable_setRequestLocale } from "next-intl/server";
-// import {getTranslations} from 'next-intl/server';
-import { useTranslations } from "next-intl";
 import { FormComponent } from "@/components/Form/Form";
-import { routes } from "../../../routes";
+// import { routes } from "../../../routes";
 
-const locales = Object.keys(routes.localization);
+// const locales = Object.keys(routes.localization);
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
+// export function generateStaticParams() {
+//   return locales.map((locale) => ({ locale }));
+// }
 
 export default function HomePage({
   params: { locale },
 }: {
   params: { locale: string };
 }) {
-  unstable_setRequestLocale(locale ? locale : "en");
-  // const t = await getTranslations({locale});
-  const t = useTranslations();
+  unstable_setRequestLocale(locale);
+
   return (
     <>
       <section className={styles["main-page__banner-section"]}>
@@ -37,7 +34,7 @@ export default function HomePage({
         />
       </section>
       <section className={styles["main-page__advantages-section"]}>
-        <AdvantagesSpeakingClub t={t} where="main" />
+        <AdvantagesSpeakingClub where="main" />
       </section>
       <section className={styles["main-page__additional-services-section"]}>
         <AdditionalServices />

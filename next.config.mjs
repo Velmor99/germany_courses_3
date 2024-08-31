@@ -2,7 +2,7 @@ import createNextIntlPlugin from "next-intl/plugin";
 import path from "path";
 const __dirname = import.meta.dirname;
 
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

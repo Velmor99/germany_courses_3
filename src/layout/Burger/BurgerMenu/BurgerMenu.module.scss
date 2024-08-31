@@ -1,0 +1,80 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.burger-container {
+  width: $phone-width;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 0 0 20px;
+}
+
+.burger-menu {
+  padding-top: 35px;
+  &__title {
+    color: $text-black;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 8px;
+    text-transform: capitalize;
+
+    &-block {
+      display: flex;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__icon {
+    display: block;
+    padding-top: 14px;
+  }
+
+  &__list-of {
+    &-links {
+      display: grid;
+      grid-auto-flow: row;
+      gap: 20px 0;
+      margin-bottom: 40px;
+    }
+
+    &-documents {
+      display: grid;
+      grid-auto-flow: row;
+      gap: 20px 0;
+      margin-bottom: 71px;
+    }
+  }
+
+  &__socials-block {
+    width: 180px;
+    margin-bottom: 23px;
+  }
+
+  &__phone-block {
+    margin-bottom: 15px;
+  }
+
+  &__localization-block {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+
+  &__email-block {
+    margin-bottom: 20px;
+  }
+
+  //TODO remove
+  &__bottom-block {
+    height: 20px;
+  }
+
+  &__link {
+    color: $text-black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

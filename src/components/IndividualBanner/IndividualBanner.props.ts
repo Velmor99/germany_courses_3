@@ -1,9 +1,9 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export interface IndividualBannerProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  title: "main_banner_title" | "consultation_banner_title";
-  text: "consultation_banner_text" | "main_banner_text";
-  buttonText: "main_banner_button" | "consultation_banner_button";
-  where: "main" | "consultation";
+  title: string;
+  text: string;
+  buttonText: string;
+  where: string;
   // t: (s: string) => string
 }

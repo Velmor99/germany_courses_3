@@ -29,7 +29,10 @@ const BurgerMenuButton = ({ changeMenu, isShowed }: BurgerButtonMenuProps) => {
             </div>
           </div>
         </button>
-        <BurgerListDesktop isOpened={desktopNavMenu} />
+        <BurgerListDesktop
+          setMenu={setDesktopNavMenu}
+          isOpened={desktopNavMenu}
+        />
       </div>
       <div className={cn(styles["menu-button__mobile"])}>
         <button

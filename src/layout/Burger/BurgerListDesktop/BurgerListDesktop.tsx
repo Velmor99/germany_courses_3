@@ -21,7 +21,7 @@ const navLinks = [
   { link: routes.documents, name: "footer_links.preparing_documents" },
 ];
 
-const BurgerListDesktop = ({ isOpened }: BurgerMenuDesktopProps) => {
+const BurgerListDesktop = ({ isOpened, setMenu }: BurgerMenuDesktopProps) => {
   const t = useTranslations();
   const pathname = usePathname();
   const navLink = pathname.split("/");
@@ -71,6 +71,7 @@ const BurgerListDesktop = ({ isOpened }: BurgerMenuDesktopProps) => {
           animate={isOpened ? "visible" : "hidden"}
           variants={variantsChildren}
           className={styles["nav__link-item"]}
+          onClick={() => setMenu(false)}
           // transition={{duration: 0.25, linear: "ease", delay: 0.25}}
           key={index}
         >

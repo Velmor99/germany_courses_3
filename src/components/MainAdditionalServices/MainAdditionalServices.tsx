@@ -79,7 +79,7 @@ const MainAdditionalServices = () => {
               className={styles["fifth"]}
             />
           </li>
-          <li
+          {/* <li
             className={cn(
               styles["services__list-item"],
               styles["services__list-item-sixth"]
@@ -91,7 +91,7 @@ const MainAdditionalServices = () => {
               linkHref={routes.students}
               className={styles["sixth"]}
             />
-          </li>
+          </li> */}
           <li
             className={cn(
               styles["services__list-item"],
@@ -100,7 +100,7 @@ const MainAdditionalServices = () => {
           >
             <MainAdditionalServicesCard
               title="main_additional_links.prepare_to_technical_language_test"
-              price={Number(prices.prepare_to_test.group)}
+              price={Number(prices.prepare_to_test.individual)}
               linkHref={routes.prepareToTest}
               className={styles["seventh"]}
             />

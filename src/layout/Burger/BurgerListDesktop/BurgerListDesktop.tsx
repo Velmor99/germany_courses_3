@@ -1,7 +1,7 @@
 import styles from "./BurgerListDesktop.module.scss";
 import cn from "classnames";
 import { routes } from "../../../../routes";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";

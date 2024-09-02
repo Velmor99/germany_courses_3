@@ -24,7 +24,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <LayoutCmp>{children}</LayoutCmp>
+          <LayoutCmp lang={locale}>{children}</LayoutCmp>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -1,13 +1,12 @@
 {
-  "resume": "150",
-  "speaking_club": "15",
-  "documents": "600",
-  "students": "100",
+  "resume": "/150",
+  "speaking_club": "/20",
+  "documents": "N/A",
+  "students": "/600",
   "prepare_to_test": {
-    "individual": "1000",
-    "group": "800"
+    "individual": "/40 per hour" 
   },
-  "consultation": "100",
+  "consultation": "/150",
   "main": {
     "group": {
       "A1": {
@@ -29,28 +28,6 @@
         "price_per_hour": 6,
         "duration": 112,
         "discount": 160
-      }
-    },
-    "individual": {
-      "A1": {
-        "price_per_hour": 12,
-        "duration": 112,
-        "discount": 200
-      },
-      "A2": {
-        "price_per_hour": 12,
-        "duration": 112,
-        "discount": 200
-      },
-      "B1": {
-        "price_per_hour": 12,
-        "duration": 112,
-        "discount": 200
-      },
-      "B2": {
-        "price_per_hour": 12,
-        "duration": 112,
-        "discount": 200
       }
     }
   }

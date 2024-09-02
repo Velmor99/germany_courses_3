@@ -13,7 +13,7 @@ const PrepareToTestPricing = () => {
             {t("pricing_title_course")}
           </h2>
           <ul className={cn(styles["pricing__card-list"])}>
-            <li className={cn(styles["pricing__card"])}>
+            {/* <li className={cn(styles["pricing__card"])}>
               <div className={cn(styles["pricing__card-title-block"])}>
                 <span className={cn(styles["pricing__card-title"])}>
                   {t("groups_pricing")}
@@ -29,7 +29,7 @@ const PrepareToTestPricing = () => {
                   {"€" + prices.prepare_to_test.group}
                 </p>
               </div>
-            </li>
+            </li> */}
 
             <li className={cn(styles["pricing__card"])}>
               <div className={cn(styles["pricing__card-title-block"])}>
@@ -49,9 +49,9 @@ const PrepareToTestPricing = () => {
               </div>
             </li>
           </ul>
-          <span className={cn(styles["pricing__parts-text"])}>
+          {/* <span className={cn(styles["pricing__parts-text"])}>
             {t("some_parts_of_payment")}
-          </span>
+          </span> */}
         </div>
       </div>
     </div>

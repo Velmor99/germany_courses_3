@@ -2,7 +2,7 @@ import styles from "./MainPricing.module.scss";
 import cn from "classnames";
 import MainPricingTab from "./MainPricingTab/MainPricingTab";
 import {
-  createIndividualCoursesData,
+  // createIndividualCoursesData,
   createGroupCoursesData,
 } from "@/utils/createPriceDataForMain";
 import { useTranslations } from "next-intl";
@@ -20,10 +20,10 @@ const MainPricing = () => {
             title={t("groups_pricing")}
             data={createGroupCoursesData()}
           />
-          <MainPricingTab
+          {/* <MainPricingTab
             title={t("individual_pricing")}
             data={createIndividualCoursesData()}
-          />
+          /> */}
         </div>
       </div>
     </div>

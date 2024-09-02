@@ -1,3 +1,4 @@
+"use client";
 import ArrowIcon from "../../../../public/common/localization_arrow.svg";
 import BurgerIcon from "../../../../public/common/burger.svg";
 import CloseIcon from "../../../../public/common/close.svg";
@@ -11,6 +12,7 @@ import { useTranslations } from "next-intl";
 const BurgerMenuButton = ({ changeMenu, isShowed }: BurgerButtonMenuProps) => {
   const [desktopNavMenu, setDesktopNavMenu] = useState(false);
   const t = useTranslations();
+
   return (
     <div className={cn(styles["menu-button"])}>
       <div className={cn(styles["menu-button__desktop"])}>
@@ -22,7 +24,9 @@ const BurgerMenuButton = ({ changeMenu, isShowed }: BurgerButtonMenuProps) => {
             {t("service")}
           </span>
           <div className={cn(styles["menu-button__desktop-button-icon"])}>
-            <ArrowIcon />
+            <div>
+              <ArrowIcon />
+            </div>
           </div>
         </button>
         <BurgerListDesktop isOpened={desktopNavMenu} />

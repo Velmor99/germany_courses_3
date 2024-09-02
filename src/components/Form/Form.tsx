@@ -148,7 +148,11 @@ export const FormComponent = ({
               checked={checkbox}
               onChange={() => setCheckbox(!checkbox)}
             />
-            <p className={cn(styles["form__checkbox-text"])}>
+            <p
+              className={cn(styles["form__checkbox-text"], {
+                [styles["form__checkbox-text--active"]]: checkbox === true,
+              })}
+            >
               <span className={cn(styles["form__text"])}>{`${t(
                 "form.press_on_button"
               )} `}</span>

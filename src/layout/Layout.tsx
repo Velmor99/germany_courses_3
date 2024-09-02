@@ -8,7 +8,7 @@ import styles from "./Layout.module.scss";
 import BurgerMenu from "./Burger/BurgerMenu/BurgerMenu";
 import { motion } from "framer-motion";
 
-export const LayoutCmp = ({ children }: LayoutProps): JSX.Element => {
+export const LayoutCmp = ({ children, lang }: LayoutProps): JSX.Element => {
   const [showedBurgerMenu, setShowedBurgerMenu] = useState(false);
 
   const changeShowBurgerMenu = () => {
@@ -25,6 +25,7 @@ export const LayoutCmp = ({ children }: LayoutProps): JSX.Element => {
   return (
     <div className={cn(styles["layout"])}>
       <Header
+        lang={lang}
         setBurgerMenu={changeShowBurgerMenu}
         isShowedBurger={showedBurgerMenu}
       />
@@ -40,7 +41,7 @@ export const LayoutCmp = ({ children }: LayoutProps): JSX.Element => {
         }
         transition={{ duration: 0.25 }}
       >
-        <BurgerMenu setBurgerMenu={changeShowBurgerMenu} />
+        <BurgerMenu lang={lang} setBurgerMenu={changeShowBurgerMenu} />
       </motion.div>
       {children}
       <Footer />

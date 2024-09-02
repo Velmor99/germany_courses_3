@@ -12,6 +12,7 @@ export default function Header({
   classname,
   isShowedBurger,
   setBurgerMenu,
+  lang,
   ...props
 }: HeaderProps): JSX.Element {
   const t = useTranslations();
@@ -44,6 +45,7 @@ export default function Header({
 
           <div className={cn(styles["header__localization-block"])}>
             <LocalizationMenu
+              lang={lang}
               classname={cn(styles["header__localization"])}
               isInBurger={false}
             />

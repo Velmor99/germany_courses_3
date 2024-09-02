@@ -2,7 +2,7 @@ import styles from "./BurgerMenu.module.scss";
 import cn from "classnames";
 import { BurgerMenuProps } from "./BurgerMenu.props";
 import ArrowIcon from "../../../../public/common/localization_arrow.svg";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { routes } from "../../../../routes";
 import Socials from "@/components/Socials/Socials";
@@ -10,7 +10,12 @@ import PhoneContact from "@/components/PhoneContact/PhoneContact";
 import EmailContact from "@/components/EmailContact/EmailContact";
 import LocalizationMenu from "@/components/LocalizationMenu/LocalizationMenu";
 
-const BurgerMenu = ({ className, setBurgerMenu, title }: BurgerMenuProps) => {
+const BurgerMenu = ({
+  className,
+  setBurgerMenu,
+  lang,
+  title,
+}: BurgerMenuProps) => {
   const t = useTranslations();
   return (
     <nav className={cn(styles["burger-menu"], className)}>
@@ -96,21 +101,18 @@ const BurgerMenu = ({ className, setBurgerMenu, title }: BurgerMenuProps) => {
         >
           <li>
             <Link className={cn(styles["burger-menu__link"])} href="/">
-              Публичная оферта
+              {t("footer_links.public_offer")}
             </Link>
           </li>
           <li>
             <Link className={cn(styles["burger-menu__link"])} href="/">
-              Политика конфиденциальности
+              {t("footer_links.privacy_policy")}
             </Link>
           </li>
         </ul>
 
-        <div
-          onClick={() => setBurgerMenu()}
-          className={cn(styles["burger-menu__localization-block"])}
-        >
-          <LocalizationMenu isInBurger={true} />
+        <div className={cn(styles["burger-menu__localization-block"])}>
+          <LocalizationMenu lang={lang} isInBurger={true} />
         </div>
 
         <div

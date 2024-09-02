@@ -83,21 +83,53 @@
   }
 
   &__checkbox {
-    position: absolute;
-    left: 4%;
-    @media (min-width: $wide-phone-width) {
-      left: 18%;
-    }
-    @media (min-width: $tablet-width) {
-      top: 2px;
-      left: 13%;
-    }
+    display: none;
   }
 
   &__checkbox-text {
     text-align: center;
+    position: relative;
     margin-bottom: 45px;
     margin: 0 auto 45px auto;
+    display: inline;
+    width: 74%;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      background-color: $white;
+      position: absolute;
+      left: -25px;
+      top: 2px;
+    }
+
+    &--active {
+      &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: $white;
+        position: absolute;
+        left: -25px;
+        top: 2px;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: $main-green;
+        position: absolute;
+        left: -20px;
+        top: 7px;
+      }
+    }
   }
 
   &__link {

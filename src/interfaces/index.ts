@@ -13,12 +13,12 @@ export interface IAdvancedHowItWorks {
 export type IHowItWorks = IAdvancedHowItWorks | string;
 
 export interface ICoursesDataFormated {
-  level: IndividualLevelType | GroupLevelType;
+  level: GroupLevelType;
   duration: number;
   pricePerHour: number;
   allCoursePrice: number;
   priceWithDiscount: number;
 }
 
-export type IndividualLevelType = keyof typeof prices.main.individual;
+// export type IndividualLevelType = keyof typeof prices.main.individual;
 export type GroupLevelType = keyof typeof prices.main.group;

@@ -1,6 +1,7 @@
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+"use client";
 import { useState } from "react";
+import { useRouter } from "@/i18n/routing";
+import { usePathname } from "@/i18n/routing";
 import styles from "./LocalizationMenu.module.scss";
 import cn from "classnames";
 import { routes } from "../../../routes";
@@ -14,21 +15,22 @@ import { motion } from "framer-motion";
 const LocalizationMenu = ({
   classname,
   isInBurger,
+  lang,
 }: LocalizationProps): JSX.Element => {
   const [isOpenLocalizationMenu, openLocalizationMenu] = useState(false);
   const pathname = usePathname();
-  const lang = pathname.split("/");
+  const router = useRouter();
 
   const changeLocalizationMenu = (value: boolean) => {
     openLocalizationMenu(value);
   };
 
   const transformLocaleToText = () => {
-    if (lang.includes("en")) {
+    if (lang && lang === "en") {
       return routes.localization.en.title;
-    } else if (lang.includes("de")) {
+    } else if (lang && lang === "de") {
       return routes.localization.de.title;
-    } else if (lang.includes("ru")) {
+    } else if (lang && lang === "ru") {
       return routes.localization.ru.title;
     }
   };
@@ -99,17 +101,16 @@ const LocalizationMenu = ({
           animate={isOpenLocalizationMenu ? "visible" : "hidden"}
           variants={variantsChildren}
         >
-          <Link
-            replace={true}
-            href={`/en`}
+          <button
+            onClick={() => router.replace(pathname, { locale: "en" })}
             className={cn(styles["localization__link"], {
-              [styles["localization__link-active"]]:
-                lang.includes("en") && isOpenLocalizationMenu,
+              [styles["localization__link-open-active"]]:
+                lang && lang === "en" && isOpenLocalizationMenu,
               [styles["localization__link-open"]]: isOpenLocalizationMenu,
             })}
           >
             {routes.localization.en.title}
-          </Link>
+          </button>
         </motion.li>
         <motion.li
           onClick={() => changeLocalizationMenu(false)}
@@ -117,47 +118,33 @@ const LocalizationMenu = ({
           animate={isOpenLocalizationMenu ? "visible" : "hidden"}
           variants={variantsChildren}
         >
-          <Link
+          <button
             className={cn(styles["localization__link"], {
               [styles["localization__link-open-active"]]:
-                lang.includes("de") && isOpenLocalizationMenu,
+                lang && lang === "de" && isOpenLocalizationMenu,
               [styles["localization__link-open"]]: isOpenLocalizationMenu,
             })}
-            replace={true}
-            href={`/de`}
+            onClick={() => router.replace(pathname, { locale: "de" })}
           >
             {routes.localization.de.title}
-          </Link>
+          </button>
         </motion.li>
-        {/* <li onClick={() => changeLocalizationMenu(false)} className={cn(styles["localization__list-item"])}>
-            <Link
-              className={cn(styles["localization__link"], {
-                [styles["localization__link-active"]]: router.locale === "ua"
-              })}
-              replace={true}
-              href={pathname}
-              locale="ua"
-            >
-              {routes.localization.ua.title}
-            </Link>
-          </li> */}
         <motion.li
           onClick={() => changeLocalizationMenu(false)}
           className={cn(styles["localization__list-item"])}
           animate={isOpenLocalizationMenu ? "visible" : "hidden"}
           variants={variantsChildren}
         >
-          <Link
+          <button
             className={cn(styles["localization__link"], {
               [styles["localization__link-open-active"]]:
-                lang.includes("ru") && isOpenLocalizationMenu,
+                lang && lang === "ru" && isOpenLocalizationMenu,
               [styles["localization__link-open"]]: isOpenLocalizationMenu,
             })}
-            replace={true}
-            href={`/ru`}
+            onClick={() => router.replace(pathname, { locale: "ru" })}
           >
             {routes.localization.ru.title}
-          </Link>
+          </button>
         </motion.li>
       </motion.ul>
     </div>

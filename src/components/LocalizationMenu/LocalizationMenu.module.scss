@@ -6,6 +6,8 @@
   &__current,
   &__link {
     color: $text-black;
+    border: none;
+    background: transparent;
     text-transform: capitalize;
     font-size: 24px;
     font-style: normal;
@@ -77,7 +79,7 @@
     height: 0;
     // transition: height linear .25s;
     @media (min-width: $desktop-width) {
-      top: 71px;
+      top: 67px;
     }
     &-burger {
       top: 46px;

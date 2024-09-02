@@ -4,4 +4,5 @@ export interface HeaderProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivEle
   classname?: string;
   isShowedBurger: boolean;
   setBurgerMenu: () => void;
+  lang: string;
 }

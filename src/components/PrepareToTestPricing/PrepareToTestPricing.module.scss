@@ -70,8 +70,8 @@
   &__card {
     position: relative;
     &-list {
-      display: grid;
-      grid-auto-flow: row;
+      // display: grid;
+      // grid-auto-flow: row;
       gap: 73px 0;
       margin-bottom: 50px;
       @media (min-width: $wide-phone-width) {
@@ -88,21 +88,21 @@
       @media (min-width: $desktop-width) {
         grid-template-columns: 489px 489px;
       }
-      &::before {
-        display: none;
-        @media (min-width: $unfolded-tablet-width) {
-          height: 68%;
-          width: 1px;
-          background-color: $main-green;
-          content: "";
-          display: block;
-          position: absolute;
-          z-index: 20;
-          transform: translate(-50%);
-          left: 50%;
-          top: 37px;
-        }
-      }
+      // &::before {
+      //   display: none;
+      //   @media (min-width: $unfolded-tablet-width) {
+      //     height: 68%;
+      //     width: 1px;
+      //     background-color: $main-green;
+      //     content: "";
+      //     display: block;
+      //     position: absolute;
+      //     z-index: 20;
+      //     transform: translate(-50%);
+      //     left: 50%;
+      //     top: 37px;
+      //   }
+      // }
     }
 
     &-title-block {
@@ -159,17 +159,17 @@
         padding: 79px 0;
         width: 490px;
       }
-      &-first {
-        @media (min-width: $unfolded-tablet-width) {
-          border-radius: 25px 0px 0px 25px;
-          box-shadow: -50px 4px 50px 0px rgba(14, 62, 39, 0.1),
-            -50px 0px 25px 0px rgba(14, 62, 39, 0.05);
-          z-index: 1;
-        }
-      }
+      // &-first {
+      //   @media (min-width: $unfolded-tablet-width) {
+      //     border-radius: 25px 0px 0px 25px;
+      //     box-shadow: -50px 4px 50px 0px rgba(14, 62, 39, 0.1),
+      //       -50px 0px 25px 0px rgba(14, 62, 39, 0.05);
+      //     z-index: 1;
+      //   }
+      // }
       &-second {
         @media (min-width: $unfolded-tablet-width) {
-          border-radius: 0px 25px 0px 0px;
+          border-radius: 25px 25px 0px 25px;
           box-shadow: 50px 4px 50px 0px rgba(14, 62, 39, 0.1),
             50px 0px 25px 0px rgba(14, 62, 39, 0.05);
           z-index: 4;

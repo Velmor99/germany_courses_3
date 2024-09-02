@@ -5,12 +5,14 @@ import ButtonComponent from "@/components/Button/Button";
 import { useTranslations } from "next-intl";
 import { MainPricingTabProps } from "./MainPricingTab.props";
 import { useEffect, useState } from "react";
-import { GroupLevelType, IndividualLevelType } from "@/interfaces";
+import { GroupLevelType } from "@/interfaces";
 import { motion } from "framer-motion";
 
 const MainPricingTab = ({ title, data }: MainPricingTabProps) => {
   const t = useTranslations();
-  const [currentLevel, setCurrentLevel] = useState("");
+  const [currentLevel, setCurrentLevel] = useState<string | number | symbol>(
+    ""
+  );
   const [currentDuration, setCurrentDuration] = useState(0);
   const [currentPerHour, setCurrentPerHour] = useState(0);
   const [currentCoursePrice, setCurrentCoursePrice] = useState(0);
@@ -24,7 +26,7 @@ const MainPricingTab = ({ title, data }: MainPricingTabProps) => {
     setCurrentPriceWithDiscount(data[0].priceWithDiscount);
   }, []);
 
-  const changeLevel = (level: IndividualLevelType | GroupLevelType) => {
+  const changeLevel = (level: GroupLevelType) => {
     const priceItem = data.find((item) => item.level === level);
     if (priceItem) {
       setCurrentDuration(priceItem.duration);

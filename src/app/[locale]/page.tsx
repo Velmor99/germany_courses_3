@@ -8,6 +8,7 @@ import MainPricing from "@/components/MainPricing/MainPricing";
 import MainAdditionalServices from "@/components/MainAdditionalServices/MainAdditionalServices";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { FormComponent } from "@/components/Form/Form";
+import cn from "classnames";
 // import { routes } from "../../../routes";
 
 // const locales = Object.keys(routes.localization);
@@ -39,7 +40,13 @@ export default function HomePage({
       <section className={styles["main-page__additional-services-section"]}>
         <AdditionalServices />
       </section>
-      <section className={styles["main-page__green-content-section"]}>
+      <section
+        className={cn(styles["main-page__green-content-section"], {
+          [styles["main-page__green-content-section--english"]]:
+            locale === "en",
+          [styles["main-page__green-content-section--deutch"]]: locale === "de",
+        })}
+      >
         <div className={styles["main-page__green-content-block"]}>
           <GreenContentBlock
             revers={true}

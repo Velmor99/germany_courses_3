@@ -8,6 +8,7 @@ import prices from "@/../public/prices.json";
 import { FormComponent } from "@/components/Form/Form";
 import { unstable_setRequestLocale } from "next-intl/server";
 import FAQ from "@/components/FAQ/Faq";
+import cn from "classnames";
 // import { routes } from "../../../../routes";
 
 // const locales = Object.keys(routes.localization);
@@ -28,7 +29,12 @@ export default function DocumentsPage({
       <section className={styles["documents__banner-section"]}>
         <Banner greenContent={false} bannerName="documents_banner" />
       </section>
-      <section className={styles["documents__green-content-section"]}>
+      <section
+        className={cn(styles["documents__green-content-section"], {
+          [styles["documents__green-content-section--english"]]:
+            locale === "en",
+        })}
+      >
         <GreenContentBlock
           content={"documents_green_content"}
           revers={true}

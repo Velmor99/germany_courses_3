@@ -70,25 +70,57 @@
     margin-bottom: 62px;
     @media (min-width: $wide-phone-width) {
       background-image: url("../../public/backgrounds/green-text/main/wide-phone.png");
-      background-position: bottom 650px center;
+      background-position: bottom 590px center;
       margin-bottom: 80px;
     }
     @media (min-width: $tablet-width) {
       background-image: url("../../public/backgrounds/green-text/main/tablet.png");
-      background-position: bottom 700px center;
+      background-position: bottom 660px center;
       background-size: 100% 679px;
     }
     @media (min-width: $unfolded-tablet-width) {
       background-image: url("../../public/backgrounds/green-text/main/unfolded-tablet.png");
-      background-position: bottom 760px center;
+      background-position: bottom 680px center;
       background-size: 100% 693px;
       margin-bottom: 100px;
     }
     @media (min-width: $desktop-width) {
       background-image: url("../../public/backgrounds/green-text/main/desktop.png");
-      background-position: bottom 620px center;
+      background-position: bottom 600px center;
       background-size: 100%;
       margin-bottom: 148px;
+    }
+
+    &--english {
+      background-position: bottom 390px center;
+      @media (min-width: $wide-phone-width) {
+        background-position: bottom 520px center;
+      }
+      @media (min-width: $tablet-width) {
+        background-position: bottom 600px center;
+      }
+      @media (min-width: $unfolded-tablet-width) {
+        background-position: bottom 610px center;
+      }
+      @media (min-width: $desktop-width) {
+        background-position: bottom 500px center;
+      }
+    }
+
+    &--deutch {
+      background-position: bottom 425px center;
+      @media (min-width: $wide-phone-width) {
+        background-position: bottom 570px center;
+      }
+      @media (min-width: $tablet-width) {
+        background-position: bottom 610px center;
+      }
+      @media (min-width: $unfolded-tablet-width) {
+        background-position: bottom 640px center;
+      }
+      @media (min-width: $desktop-width) {
+        background-position: bottom 540px center;
+      }
     }
   }
 

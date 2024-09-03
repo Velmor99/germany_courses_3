@@ -1,9 +1,12 @@
+"use client";
 import cn from "classnames";
 import styles from "./DeutchEducation.module.scss";
 import TextComponent from "../Text/Text";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const DeutchEducation = () => {
+  const pathname = usePathname();
   const t = useTranslations();
   return (
     <div className={cn(styles["deutch"])}>
@@ -17,7 +20,14 @@ const DeutchEducation = () => {
               <p className={cn(styles["deutch__level-text"])}>A1</p>
             </div>
             <div className={cn(styles["deutch__from-block"])}>
-              <p className={cn(styles["deutch__destination-text"])}>
+              <p
+                className={cn(styles["deutch__destination-text"], {
+                  [styles["deutch__destination-text--english"]]:
+                    pathname.includes("en"),
+                  [styles["deutch__destination-text--deutch"]]:
+                    pathname.includes("de"),
+                })}
+              >
                 {t("deutch_education_from")}
               </p>
             </div>
@@ -28,7 +38,14 @@ const DeutchEducation = () => {
               <p className={cn(styles["deutch__level-text"])}>B2</p>
             </div>
             <div className={cn(styles["deutch__to-block"])}>
-              <p className={cn(styles["deutch__destination-text"])}>
+              <p
+                className={cn(styles["deutch__destination-text"], {
+                  [styles["deutch__destination-text--english"]]:
+                    pathname.includes("en"),
+                  [styles["deutch__destination-text--deutch"]]:
+                    pathname.includes("de"),
+                })}
+              >
                 {t("deutch_education_to")}
               </p>
             </div>

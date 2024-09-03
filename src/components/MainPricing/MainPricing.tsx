@@ -2,8 +2,8 @@ import styles from "./MainPricing.module.scss";
 import cn from "classnames";
 import MainPricingTab from "./MainPricingTab/MainPricingTab";
 import {
-  // createIndividualCoursesData,
-  createGroupCoursesData,
+  createIndividualCoursesData,
+  // createGroupCoursesData,
 } from "@/utils/createPriceDataForMain";
 import { useTranslations } from "next-intl";
 
@@ -17,8 +17,8 @@ const MainPricing = () => {
         </h2>
         <div className={cn(styles["main-pricing__tab-block"])}>
           <MainPricingTab
-            title={t("groups_pricing")}
-            data={createGroupCoursesData()}
+            title={t("individual_pricing")}
+            data={createIndividualCoursesData()}
           />
           {/* <MainPricingTab
             title={t("individual_pricing")}

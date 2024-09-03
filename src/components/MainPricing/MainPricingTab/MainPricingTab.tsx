@@ -5,7 +5,7 @@ import ButtonComponent from "@/components/Button/Button";
 import { useTranslations } from "next-intl";
 import { MainPricingTabProps } from "./MainPricingTab.props";
 import { useEffect, useState } from "react";
-import { GroupLevelType } from "@/interfaces";
+import { IndividualLevelType } from "@/interfaces";
 import { motion } from "framer-motion";
 
 const MainPricingTab = ({ title, data }: MainPricingTabProps) => {
@@ -26,7 +26,7 @@ const MainPricingTab = ({ title, data }: MainPricingTabProps) => {
     setCurrentPriceWithDiscount(data[0].priceWithDiscount);
   }, []);
 
-  const changeLevel = (level: GroupLevelType) => {
+  const changeLevel = (level: IndividualLevelType) => {
     const priceItem = data.find((item) => item.level === level);
     if (priceItem) {
       setCurrentDuration(priceItem.duration);

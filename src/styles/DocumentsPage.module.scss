@@ -56,6 +56,12 @@
       padding-bottom: 70px;
       margin-bottom: 46px;
     }
+
+    &--english {
+      @media (min-width: $desktop-width) {
+        background-position: top -60px center;
+      }
+    }
   }
 
   &__advantages-section {

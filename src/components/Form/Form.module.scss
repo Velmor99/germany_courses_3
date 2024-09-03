@@ -87,6 +87,7 @@
   }
 
   &__checkbox-text {
+    cursor: pointer;
     text-align: center;
     position: relative;
     margin-bottom: 45px;
@@ -96,6 +97,7 @@
 
     &::before {
       content: "";
+      cursor: pointer;
       display: block;
       width: 20px;
       height: 20px;
@@ -109,6 +111,7 @@
     &--active {
       &::before {
         content: "";
+        cursor: pointer;
         display: block;
         width: 20px;
         height: 20px;
@@ -120,17 +123,51 @@
       }
       &::after {
         content: "";
+        cursor: pointer;
         display: block;
-        width: 10px;
-        height: 10px;
+        width: 13px;
+        height: 13px;
         border-radius: 100%;
         background-color: $main-green;
         position: absolute;
-        left: -20px;
-        top: 7px;
+        left: -5.2%;
+        top: 6.5px;
+      }
+    }
+
+    &--white {
+      &::before {
+        content: "";
+        cursor: pointer;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $main-green;
+        border-radius: 100%;
+        background-color: $white;
+        position: absolute;
+        left: -25px;
+        top: 2px;
+      }
+    }
+
+    &--white-active {
+      &::after {
+        content: "";
+        cursor: pointer;
+        display: block;
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        background-color: $main-green;
+        position: absolute;
+        left: -21px;
+        top: 6px;
       }
     }
   }
+
+  
 
   &__link {
     font-size: 15px;

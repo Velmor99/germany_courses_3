@@ -151,6 +151,9 @@ export const FormComponent = ({
             <p
               className={cn(styles["form__checkbox-text"], {
                 [styles["form__checkbox-text--active"]]: checkbox === true,
+                [styles["form__checkbox-text--white"]]: styleType === "white",
+                [styles["form__checkbox-text--white-active"]]:
+                  styleType === "white" && checkbox === true,
               })}
             >
               <span className={cn(styles["form__text"])}>{`${t(

@@ -104,8 +104,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 10px;
     @media (min-width: $tablet-width) {
-      font-size: 30px;
+      font-size: 24px;
+      margin-bottom: 16px;
     }
   }
 
@@ -116,10 +118,10 @@
     font-weight: 400;
     line-height: normal;
     @media (min-width: $tablet-width) {
-      font-size: 30px;
+      font-size: 20px;
     }
     @media (min-width: $desktop-width) {
-      line-height: 120%;
+      line-height: 130%;
     }
   }
 }

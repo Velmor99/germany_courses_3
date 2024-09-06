@@ -57,7 +57,15 @@ export default function HomePage({
               colorText: "green",
             }}
             optionsForTextBelowPhoto={{
-              targets: ["не ограничиваются", "учебниками"],
+              targets: [
+                "не ограничиваются",
+                "учебниками",
+                "Lehrbücher",
+                "Auswendiglernen.",
+                "textbooks",
+                "rote",
+                "learning.",
+              ],
               fontWeight: 700,
               colorText: "white",
             }}

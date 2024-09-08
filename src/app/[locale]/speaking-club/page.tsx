@@ -8,13 +8,6 @@ import Pricing from "@/components/Pricing/Pricing";
 import styles from "@/styles/SpeakingClubPage.module.scss";
 import { unstable_setRequestLocale } from "next-intl/server";
 import prices from "@/../public/prices.json";
-// import { routes } from "../../../../routes";
-
-// const locales = Object.keys(routes.localization);
-
-// export function generateStaticParams() {
-//   return locales.map((locale) => ({ locale }));
-// }
 
 export default function SpeakingClubPage({
   params: { locale },

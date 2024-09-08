@@ -9,13 +9,6 @@ import MainAdditionalServices from "@/components/MainAdditionalServices/MainAddi
 import { unstable_setRequestLocale } from "next-intl/server";
 import { FormComponent } from "@/components/Form/Form";
 import cn from "classnames";
-// import { routes } from "../../../routes";
-
-// const locales = Object.keys(routes.localization);
-
-// export function generateStaticParams() {
-//   return locales.map((locale) => ({ locale }));
-// }
 
 export default function HomePage({
   params: { locale },

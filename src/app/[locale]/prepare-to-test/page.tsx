@@ -7,13 +7,6 @@ import OurAdvantages from "@/components/OurAdvantages/OurAdvantages";
 import PrepareToTestPricing from "@/components/PrepareToTestPricing/PrepareToTestPricing";
 import { unstable_setRequestLocale } from "next-intl/server";
 import styles from "@/styles/PrepareToTestPage.module.scss";
-// import { routes } from "../../../../routes";
-
-// const locales = Object.keys(routes.localization);
-
-// export function generateStaticParams() {
-//   return locales.map((locale) => ({ locale }));
-// }
 
 export default function PrepareToTestPage({
   params: { locale },

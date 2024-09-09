@@ -6,7 +6,6 @@ import cn from "classnames";
 import { useEffect, useState } from "react";
 import { CountrySelectProps } from "./CountrySelect.props";
 import { filterCountriesFlag } from "@/utils/filterListOfCountriesFlag";
-// import { CountryCode } from "libphonenumber-js";
 
 const CountrySelect = ({
   className,

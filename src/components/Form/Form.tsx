@@ -20,16 +20,13 @@ import { validatePhoneNumber } from "@/utils/validatePhoneNumber";
 import { CountryCode } from "libphonenumber-js";
 import { yupResolver } from "../../../node_modules/@hookform/resolvers/yup";
 import { schema } from "@/utils/yupValidationForm";
-// import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 import { sendMail } from "../../service/mailgun";
 
-// import PhoneInput from "react-phone-number-input";
 import FormWe from "./FormWe/FormWe";
 import SentFormNotification from "../SentFormNotification/SentFormNotification";
 import { MessagesSendResult } from "mailgun.js";
 import { motion } from "framer-motion";
-// import mailer from '../../utils/nodemailer';
 
 export const FormComponent = ({
   title,

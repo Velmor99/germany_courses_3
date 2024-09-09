@@ -17,8 +17,6 @@ export default async function LocaleLayout({
 }) {
   unstable_setRequestLocale(locale);
   const messages = await getMessages();
-  // Providing all messages to the client
-  // side is the easiest way to get started
 
   return (
     <html lang={locale}>

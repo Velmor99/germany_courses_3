@@ -12,5 +12,4 @@ export interface ContentWithPhotoProps
   partTwo: "resume_content_with_photo_part_two";
   partOneOptions: optionsForText;
   partTwoOptions: optionsForText;
-  // t: (s: string) => string;
 }

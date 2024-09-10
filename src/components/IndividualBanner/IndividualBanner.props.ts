@@ -5,5 +5,4 @@ export interface IndividualBannerProps extends DetailedHTMLProps<HTMLAttributes<
   text: string;
   buttonText: string;
   where: string;
-  // t: (s: string) => string
 }

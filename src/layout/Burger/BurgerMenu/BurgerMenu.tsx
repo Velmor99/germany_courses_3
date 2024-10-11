@@ -100,14 +100,14 @@ const BurgerMenu = ({
           className={cn(styles["burger-menu__list-of-documents"])}
         >
           <li>
-            <Link className={cn(styles["burger-menu__link"])} href="/">
+            <a className={cn(styles["burger-menu__link"])} href={routes.publicOffer} target="_blank">
               {t("footer_links.public_offer")}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className={cn(styles["burger-menu__link"])} href="/">
+            <a className={cn(styles["burger-menu__link"])} href={routes.privacyPolicy} target="_blank">
               {t("footer_links.privacy_policy")}
-            </Link>
+            </a>
           </li>
         </ul>
 

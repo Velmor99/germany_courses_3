@@ -113,9 +113,9 @@
   &__thing {
     position: absolute;
     top: 4px;
-    right: -6.5%;
+    right: -12.5%;
     @media (min-width: $wide-phone-width) {
-      right: -10%;
+      right: -17%;
     }
   }
 
@@ -127,24 +127,44 @@
       box-shadow: $header-shadow;
       padding: 15px 30px;
       transform: translate(-50%, -50%);
-      bottom: -30%;
+      bottom: -28%;
       left: 50%;
       z-index: 8;
       width: 285px;
       @media (min-width: $tablet-width) {
         width: 548px;
-        bottom: -28%;
+        bottom: -32%;
       }
       @media (min-width: $desktop-width) {
-        bottom: -50%;
+        bottom: -58%;
         left: 36%;
         border-radius: 15px 15px 0px 15px;
+      }
+      
+      &-deu {
+        bottom: -40%;
+        
+        @media (min-width: $wide-phone-width) {
+          bottom: -34%
+        }
+
+        @media (min-width: $tablet-width) {
+          bottom: -25%
+        }
+
+        @media (min-width: $unfolded-tablet-width) {
+          bottom: -30%
+        }
+
+        @media (min-width: $desktop-width) {
+          bottom: -54%
+        }
       }
     }
     &-text {
       color: $main-green;
       text-align: center;
-      font-size: 30px;
+      font-size: 24px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;

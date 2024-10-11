@@ -1,3 +1,4 @@
+'use client'
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import styles from "./Footer.module.scss";
@@ -8,10 +9,14 @@ import LogoComponent from "@/components/Logo/Logo";
 import { routes } from "../../../routes";
 import PhoneContact from "@/components/PhoneContact/PhoneContact";
 import EmailContact from "@/components/EmailContact/EmailContact";
+import {usePathname} from "next/navigation"
 
 const Footer = (): JSX.Element => {
   const t = useTranslations();
   const date = new Date();
+  const pathname = usePathname()
+  const lang = pathname.slice(1, 3)
+
   return (
     <footer className={cn(styles["footer"])}>
       <div className={cn(styles["container"])}>
@@ -23,7 +28,7 @@ const Footer = (): JSX.Element => {
                 styles["footer__list-item-first"]
               )}
             >
-              <Link className={cn(styles["footer__link-text"])} href={"/"}>
+              <Link className={cn(styles["footer__link-text"])} href={`${lang}/`}>
                 {t("footer_links.language_school")}
               </Link>
             </li>
@@ -35,7 +40,7 @@ const Footer = (): JSX.Element => {
             >
               <Link
                 className={cn(styles["footer__link-text"])}
-                href={routes.resume}
+                href={`${lang}${routes.resume}`}
               >
                 {t("footer_links.cv_writing")}
               </Link>
@@ -48,7 +53,7 @@ const Footer = (): JSX.Element => {
             >
               <Link
                 className={cn(styles["footer__link-text"])}
-                href={routes.prepareToTest}
+                href={`${lang}${routes.prepareToTest}`}
               >
                 {t("footer_links.prepare_to_technical_language_test")}
               </Link>
@@ -61,7 +66,7 @@ const Footer = (): JSX.Element => {
             >
               <Link
                 className={cn(styles["footer__link-text"])}
-                href={routes.students}
+                href={`${lang}${routes.students}`}
               >
                 {t("footer_links.admission_to_universities")}
               </Link>
@@ -74,7 +79,7 @@ const Footer = (): JSX.Element => {
             >
               <Link
                 className={cn(styles["footer__link-text"])}
-                href={routes.freeCourse}
+                href={`${lang}${routes.freeCourse}`}
               >
                 {t("footer_links.free_information_course")}
               </Link>
@@ -88,7 +93,7 @@ const Footer = (): JSX.Element => {
             >
               <Link
                 className={cn(styles["footer__link-text"])}
-                href={routes.consultation}
+                href={`${lang}${routes.consultation}`}
               >
                 {t("footer_links.personal_consultation")}
               </Link>
@@ -101,7 +106,7 @@ const Footer = (): JSX.Element => {
             >
               <Link
                 className={cn(styles["footer__link-text"])}
-                href={routes.consultation}
+                href={`${lang}${routes.consultation}`}
               >
                 {t("footer_links.personal_consultation_long")}
               </Link>
@@ -115,7 +120,7 @@ const Footer = (): JSX.Element => {
             >
               <Link
                 className={cn(styles["footer__link-text"])}
-                href={routes.speakingClub}
+                href={`${lang}${routes.speakingClub}`}
               >
                 {t("footer_links.conversational_club")}
               </Link>
@@ -128,7 +133,7 @@ const Footer = (): JSX.Element => {
             >
               <Link
                 className={cn(styles["footer__link-text"])}
-                href={routes.documents}
+                href={`${lang}${routes.documents}`}
               >
                 {t("footer_links.preparing_documents")}
               </Link>
@@ -140,12 +145,13 @@ const Footer = (): JSX.Element => {
                 styles["footer__list-item-nineth"]
               )}
             >
-              <Link
+              <a
                 className={cn(styles["footer__link-text"])}
                 href={routes.publicOffer}
+                target="_blank"
               >
                 {t("footer_links.public_offer")}
-              </Link>
+              </a>
             </li>
             <li
               className={cn(
@@ -153,12 +159,13 @@ const Footer = (): JSX.Element => {
                 styles["footer__list-item-tenth"]
               )}
             >
-              <Link
+              <a
                 className={cn(styles["footer__link-text"])}
                 href={routes.privacyPolicy}
+                target="_blank"
               >
                 {t("footer_links.privacy_policy")}
-              </Link>
+              </a>
             </li>
           </ul>
 
@@ -194,7 +201,10 @@ const Footer = (): JSX.Element => {
             <PhoneContact styleType="white" />
           </div>
 
-          <div className={cn(styles["footer__green-line"])}></div>
+          <div className={cn(styles["footer__green-line"], {
+            [styles["footer__green-line-deu"]]: pathname.includes("de"),
+            [styles["footer__green-line-ru"]]: pathname.includes("ru")
+          })}></div>
         </div>
       </div>
     </footer>

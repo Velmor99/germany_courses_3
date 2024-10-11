@@ -2,7 +2,7 @@
   "payment_button": "zahlen",
   "service": "Leistungen",
   "footer_links": {
-    "cv_writing": "Lebenslauf schreiben",
+    "cv_writing": "Erstellung einer Bewerbungsmappe",
     "admission_to_universities": "Dienstleistungen für Hochschulzulassungen",
     "prepare_to_technical_language_test": "Vorbereitung auf die Fachsprachprüfung",
     "conversational_club": "Speaking-Club für Mediziner",
@@ -52,7 +52,7 @@
     },
     "1": {
       "title": "Welche Sprachen unterstützen Sie bei der Erstellung der Lebensläufe?",
-      "content": "Wir erstellen Lebensläufe in mehreren Sprachen, darunter Englisch, Deutsch und Russisch. Wir stellen sicher, dass Ihr Lebenslauf ein hohes Sprachkenntnisniveau aufweist."
+      "content": "Wir erstellen Lebensläufe in mehreren Sprachen, darunter Englisch und Deutsch. Wir stellen sicher, dass Ihr Lebenslauf ein hohes Sprachkenntnisniveau aufweist."
     },
     "2": {
       "title": "Wie lange dauert es, einen Lebenslauf zu erstellen?",
@@ -66,7 +66,7 @@
   "FAQ_speaking_club": {
     "0": {
       "title": "Welches Sprachniveau brauche ich, um am Sprachclub teilzunehmen?",
-      "content": "Sie können an unserem Sprachclub ab dem Niveau A2 teilnehmen. Die Gruppen sind in die Niveaus A2–B1 und B1–B2 unterteilt."
+      "content": "Sie können an unserem Sprachclub ab dem Niveau A2 teilnehmen."
     },
     "1": {
       "title": "Welche Themen werden im Sprachclub besprochen?",
@@ -162,12 +162,12 @@
     "2": "Der Manager schickt Ihnen einen Fragebogen und gute Fotobeispiele für Ihren Lebenslauf.",
     "3": "Sie senden den ausgefüllten Fragebogen und qualitativ hochwertige Fotos an den Manager.",
     "4": "Sie bezahlen die Dienstleistung über die zentrale Schaltfläche ‚Bezahlen‘ oben auf der Website.",
-    "5": "Wir schreiben Ihren Lebenslauf kompetent in der entsprechenden Fremdsprache.",
+    "5": "Wir erstellen Lebensläufe in einer Fremdsprache nach modernen Anforderungen und berücksichtigen auch die Einreichung von Lebensläufen im Ausland.",
     "6": "Wir schicken Ihnen den fertigen Lebenslauf per E-Mail oder auf einem anderen von Ihnen bevorzugten Weg."
   },
   "speaking_club_how_it_works": {
-    "1": "Die Anmeldung erfolgt einmal pro Monat für einen Monat im Voraus, je nach Teilnehmerzahl können die Gruppen auch häufiger stattfinden.",
-    "2": "Die Clubtreffen finden einmal wöchentlich für 1,5 Stunden in Minigruppen von 4–6 Personen statt.",
+    "1": "Das Konversationstraining findet zu zweit mit einem Lehrer für 35 Minuten statt. Vor dem Unterricht erhalten Sie einen Artikel zum Lesen und eine Liste mit Vokabeln, die als Orientierung für die Diskussion dienen.",
+    "2": "Der Unterricht findet 2-mal pro Woche statt und Sie können im Voraus Diskussionsthemen vorschlagen.",
     "3": "Die Teilnehmer erhalten Vokabellisten, Lehrbuchempfehlungen und eine Menge positiver Erfahrungen durch soziale Kontakte."
   },
   "documents_how_it_works": {
@@ -247,12 +247,12 @@
     }
   },
   "main_banner": {
-    "strong": "Internationale Sprachschule",
+    "strong": "Internationale Sprachschule für Fachärzte",
     "text": "mit Videokursen und Sprachclubs",
     "button": "Beitreten"
   },
   "resume_banner": {
-    "strong": "Lebenslauf schreiben \n",
+    "strong": "Erstellung einer Bewerbungsmappe \n",
     "text": "ist Ihr erster Schritt für eine erfolgreiche Karriere im Ausland!",
     "green_text": "Wir helfen Ihnen, diesen Schritt selbstbewusst zu gehen!",
     "button": "Beitreten"
@@ -264,7 +264,7 @@
   },
   "documents_banner": {
     "strong": "Vorbereitung der Dokumente\n für die Arbeitsmigration\n",
-    "text": "Ihr sorgloser Weg zum Erfolg mit unseren Managern!",
+    "text": "Mit verlässlicher Unterstützung stressfrei zum Erfolg!",
     "button": "Anmelden"
   },
   "students_banner": {
@@ -301,8 +301,8 @@
   "deutch_education_to": "bis",
   "deutch_education_part_one": "Welingua bietet Vorbereitungskurse für internationale B1- und B2-Prüfungen an. Diese Sprachkurse dienen der Vorbereitung auf die Arbeitsmigration sowie der allgemeinen Sprachschulung.",
   "deutch_education_part_two": "Der Unterricht wird anhand eines speziellen Programms im Online-Format mit ausgebildeten Lehrern durchgeführt. Der Unterricht kann in Gruppen, einzeln und in Minigruppen 1+1 (zwei Personen) stattfinden. Die Stundenpläne für den Einzel- und Minigruppenunterricht werden nach Wunsch der Schüler erstellt.",
-  "main_banner_title": "Internationale Sprachschule",
-  "main_banner_text": "mit Video-Kursen und Konversationsklubs.",
+  "main_banner_title": "Internationale Sprachschule für Fachärzte",
+  "main_banner_text": "mit Video-Kursen und Konversationsklubs für Ärzte.",
   "consultation_banner_title": "Persönliche Beratung",
   "consultation_banner_text": "Antworten auf alle Fragen bei Relocation",
   "main_banner_button": "Beitreten",

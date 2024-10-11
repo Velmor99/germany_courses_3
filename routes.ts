@@ -1,3 +1,5 @@
+import path from 'path';
+
 export const routes = {
   main: "/",
   resume: "/resume",
@@ -12,7 +14,7 @@ export const routes = {
     // ua: {route: "ua", title: "українська"},
     ru: { route: "ru", title: "русский" },
   },
-  publicOffer: "/public-offer",
+  publicOffer: "/offer-agreement",
   privacyPolicy: "/privacy-policy",
   freeCourse: "/",
   languageSchool: "/",

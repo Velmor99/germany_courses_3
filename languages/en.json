@@ -5,7 +5,7 @@
     "cv_writing": "Writing CV",
     "admission_to_universities": "University Admissions services",
     "prepare_to_technical_language_test": "Preparation for Fachsprachprüfung",
-    "conversational_club": "Conversational Club for Medicals",
+    "conversational_club": "Conversational Training for Medicals",
     "preparing_documents": "Preparation of documents for migration",
     "language_school": "Language School",
     "public_offer": "Public offer",
@@ -17,7 +17,7 @@
   "main_additional_links": {
     "cv_writing": "Writing\n CV",
     "free_information_course": "Information course\n on labor migration to Germany",
-    "conversational_club": "Conversational Club\n for Medicals",
+    "conversational_club": "Conversational Training\n for Medicals",
     "preparing_documents": "Preparation of\n documents for migration",
     "personal_consultation": "Personal consultation\n in the field of labor migration",
     "admission_to_universities": "University\n Admissions services",
@@ -52,7 +52,7 @@
     },
     "1": {
       "title": "What languages do you support for resume writing?",
-      "content": "We support multiple languages including English, German and Russian. We ensure a high level of language literacy in your resume."
+      "content": "We support multiple languages including English and German. We ensure a high level of language literacy in your resume."
     },
     "2": {
       "title": "How long does it take to create a resume?",
@@ -66,7 +66,7 @@
   "FAQ_speaking_club": {
     "0": {
       "title": "What language level do I need to participate in the Speaking Club?",
-      "content": "You can participate in our language club from level A2. The groups are divided into A2–B1 and B1–B2 levels."
+      "content": "You can participate in our language club from level A2."
     },
     "1": {
       "title": "What topics are discussed in the Speaking Club?",
@@ -162,12 +162,12 @@
     "2": "The manager sends you a questionnaire and examples of good photos for your CV",
     "3": "You send the completed questionnaire and high-quality photos to the manager",
     "4": "You pay for the service using the central ‘Pay’ button at the top of the site",
-    "5": "We write your CV in a competent foreign language",
+    "5": "We prepare CVs in a foreign language in accordance with modern requirements, as well as taking into account the submission of CVs abroad.",
     "6": "We send the finished CV to your mail or any other convenient way for you"
   },
   "speaking_club_how_it_works": {
-    "1": "Signing up for classes is once a month for a month in advance, depending on the number of people interested, groups can be held more often.",
-    "2": "Club sessions are held once a week for 1.5 hours in mini groups of 4–6 people.",
+    "1": "Conversational training takes place in pairs with a teacher for 35 minutes. Before the lesson, you receive an article to read and a list of vocabulary to help you conduct the discussion.",
+    "2": "Classes are held twice a week, and you can suggest topics for discussion in advance.",
     "3": "Participants receive vocabulary lists, textbook recommendations and a lot of positive emotions from communication."
   },
   "documents_how_it_works": {
@@ -247,7 +247,7 @@
     }
   },
   "main_banner": {
-    "strong": "International Language School",
+    "strong": "International Language School for Medical Specialists",
     "text": "with video courses and speaking clubs",
     "button": "Join"
   },
@@ -264,7 +264,7 @@
   },
   "documents_banner": {
     "strong": "Preparation of documents\n for labor migration\n",
-    "text": "Carefree path to success with our managers!",
+    "text": "A carefree path to success with reliable support!",
     "button": "Sign up"
   },
   "students_banner": {
@@ -301,8 +301,8 @@
   "deutch_education_to": "to",
   "deutch_education_part_one": "Welingua offers preparation courses for B1 and B2 international exams. These language courses are aimed at preparing candidates for labor migration as well as general language training.",
   "deutch_education_part_two": "Classes are conducted according to a special program in an online format with trained teachers. It is possible to study in groups, individually, and in mini-groups 1+1 (two people). Schedules of individual and mini-group lessons are made at the request of students.",
-  "main_banner_title": "International language school.",
-  "main_banner_text": "with video courses and speaking clubs.",
+  "main_banner_title": "International language school for Medical Specialists",
+  "main_banner_text": "with video courses and speaking clubs for doctors.",
   "consultation_banner_title": "Personal consultation",
   "consultation_banner_text": "Answers to all your questions about relocating to another country",
   "main_banner_button": "Join",

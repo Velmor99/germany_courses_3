@@ -157,27 +157,29 @@ export const FormComponent = ({
                 "form.press_on_button"
               )} `}</span>
               <br />
-              <Link
+              <a
                 className={cn(styles["form__link"], {
                   [styles["form__link-green"]]: styleType === "white",
                   [styles["form__link-white"]]: styleType === "green",
                 })}
+                target="_blank"
                 href={routes.publicOffer}
               >
                 {t("form.link_of_public_offer")}
-              </Link>
-              <span className={cn(styles["form__text"])}>{` ${t(
+              </a>
+              <span className={cn(styles["form__text"])}>{` ${t( 
                 "form.and"
               )} `}</span>
-              <Link
+              <a
                 className={cn(styles["form__link"], {
                   [styles["form__link-green"]]: styleType === "white",
                   [styles["form__link-white"]]: styleType === "green",
                 })}
+                target="_blank"
                 href={routes.privacyPolicy}
               >
                 {t("form.link_of_privacy_policy")}
-              </Link>
+              </a>
             </p>
           </label>
 

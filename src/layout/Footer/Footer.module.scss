@@ -359,5 +359,25 @@
     @media (min-width: $desktop-width) {
       top: 226px;
     }
+
+    &-deu {
+      @media (min-width: $unfolded-tablet-width) {
+        top: 240px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 226px;
+      }
+    }
+
+    &-ru {
+      @media (min-width: $unfolded-tablet-width) {
+        top: 240px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 226px;
+      }
+    }
   }
 }

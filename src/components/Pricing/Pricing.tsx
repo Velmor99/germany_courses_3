@@ -1,9 +1,11 @@
+"use client";
 import styles from "./Pricing.module.scss";
 import cn from "classnames";
 import { PricingProps } from "./Pricing.props";
 import EuroIcon from "../../../public/common/euro.svg";
 import EuroMobileIcon from "../../../public/common/euro-mobile.svg";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const Pricing = ({
   price,
@@ -11,6 +13,7 @@ const Pricing = ({
   perLesson,
 }: PricingProps): JSX.Element => {
   const t = useTranslations();
+  const pathname = usePathname();
   return (
     <div className={cn(styles["pricing"], className)}>
       <div className={cn(styles["pricing__yellow-background"])}>
@@ -35,7 +38,11 @@ const Pricing = ({
               </div>
             </div>
             {perLesson && (
-              <div className={cn(styles["pricing__per-lesson-block"])}>
+              <div
+                className={cn(styles["pricing__per-lesson-block"], {
+                  [styles["pricing__per-lesson-block-deu"]]: pathname.includes("de"),
+                })}
+              >
                 <span className={cn(styles["pricing__per-lesson-text"])}>
                   {t("per_lesson")}
                 </span>

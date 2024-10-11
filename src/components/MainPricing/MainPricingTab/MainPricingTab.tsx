@@ -98,7 +98,7 @@ const MainPricingTab = ({ title, data }: MainPricingTabProps) => {
             </motion.p>
           </div>
 
-          <div className={cn(styles["tab__per-course-block"])}>
+          {/* <div className={cn(styles["tab__per-course-block"])}>
             <h4
               className={cn(
                 styles["tab__information-title"],
@@ -128,7 +128,7 @@ const MainPricingTab = ({ title, data }: MainPricingTabProps) => {
                 </span>
               )}
             </motion.p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

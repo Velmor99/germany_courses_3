@@ -57,14 +57,6 @@ const BurgerMenu = ({
           <li className={cn(styles["burger-menu__list-item"])}>
             <Link
               className={cn(styles["burger-menu__link"])}
-              href={routes.students}
-            >
-              {t("footer_links.admission_to_universities")}
-            </Link>
-          </li>
-          <li className={cn(styles["burger-menu__list-item"])}>
-            <Link
-              className={cn(styles["burger-menu__link"])}
               href={routes.consultation}
             >
               {t("footer_links.personal_consultation")}

@@ -4,7 +4,6 @@ import Link from "next/link";
 import styles from "./Footer.module.scss";
 import cn from "classnames";
 import Socials from "@/components/Socials/Socials";
-import PaymentButton from "@/components/PaymentButton/ButtonComponent";
 import LogoComponent from "@/components/Logo/Logo";
 import { routes } from "../../../routes";
 import PhoneContact from "@/components/PhoneContact/PhoneContact";
@@ -177,13 +176,6 @@ const Footer = (): JSX.Element => {
             <div className={cn(styles["footer__socials"])}>
               <Socials iconsType="white" />
             </div>
-            {/**TODO width button 226 */}
-            <PaymentButton
-              classname={cn(styles["footer__payment-footer"])}
-              apperance="payment"
-            >
-              {t("payment_button")}
-            </PaymentButton>
           </div>
 
           <div className={cn(styles["footer__logo"])}>

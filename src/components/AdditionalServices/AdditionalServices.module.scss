@@ -20,7 +20,6 @@
 
   &__white-title {
     display: block;
-    height: 43px;
     width: 238px;
     margin: 0 auto;
     border-radius: 10px 10px 0px 0px;
@@ -32,17 +31,15 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-top: 4px;
+    padding: 8px 8px;
     @media (min-width: $wide-phone-width) {
       font-size: 30px;
-      height: 68px;
-      padding-top: 14px;
+      padding: 14px 14px;
     }
   }
 
   &__black-title {
-    width: 320px;
-    height: 56px;
+    // width: 320px;
     border-radius: 10px;
     background: $white;
     box-shadow: $header-shadow;
@@ -54,15 +51,13 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-top: 10px;
+    padding: 10px 6px;
     @media (min-width: $wide-phone-width) {
       font-size: 30px;
-      height: 70px;
-      width: 377px;
-      padding-top: 14px;
     }
-    @media (min-width: $unfolded-tablet-width) {
-      width: 471px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 471px;
     }
   }
 
@@ -93,9 +88,9 @@
 
   &__services-list {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 63px 0px;
+    gap: 53px 0px;
     @media (min-width: $wide-phone-width) {
       gap: 40px 0;
     }
@@ -144,6 +139,12 @@
       justify-self: center;
     }
     &::before {
+      height: 76px;
+      z-index: 1;
+      top: -42%;
+      @media (min-width: $wide-phone-width) {
+        top: -30%;
+      }
       @media (min-width: $tablet-width) {
         display: block;
         background-color: $main-green;
@@ -176,6 +177,11 @@
       justify-self: center;
     }
     &::before {
+      height: 76px;
+      top: -44%;
+      @media (min-width: $wide-phone-width) {
+        top: -30%;
+      }
       @media (min-width: $tablet-width) {
         content: "";
         display: block;
@@ -214,6 +220,35 @@
         top: 4px;
       }
     }
+
+    &-de {  
+      &::before {
+        @media (min-width: $tablet-width) {
+          top: -55%;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          left: -19%
+        }
+        @media (min-width: $desktop-width) {
+          left: -8%
+        }
+      }
+    }
+
+    &-en {
+      &::before {
+        @media (min-width: $tablet-width) {
+          top: -55%;
+          left: 21%;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          left: -35%;
+        }
+        @media (min-width: $desktop-width) {
+          left: -21%
+        }
+      }
+    }
   }
 
   &__consultation {
@@ -234,15 +269,15 @@
       content: "";
       display: block;
       width: 2px;
-      height: 290px;
+      height: 310px;
       background-color: $main-green;
       position: absolute;
       transform: translate(-50%);
-      top: -180%;
+      top: -198%;
       left: 50%;
       @media (min-width: $wide-phone-width) {
-        top: -142%;
-        height: 320px;
+        top: -152%;
+        height: 328px;
       }
       @media (min-width: $tablet-width) {
         width: 174px;
@@ -279,12 +314,39 @@
         top: 4px;
       }
     }
+
+    &-de {
+      &::before {
+        @media (min-width: $tablet-width) {
+          top: -55%;
+          left: 48%;
+        }
+      }
+    }
+
+    &-en {
+      &::before {
+        @media (min-width: $tablet-width) {
+          top: -55%;
+          left: 41%;
+        }
+        @media (min-width: $unfolded-tablet-width) {
+          left: 49%;
+        }
+        @media (min-width: $desktop-width) {
+          left: 48%;
+        }
+      }
+    }
   }
 
   &__image-block {
     width: 100px;
     height: 100px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    background: $white;
     @media (min-width: $wide-phone-width) {
       width: 150px;
       height: 150px;
@@ -310,7 +372,7 @@
     font-weight: 700;
     line-height: normal;
     @media (min-width: $wide-phone-width) {
-      font-size: 18px;
+      font-size: 19px;
     }
     @media (min-width: $tablet-width) {
       font-size: 20px;

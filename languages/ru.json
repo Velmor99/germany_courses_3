@@ -1,5 +1,5 @@
 {
-  "payment_button": "оплатить",
+  "we_help": "Мы поможем шагнуть уверенно!",
   "service": "Услуги",
   "footer_links": {
     "cv_writing": "Составление резюме",
@@ -35,7 +35,7 @@
     "name_placeholder": "Введите ваше имя",
     "email_placeholder": "Введите ваш адрес електронной почты",
     "link_of_public_offer": "Публичной офертой",
-    "link_of_privacy_policy": "Политикой конфедициальности",
+    "link_of_privacy_policy": "Политикой конфиденциальности",
     "press_on_button": "Нажимая на кнопку я соглашаюсь с",
     "and": "и", 
     "empty_name_error": "Заполните имя",

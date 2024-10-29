@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 import cn from "classnames";
-import PaymentButton from "@/components/PaymentButton/ButtonComponent";
 import { HeaderProps } from "./Header.props";
 import styles from "./Header.module.scss";
 import LogoComponent from "@/components/Logo/Logo";
@@ -31,13 +30,6 @@ export default function Header({
               isShowed={isShowedBurger}
             />
           </div>
-
-          <PaymentButton
-            apperance="payment"
-            classname={cn(styles["header__payment-button"])}
-          >
-            {t("payment_button")}
-          </PaymentButton>
 
           <div className={cn(styles["header__socials"])}>
             <Socials iconsType="black" />

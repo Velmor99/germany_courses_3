@@ -52,7 +52,7 @@ const Banner = ({ bannerName, greenContent = false }: BannerProps) => {
           {greenContent && (
             <div className={cn(styles["banner__mobile-green-block"])}>
               <p className={cn(styles["banner__mobile-green-text"])}>
-                Мы поможем шагнуть уверенно!
+                {t("we_help")}
               </p>
             </div>
           )}

@@ -1,3 +1,4 @@
+"use client";
 import cn from "classnames";
 import styles from "./AdditionalServices.module.scss";
 import ResumeImage from "../../../public/advantages_icons/resume.png";
@@ -5,9 +6,12 @@ import TranslateImage from "../../../public/advantages_icons/translate_documents
 import ConsultationImage from "../../../public/advantages_icons/consultations.png";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const AdditionalServices = () => {
   const t = useTranslations();
+  const pathname = usePathname();
+
   return (
     <div className={cn(styles["services"])}>
       <div className={cn(styles["container"])}>
@@ -44,7 +48,11 @@ const AdditionalServices = () => {
           <div
             className={cn(
               styles["services__list-item"],
-              styles["services__translations"]
+              styles["services__translations"],
+              {
+                [styles["services__translations-de"]]: pathname.includes("de"),
+                [styles["services__translations-en"]]: pathname.includes("en"),
+              }
             )}
           >
             <div className={cn(styles["services__image-block"])}>
@@ -61,7 +69,11 @@ const AdditionalServices = () => {
           <div
             className={cn(
               styles["services__list-item"],
-              styles["services__consultation"]
+              styles["services__consultation"],
+              {
+                [styles["services__consultation-en"]]: pathname.includes('en'),
+                [styles["services__consultation-de"]]: pathname.includes('de')
+              }
             )}
           >
             <div className={cn(styles["services__image-block"])}>

@@ -65,7 +65,7 @@
     &-phone {
       margin-bottom: 17px;
       @media (min-width: $wide-phone-width) {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
       }
       @media (min-width: $tablet-width) {
         margin-bottom: 40px;
@@ -84,19 +84,12 @@
 
   &__checkbox {
     display: none;
-  }
 
-  &__checkbox-text {
-    cursor: pointer;
-    text-align: center;
-    position: relative;
-    margin-bottom: 45px;
-    margin: 0 auto 45px auto;
-    display: inline;
-    width: 74%;
+    &-container {
+      position: relative;
+    }
 
-    &::before {
-      content: "";
+    &-view {
       cursor: pointer;
       display: block;
       width: 20px;
@@ -104,35 +97,47 @@
       border-radius: 100%;
       background-color: $white;
       position: absolute;
-      left: -25px;
-      top: 2px;
-    }
+      transform: translate(-50%, -50%);
+      left: 10px;
+      top: 30%;
 
-    &--active {
-      &::before {
-        content: "";
-        cursor: pointer;
-        display: block;
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
+      &-active {
+        &::before {
+          content: "";
+          cursor: pointer;
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          background-color: $main-green;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          left: 50%;
+          top: 50%;
+        }
+      }
+
+      &-white {
+        border: 1px solid $main-green;
         background-color: $white;
-        position: absolute;
-        left: -25px;
-        top: 2px;
       }
-      &::after {
-        content: "";
-        cursor: pointer;
-        display: block;
-        width: 13px;
-        height: 13px;
-        border-radius: 100%;
-        background-color: $main-green;
-        position: absolute;
-        left: -5.2%;
-        top: 6.5px;
-      }
+    }
+  }
+
+  &__checkbox-text {
+    cursor: pointer;
+    display: inline;
+    text-align: left;
+    position: relative;
+    margin: 0 auto 20px auto;
+    padding: 0 0 0 30px;
+    line-height: 120%;
+    font-weight: 300;
+    font-size: 12px;
+    hyphens: auto;
+    
+    @media (min-width: $wide-phone-width) {
+      font-size: 18px;
     }
 
     &--white {
@@ -170,13 +175,6 @@
   
 
   &__link {
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 120%;
-    @media (min-width: $tablet-width) {
-      font-size: 24px;
-    }
     &-green {
       color: $main-green;
     }
@@ -187,13 +185,6 @@
 
   &__text {
     color: $text-black;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 120%;
-    @media (min-width: $tablet-width) {
-      font-size: 24px;
-    }
   }
 
   &__submit-button {

@@ -139,24 +139,28 @@ export const FormComponent = ({
           </div>
 
           <label className={cn(styles["form__checkbox-label"])}>
-            <InputComponent
-              className={styles["form__checkbox"]}
-              type={"checkbox"}
-              checked={checkbox}
-              onChange={() => setCheckbox(!checkbox)}
-            />
-            <p
-              className={cn(styles["form__checkbox-text"], {
-                [styles["form__checkbox-text--active"]]: checkbox === true,
-                [styles["form__checkbox-text--white"]]: styleType === "white",
-                [styles["form__checkbox-text--white-active"]]:
-                  styleType === "white" && checkbox === true,
-              })}
-            >
+            <div className={cn(styles["form__checkbox-container"])}>
+              <InputComponent
+                className={styles["form__checkbox"]}
+                type={"checkbox"}
+                checked={checkbox}
+                onChange={() => setCheckbox(!checkbox)}
+              />
+              <div
+                className={cn(styles["form__checkbox-view"], {
+                  [styles["form__checkbox-view-white"]]: styleType === 'white',
+                  [styles["form__checkbox-view-active"]]: checkbox === true,
+                  [styles["form__checkbox-view-active-white"]]: checkbox === true && styleType === 'white'
+                })}
+              ></div>
+            </div>
+            <p className={cn(styles["form__checkbox-text"])}>
               <span className={cn(styles["form__text"])}>{`${t(
                 "form.press_on_button"
               )} `}</span>
-              <br />
+
+              {/* <br /> */}
+
               <a
                 className={cn(styles["form__link"], {
                   [styles["form__link-green"]]: styleType === "white",
@@ -167,7 +171,7 @@ export const FormComponent = ({
               >
                 {t("form.link_of_public_offer")}
               </a>
-              <span className={cn(styles["form__text"])}>{` ${t( 
+              <span className={cn(styles["form__text"])}>{` ${t(
                 "form.and"
               )} `}</span>
               <a
